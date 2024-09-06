@@ -1,0 +1,225 @@
+/* ProductGallery.css */
+
+.gallery-container {
+    position: relative;
+    background-color: rgb(230, 228, 228);
+}
+
+.hero-banner {
+    position: relative;
+    width: 100%;
+    height: 380px;
+    background-color: white;
+    background-size: cover;
+}
+
+.gallery-transform {
+    transform: translateY(-150px);
+}
+
+.gallery-section {
+    position: relative;
+    /* top: -50px; Adjust the value to overlap the hero banner */
+
+    padding-top: 50px;
+    /* Adjust padding to compensate for the negative top value */
+    display: flex;
+    justify-content: center;
+
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery-item {
+    margin: 10px;
+    /* Adjust spacing between images */
+}
+
+.gallery-image {
+    width: 100%;
+    /* Make images responsive */
+    height: 450px;
+    border-radius: 10px;
+    /* Optional: add border radius */
+}
+
+.gallery-image2 {
+    width: 100%;
+    /* Make images responsive */
+    height: auto;
+    transform: translateY(-170px);
+    border-radius: 10px;
+    /* Optional: add border radius */
+}
+
+.gallery-image1 {
+    width: 100%;
+    /* Make images responsive */
+    height: auto;
+    transform: translateY(-170px);
+    border-radius: 10px;
+    /* Optional: add border radius */
+}
+
+
+
+.load-more {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.load-more button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.gallery .img-box {
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 23px;
+}
+
+.gallery .heighted-image .img-box{
+    height: 550px;
+    transform: translateY(-150px);
+
+}
+
+.gallery .width-image .img-box{
+    height: 400px; 
+}
+
+.gallery .img-box-after {
+    height: 550px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 23px;
+    margin-top: 0px;
+    transform: translateY(-120px);
+}
+
+.gallery .img-box-after-home {
+    height: 550px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 23px;
+    margin-top: 0px;
+    transform: translateY(-280px);
+}
+
+/* .gallery-item {
+    transition: transform 0.3s ease-in-out;
+    transform: translateY(-10px);
+} */
+
+.gallery .no-transform  {
+    transform: translateY(160px);
+}
+
+.gallery-transform.no-transform {
+    transform: translateY(0);
+}
+
+.gallery .width-image {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: end; */
+}
+
+.gallery-container .modal-popup-image{
+    width: 50vw;
+    border-radius: 12px;
+}
+
+
+
+@media (max-width: 993px) {
+    .gallery-transform {
+        transform: translateY(0px);
+    }
+    .gallery .img-box-after {
+        height: 220px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 10px;
+        margin-top: 0px;
+        transform: translateY(0px);
+    }
+    .gallery .img-box-after-home {
+        height: 220px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 23px;
+        margin-top: 0px;
+        transform: translateY(0px);
+    }
+
+    .gallery .no-transform  {
+        transform: translateY(0px);
+    }
+    .gallery-transform.no-transform {
+        transform: translateY(0);
+    }
+    .gallery-image2 {
+        transform: translateY(0px);
+    }
+    .gallery-image1 {
+        transform: translateY(0px);
+    }
+
+    .gallery-container {
+        padding: 4vh 0vh;
+    }
+
+    .gallery-section {
+       
+        padding-top: 0px;
+    }
+
+    .gallery-image2 {
+
+        transform: translateY(0px);
+
+
+    }
+
+    .gallery-image1 {
+
+        transform: translateY(0px);
+
+    }
+
+    .gallery-item {
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+    }
+    .gallery .heighted-image .img-box{
+        height: 100%;
+        transform: translateY(0px);
+    
+    }
+    
+    .gallery .width-image .img-box{
+        height: 220px;
+        border-radius: 10px; 
+        transform: translateY(-18px);
+    }
+
+    .gallery-container .modal-popup-image{
+        width: 100%;
+        border-radius: 12px;
+        height: 100%;
+       
+    }
+}

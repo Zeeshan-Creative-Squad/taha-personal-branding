@@ -1,0 +1,146 @@
+.maindiv {
+  background-color: #F9F9F9;
+  padding: 9vh 0vh;
+}
+
+.team-container {
+  background-color: #F9F9F9;
+  color: white;
+  padding: 0px;
+  border-radius: 10px;
+}
+
+.team-container .headtop {
+  color: #1972B7;
+  font-size: 22px;
+}
+
+.team-container .head-h1{
+  font-size: 50px;
+  color: #1F2F54;
+  font-weight: 700;
+}
+
+.team-container .card {
+  background-color: transparent;
+ 
+}
+
+.team-container .card-text {
+  color: #717C93;
+}
+
+.team-container .card-title {
+  color: #1F2F54;
+
+}
+
+.team-container .card-img-top{
+  border-radius: 10px;
+}
+
+.team-container .body_paragraph{
+  width: 55%;
+    margin: 0 auto;
+    text-align: center;
+    color: #717C93;
+    padding: 3vh 0vh;
+    margin-bottom: 20px;
+    
+}
+
+@media (max-width: 575.98px) {
+  .maindiv {
+      padding: 5vh 1vh;
+  }
+
+  .team-container{
+    padding: 3vh 1vh;
+  }
+
+  .team-container .headtop {
+    color: #1972B7;
+    font-size: 16px;
+  
+  }
+
+  .team-container .head-h1 {
+      font-size: 36px;
+     
+  }
+
+  .card {
+      margin-bottom: 2vh;
+  }
+  .team-container .body_paragraph{
+    width: 100%;
+    padding: 0vh 0vh;
+  }
+  .team-container .team-member-list{
+    padding: 0vh 0vh;
+  }
+
+  .team-container .secondary-h1 {
+    font-size: 16px;
+  }
+}
+
+/* Small devices (tablets, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .maindiv {
+      padding: 7vh 2vh;
+  }
+
+  .team-container .headtop {
+    color: #1972B7;
+    font-size: 22px;
+  }
+
+  .team-container .head-h1 {
+      /* font-size: 24px; */
+  }
+
+  .card {
+      margin-bottom: 3vh;
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .maindiv {
+      padding: 8vh 2vh;
+  }
+
+  .team-container .headtop {
+    color: #1972B7;
+    /* font-size: 22px; */
+  }
+
+  .team-container .head-h1 {
+      font-size: 26px;
+  }
+
+  .card {
+      margin-bottom: 4vh;
+  }
+}
+
+
+@media (min-width: 992px) {
+  .maindiv {
+      /* padding: 12vh 2vh; */
+    
+  }
+  .team-container .headtop {
+    color: #1972B7;
+    font-size: 22px;
+  }
+
+  .team-container .head-h1 {
+      /* font-size: 28px; */
+  }
+
+  .card {
+      margin-bottom: 4vh;
+  }
+}
