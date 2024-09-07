@@ -14,16 +14,12 @@ import Blogs from "./screens/Blogs";
 import AboutPage from "./screens/AboutPage";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 import Services from "./screens/Services";
-import BlogInner from "./components/BlogInnerSection/BlogInner";
 import BlogInnerPage from "./screens/BlogInnerPage";
 import LoginScreen from "./AdminScreens/LoginScreen";
 import BlogsScreen from "./AdminScreens/BlogsScreens/BlogsScreen";
 import AdminScreen from "./AdminScreens/AdminScreen";
 import LocationScreen from './screens/LocationScreens/LocationScreen';
 import LocationPages from "./components/LocationPages_/LocationPages"
-
-
-
 
 const App = () => {
 
@@ -46,7 +42,6 @@ const App = () => {
         <Route path='/admin/location-pages' element={<LocationScreen />}/>
         <Route path="/login" element={<LoginScreen />} />
        
-
       </Routes>
       <FooterNew />
     </Router>

@@ -9,7 +9,6 @@ import { useState, useEffect, useRef } from "react";
 import styles from "./Navbar.module.css";
 import { Col, Container, Row } from "react-bootstrap";
 
-
 const Navbar = ({ noLinearBackground, landingPage = false, noLinearBackgroundVideo }) => {
   const [menuState, setMenuState] = useState(false);
   const [isDropdownOpenDesk, setIsDropdownOpenDesk] = useState(false);
@@ -30,17 +29,16 @@ const Navbar = ({ noLinearBackground, landingPage = false, noLinearBackgroundVid
     setHoveredItem(item);
     if (item === 'notes') {
       setIsDropdownOpenDesk(true);
-      setIsNotesSubMenuOpen(true); // Open submenu under 'Notes'
+      setIsNotesSubMenuOpen(true);
     } else {
       setIsDropdownOpenDesk(false);
-      setIsNotesSubMenuOpen(false); // Close submenu under 'Notes'
+      setIsNotesSubMenuOpen(false);
     }
   };
 
   const handleMouseLeave = () => {
     setHoveredItem(null);
     setIsDropdownOpenDesk(false);
-    setIsNotesSubMenuOpen(false); // Close submenu under 'Notes'
   };
 
   const openModal = () => setIsModalOpen(true);
@@ -69,10 +67,6 @@ const Navbar = ({ noLinearBackground, landingPage = false, noLinearBackgroundVid
     setIsDropdownOpenZakatServices(false);
     setIsDropdownOpenSubServices(false);
   };
-
- 
-   
-  
 
   const services = [
     { name: "O Level ", link: "/notes/o-level" },
@@ -130,7 +124,7 @@ const Navbar = ({ noLinearBackground, landingPage = false, noLinearBackgroundVid
               <h1 onMouseEnter={mouseLeaveHandler}>
                 <Link to="/">
                   <img
-                    src="/images/icons/ETB-Logo.png"
+                    src="/images/icons/Taha-Sheikh-logo.png"
                     className={styles.logo}
                     alt="moosa-khan-logo"
                   />
@@ -164,13 +158,13 @@ const Navbar = ({ noLinearBackground, landingPage = false, noLinearBackgroundVid
                   <div className="dropdown-trigger d-flex align-items-center"
                     onMouseEnter={() => handleMouseEnter('notes')}
                     onMouseLeave={handleMouseLeave}>
-                   <Link to="/"><span className="nav-links font-play">HOME</span></Link> 
+                    <Link to="/"><span className="nav-links font-play">Home</span></Link>
                   </div>
                   <div className={`dropdown-content ${isDropdownOpenDesk ? 'd-none' : 'd-none'}`}
                     onMouseEnter={() => handleMouseEnter('notes')}
                     onMouseLeave={handleMouseLeave}>
                     <div className="d-flex align-item-center gap-1 flex-column">
-                      
+
 
                       {/* <div className="navigation-dropdown">
         <div className="dropdown-trigger d-flex align-items-center"
@@ -202,188 +196,193 @@ const Navbar = ({ noLinearBackground, landingPage = false, noLinearBackgroundVid
       </div> */}
 
 
-<div className="navigation-dropdown">
-  <div className="dropdown-trigger d-flex align-items-center"
-    onMouseEnter={() => {setIsDropdownOpenNafilServices(false); setIsDropdownOpenZakatServices(true);
-      setIsDropdownOpenNafilServices(false);
-      setIsDropdownOpenSubServices(false);
-      setIsDropdownOpenFitrahServices(false)
-      
-    }}
-  >
-   <Link to="/zakat"><span className="nav-links font-play" style={{ padding: "12px 16px", textDecoration: "none", paddingLeft: "0px" }}
-    onClick={handleMenuItemClick}>Zakat</span></Link> 
-  </div>
-  <div className={`dropdown-content ${isDropdownOpenZakatServices ? 'open' : 'd-none'}`}
-    onMouseEnter={() => setIsDropdownOpenZakatServices(true)}
-    onMouseLeave={() => setIsDropdownOpenZakatServices(false)}
-    style={{ left: "120px", top: "0px" }}
-  >
-    <div className="d-flex align-items-center gap-5">
-      <div>
-        {['medical', 'utilities', 'grocery', 'education-fees', 'wedding', 'global-relief'].map((item) => (
-          <Link
-            to={`/${item}`}
-            className="nav-links font-play dropdown-item text-start"
-            onClick={handleMenuItemClick}
-            onMouseEnter={() => setIsDropdownOpenZakatServices(true)}
-            key={item}
-          >
-            <p className="itemsof-dropdown mb-0">{item.charAt(0).toUpperCase() + item.slice(1).replace('-', ' ')}</p>
-          </Link>
-        ))}
-      </div>
-    </div>
-  </div>
-</div>
+                      <div className="navigation-dropdown">
+                        <div className="dropdown-trigger d-flex align-items-center"
+                          onMouseEnter={() => {
+                            setIsDropdownOpenNafilServices(false); setIsDropdownOpenZakatServices(true);
+                            setIsDropdownOpenNafilServices(false);
+                            setIsDropdownOpenSubServices(false);
+                            setIsDropdownOpenFitrahServices(false)
+
+                          }}
+                        >
+                          <Link to="/zakat"><span className="nav-links font-play" style={{ padding: "12px 16px", textDecoration: "none", paddingLeft: "0px" }}
+                            onClick={handleMenuItemClick}>Zakat</span></Link>
+                        </div>
+                        <div className={`dropdown-content ${isDropdownOpenZakatServices ? 'open' : 'd-none'}`}
+                          onMouseEnter={() => setIsDropdownOpenZakatServices(true)}
+                          onMouseLeave={() => setIsDropdownOpenZakatServices(false)}
+                          style={{ left: "120px", top: "0px" }}
+                        >
+                          <div className="d-flex align-items-center gap-5">
+                            <div>
+                              {['medical', 'utilities', 'grocery', 'education-fees', 'wedding', 'global-relief'].map((item) => (
+                                <Link
+                                  to={`/${item}`}
+                                  className="nav-links font-play dropdown-item text-start"
+                                  onClick={handleMenuItemClick}
+                                  onMouseEnter={() => setIsDropdownOpenZakatServices(true)}
+                                  key={item}
+                                >
+                                  <p className="itemsof-dropdown mb-0">{item.charAt(0).toUpperCase() + item.slice(1).replace('-', ' ')}</p>
+                                </Link>
+                              ))}
+                            </div>
+                          </div>
+                        </div>
+                      </div>
 
 
-<div className="navigation-dropdown">
-  <div className="dropdown-trigger d-flex align-items-center"
-    onMouseEnter={() => {setIsDropdownOpenNafilServices(false); setIsDropdownOpenZakatServices(false); 
-      setIsDropdownOpenSubServices(false);
-      setIsDropdownOpenFitrahServices(true)
-      
-    }}
-  >
-    <Link to="/fitrah"><span className="nav-links font-play" style={{ padding: "12px 16px", textDecoration: "none", paddingLeft: "0px" }}
-    onClick={handleMenuItemClick}>Fitrah</span></Link> 
-  </div>
-  <div className={`dropdown-content ${isDropdownOpenFitrahServices ? 'open' : 'd-none'}`}
-    onMouseEnter={() => setIsDropdownOpenFitrahServices(true)}
-    onMouseLeave={() => setIsDropdownOpenFitrahServices(false)}
-    style={{ left: "120px", top: "0px" }}
-  >
-    <div className="d-flex align-items-center gap-5">
-      <div>
-        {['medical', 'utilities', 'grocery', 'education-fees', 'wedding', 'global-relief'].map((item) => (
-          <Link
-            to={`/${item}`}
-            className="nav-links font-play dropdown-item text-start"
-            onClick={handleMenuItemClick}
-            onMouseEnter={() => setIsDropdownOpenFitrahServices(true)}
-            key={item}
-          >
-            <p className="itemsof-dropdown mb-0">{item.charAt(0).toUpperCase() + item.slice(1).replace('-', ' ')}</p>
-          </Link>
-        ))}
-      </div>
-    </div>
-  </div>
-</div>
+                      <div className="navigation-dropdown">
+                        <div className="dropdown-trigger d-flex align-items-center"
+                          onMouseEnter={() => {
+                            setIsDropdownOpenNafilServices(false); setIsDropdownOpenZakatServices(false);
+                            setIsDropdownOpenSubServices(false);
+                            setIsDropdownOpenFitrahServices(true)
+
+                          }}
+                        >
+                          <Link to="/fitrah"><span className="nav-links font-play" style={{ padding: "12px 16px", textDecoration: "none", paddingLeft: "0px" }}
+                            onClick={handleMenuItemClick}>Fitrah</span></Link>
+                        </div>
+                        <div className={`dropdown-content ${isDropdownOpenFitrahServices ? 'open' : 'd-none'}`}
+                          onMouseEnter={() => setIsDropdownOpenFitrahServices(true)}
+                          onMouseLeave={() => setIsDropdownOpenFitrahServices(false)}
+                          style={{ left: "120px", top: "0px" }}
+                        >
+                          <div className="d-flex align-items-center gap-5">
+                            <div>
+                              {['medical', 'utilities', 'grocery', 'education-fees', 'wedding', 'global-relief'].map((item) => (
+                                <Link
+                                  to={`/${item}`}
+                                  className="nav-links font-play dropdown-item text-start"
+                                  onClick={handleMenuItemClick}
+                                  onMouseEnter={() => setIsDropdownOpenFitrahServices(true)}
+                                  key={item}
+                                >
+                                  <p className="itemsof-dropdown mb-0">{item.charAt(0).toUpperCase() + item.slice(1).replace('-', ' ')}</p>
+                                </Link>
+                              ))}
+                            </div>
+                          </div>
+                        </div>
+                      </div>
 
 
-<div className="navigation-dropdown">
-  <div className="dropdown-trigger d-flex align-items-center"
-    onMouseEnter={() => {setIsDropdownOpenNafilServices(true); setIsDropdownOpenZakatServices(false); 
-      setIsDropdownOpenSubServices(false);
-      setIsDropdownOpenFitrahServices(false)
-      
-    }}
-  >
-    <Link to="/nafil"><span className="nav-links font-play" style={{ padding: "12px 16px", textDecoration: "none", paddingLeft: "0px" }}
-    onClick={handleMenuItemClick}>Nafil</span></Link> 
-  </div>
-  <div className={`dropdown-content ${isDropdownOpenNafilServices ? 'open' : 'd-none'}`}
-    onMouseEnter={() => setIsDropdownOpenNafilServices(true)}
-    onMouseLeave={() => setIsDropdownOpenNafilServices(false)}
-    style={{ left: "170px", top: "0px" }}
-  >
-    <div className="d-flex align-items-center gap-5">
-      <div>
-        {['Sadaqa', 'Rashan', 'Medical', 'Education', 'Utilities', 'Global Relief', 'construction-of-mosque', 'Qurbani', 'Box', 'Mehfil', 'Sadat', 'trust-expenses', 'Others'].map((item) => (
-          <Link
-            to={`/${item}`}
-            className="nav-links font-play dropdown-item text-start"
-            onClick={handleMenuItemClick}
-            onMouseEnter={() => setIsDropdownOpenNafilServices(true)}
-            key={item}
-          >
-            <p className="itemsof-dropdown mb-0">{item.charAt(0).toUpperCase() + item.slice(1)}</p>
-          </Link>
-        ))}
-      </div>
-    </div>
-  </div>
-</div>
+                      <div className="navigation-dropdown">
+                        <div className="dropdown-trigger d-flex align-items-center"
+                          onMouseEnter={() => {
+                            setIsDropdownOpenNafilServices(true); setIsDropdownOpenZakatServices(false);
+                            setIsDropdownOpenSubServices(false);
+                            setIsDropdownOpenFitrahServices(false)
 
-                        {['hajj', 'qurbani', 'education', 'global-relief', 'construction-of-mosque', 'mehfil'].map((item) => (
-                          <Link
-                            to={`/${item}`}
-                            className="nav-links font-play dropdown-item text-start"
-                            onClick={handleMenuItemClick}
-                            onMouseEnter={() => 
-                            {setIsDropdownOpenSubServices(false)
+                          }}
+                        >
+                          <Link to="/nafil"><span className="nav-links font-play" style={{ padding: "12px 16px", textDecoration: "none", paddingLeft: "0px" }}
+                            onClick={handleMenuItemClick}>Nafil</span></Link>
+                        </div>
+                        <div className={`dropdown-content ${isDropdownOpenNafilServices ? 'open' : 'd-none'}`}
+                          onMouseEnter={() => setIsDropdownOpenNafilServices(true)}
+                          onMouseLeave={() => setIsDropdownOpenNafilServices(false)}
+                          style={{ left: "170px", top: "0px" }}
+                        >
+                          <div className="d-flex align-items-center gap-5">
+                            <div>
+                              {['Sadaqa', 'Rashan', 'Medical', 'Education', 'Utilities', 'Global Relief', 'construction-of-mosque', 'Qurbani', 'Box', 'Mehfil', 'Sadat', 'trust-expenses', 'Others'].map((item) => (
+                                <Link
+                                  to={`/${item}`}
+                                  className="nav-links font-play dropdown-item text-start"
+                                  onClick={handleMenuItemClick}
+                                  onMouseEnter={() => setIsDropdownOpenNafilServices(true)}
+                                  key={item}
+                                >
+                                  <p className="itemsof-dropdown mb-0">{item.charAt(0).toUpperCase() + item.slice(1)}</p>
+                                </Link>
+                              ))}
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      {['hajj', 'qurbani', 'education', 'global-relief', 'construction-of-mosque', 'mehfil'].map((item) => (
+                        <Link
+                          to={`/${item}`}
+                          className="nav-links font-play dropdown-item text-start"
+                          onClick={handleMenuItemClick}
+                          onMouseEnter={() => {
+                            setIsDropdownOpenSubServices(false)
                             setIsDropdownOpenZakatServices(false)
                             setIsDropdownOpenNafilServices(false)
-                            setIsDropdownOpenFitrahServices(false)}}
-                            key={item}
-                          >
-                            <p className="itemsof-dropdown mb-0">{item.charAt(0).toUpperCase() + item.slice(1)}</p>
-                          </Link>
-                        ))}
-
-
-
-
-
-     
-
-      {/* Khidmat-e-Khalq Dropdown */}
-      <div className="navigation-dropdown">
-        <div className="dropdown-trigger d-flex align-items-center"
-          onMouseEnter={() => {setIsDropdownOpenNafilServices(false); setIsDropdownOpenZakatServices(false); setIsDropdownOpenNafilServices(false);
-            setIsDropdownOpenSubServices(true);
-            setIsDropdownOpenFitrahServices(false)
-            
-          }}
-        >
-          <span className="nav-links font-play" style={{ padding: "12px 16px" }}>Khidmat-e-Khalq </span>
-        </div>
-        <div className={`dropdown-content ${isDropdownOpenSubServices ? 'open' : 'd-none'}`}
-          onMouseEnter={() => { setIsDropdownOpenSubServices(true) }}
-          onMouseLeave={() => { setIsDropdownOpenSubServices(false) }}
-          style={{ left: "170px", top: "0px" }}
-        >
-          <div className="d-flex align-item-center gap-5">
-            <div>
-              {['medical', 'utilities', 'grocery', 'education-fees', 'wedding', 'business'].map((item) => (
-                <Link
-                  to={`/${item}`}
-                  className="nav-links font-play dropdown-item text-start"
-                  onClick={handleMenuItemClick}
-                  onMouseEnter={() => setIsDropdownOpenSubServices(true)}
-                  key={item}
-                >
-                  <p className="itemsof-dropdown mb-0">{item.charAt(0).toUpperCase() + item.slice(1)}</p>
-                </Link>
-              ))}
-            </div>
-          </div>
-        </div>
-      </div>
-                        <Link
-                          to='/sadaqa'
-                          className="nav-links font-play dropdown-item text-start"
-                          // onClick={() => setIsNotesSubMenuOpen(false)} 
-                          onClick={handleMenuItemClick}
-                          onMouseEnter={() => { setIsDropdownOpenSubServices(false) }}
+                            setIsDropdownOpenFitrahServices(false)
+                          }}
+                          key={item}
                         >
-                          <p className="itemsof-dropdown mb-0">Sadaqa</p>
+                          <p className="itemsof-dropdown mb-0">{item.charAt(0).toUpperCase() + item.slice(1)}</p>
                         </Link>
+                      ))}
 
-                        <Link
-                          to='/cos'
-                          className="nav-links font-play dropdown-item text-start"
-                          // onClick={() => setIsNotesSubMenuOpen(false)} 
-                          onClick={handleMenuItemClick}
-                          onMouseEnter={() => { setIsDropdownOpenSubServices(false) }}
+
+
+
+
+
+
+                      {/* Khidmat-e-Khalq Dropdown */}
+                      <div className="navigation-dropdown">
+                        <div className="dropdown-trigger d-flex align-items-center"
+                          onMouseEnter={() => {
+                            setIsDropdownOpenNafilServices(false); setIsDropdownOpenZakatServices(false); setIsDropdownOpenNafilServices(false);
+                            setIsDropdownOpenSubServices(true);
+                            setIsDropdownOpenFitrahServices(false)
+
+                          }}
                         >
-                          <p className="itemsof-dropdown mb-0">COS</p>
-                        </Link>
+                          <span className="nav-links font-play" style={{ padding: "12px 16px" }}>Khidmat-e-Khalq </span>
+                        </div>
+                        <div className={`dropdown-content ${isDropdownOpenSubServices ? 'open' : 'd-none'}`}
+                          onMouseEnter={() => { setIsDropdownOpenSubServices(true) }}
+                          onMouseLeave={() => { setIsDropdownOpenSubServices(false) }}
+                          style={{ left: "170px", top: "0px" }}
+                        >
+                          <div className="d-flex align-item-center gap-5">
+                            <div>
+                              {['medical', 'utilities', 'grocery', 'education-fees', 'wedding', 'business'].map((item) => (
+                                <Link
+                                  to={`/${item}`}
+                                  className="nav-links font-play dropdown-item text-start"
+                                  onClick={handleMenuItemClick}
+                                  onMouseEnter={() => setIsDropdownOpenSubServices(true)}
+                                  key={item}
+                                >
+                                  <p className="itemsof-dropdown mb-0">{item.charAt(0).toUpperCase() + item.slice(1)}</p>
+                                </Link>
+                              ))}
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <Link
+                        to='/sadaqa'
+                        className="nav-links font-play dropdown-item text-start"
+                        // onClick={() => setIsNotesSubMenuOpen(false)} 
+                        onClick={handleMenuItemClick}
+                        onMouseEnter={() => { setIsDropdownOpenSubServices(false) }}
+                      >
+                        <p className="itemsof-dropdown mb-0">Sadaqa</p>
+                      </Link>
+
+                      <Link
+                        to='/cos'
+                        className="nav-links font-play dropdown-item text-start"
+                        // onClick={() => setIsNotesSubMenuOpen(false)} 
+                        onClick={handleMenuItemClick}
+                        onMouseEnter={() => { setIsDropdownOpenSubServices(false) }}
+                      >
+                        <p className="itemsof-dropdown mb-0">COS</p>
+                      </Link>
 
 
-                      
+
                     </div>
                   </div>
                 </div>
@@ -424,7 +423,19 @@ const Navbar = ({ noLinearBackground, landingPage = false, noLinearBackgroundVid
                   }
                   to="/about"
                 >
-                  ABOUT
+                  About
+                </NavLink>
+
+                <NavLink
+                  onMouseEnter={mouseLeaveHandler}
+                  className={({ isActive }) =>
+                    isActive
+                      ? `${styles.activeLink} ${styles.link}`
+                      : styles.link
+                  }
+                  to="/about"
+                >
+                  Consultation
                 </NavLink>
 
                 <NavLink
@@ -436,7 +447,7 @@ const Navbar = ({ noLinearBackground, landingPage = false, noLinearBackgroundVid
                   }
                   to="/services"
                 >
-                  SERVICES
+                  portfolio
                 </NavLink>
 
                 <NavLink
@@ -448,10 +459,10 @@ const Navbar = ({ noLinearBackground, landingPage = false, noLinearBackgroundVid
                   }
                   to="/blogs"
                 >
-                  BLOGS
+                  My Agency
                 </NavLink>
 
-                
+
                 <NavLink
                   onMouseEnter={mouseLeaveHandler}
                   className={({ isActive }) =>
@@ -461,7 +472,7 @@ const Navbar = ({ noLinearBackground, landingPage = false, noLinearBackgroundVid
                   }
                   to="/contact"
                 >
-                  CONTACT US
+                  Blogs
                 </NavLink>
                 {/* <div className="navigation-dropdown">
                   <div className="dropdown-trigger d-flex align-items-center"
@@ -512,14 +523,15 @@ const Navbar = ({ noLinearBackground, landingPage = false, noLinearBackgroundVid
                   <a onMouseEnter={mouseLeaveHandler}>
                     <button className={styles.button1}>Chat With Us</button>
                   </a> */}
-                
+
                 {/* onClick={() => {
                     setLoginpressed(false);
                     openModal(); */}
                 <Link onMouseEnter={mouseLeaveHandler} to="/contact">
-                  <button className="connect-button">GET CONSULTATION</button>
+                  <button className="connect-button">Contact Me</button>
                 </Link>
                 {/* <Modal status={isModalOpen} closeModal={closeModal}> {loginpressed ? <LoginSignup /> : <Signup />} </Modal> */}
+               
               </div>
             </div>
           </Container>
@@ -544,7 +556,7 @@ const Navbar = ({ noLinearBackground, landingPage = false, noLinearBackgroundVid
               className="img_h1_cs1 text-center"
               onClick={() => navitate("/")}
             >
-              <img src="/images/icons/ETB-mob-logo.png" className="img-fluid" alt=""/>
+              <img src="/images/icons/Taha-Sheikh-logo.png" className="img-fluid" alt="" />
             </h1>
             <div
               className="bars_cs1"

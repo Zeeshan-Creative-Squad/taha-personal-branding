@@ -113,7 +113,7 @@ const Mobilenav = (props) => {
           <div className={props.landingPage && 'd-none'}>
             <div className="d-flex justify-content-between align-content center navitems_cs1">
               <li style={{ color: "white" }}>
-                <Link onClick={() => props.hamburgerdropdown(transfer)} to="/"> HOME </Link>
+                <Link onClick={() => props.hamburgerdropdown(transfer)} to="/"> Home </Link>
               </li>
 
 
@@ -130,12 +130,12 @@ const Mobilenav = (props) => {
             </div>
             <div className={`d-flex justify-content-between align-content center navitems_cs1 ${props.landingPage && 'd-none'}`}>
               <li>
-                <Link onClick={() => props.hamburgerdropdown(transfer)} to="/about">ABOUT</Link>
+                <Link onClick={() => props.hamburgerdropdown(transfer)} to="/about">About</Link>
               </li>
             </div>
             <div className={`d-flex justify-content-between align-content center navitems_cs1 ${props.landingPage && 'd-none'}`}>
               <li>
-                <Link onClick={() => props.hamburgerdropdown(transfer)} to="/services">SERVICES</Link>
+                <Link onClick={() => props.hamburgerdropdown(transfer)} to="/services">Consultation</Link>
               </li>
             </div>
 
@@ -621,18 +621,24 @@ const Mobilenav = (props) => {
               </li>
             </div> */}
 
+<div className={`d-flex justify-content-between align-content center navitems_cs1 ${props.landingPage && 'd-none'}`}>
+            <li>
+              <Link onClick={() => props.hamburgerdropdown(transfer)} to="/blogs">Portfolio</Link>
+            </li>
+          </div>
+
+          <div className={`d-flex justify-content-between align-content center navitems_cs1 ${props.landingPage && 'd-none'}`}>
+            <li>
+              <Link onClick={() => props.hamburgerdropdown(transfer)} to="/blogs">My Agency</Link>
+            </li>
+          </div>
+
+
           <div className={`d-flex justify-content-between align-content center navitems_cs1 ${props.landingPage && 'd-none'}`}>
             <li>
               <Link onClick={() => props.hamburgerdropdown(transfer)} to="/blogs">BLOGS</Link>
             </li>
           </div>
-
-          <div className={`d-flex justify-content-between align-content center navitems_cs1 ${props.landingPage && 'd-none'}`}>
-            <li>
-              <Link onClick={() => props.hamburgerdropdown(transfer)} to="/contact">CONTACT</Link>
-            </li>
-          </div>
-
 
           {/* <div className={`d-flex justify-content-between align-content center navitems_cs1 ${props.landingPage && 'd-none'}`}>
           <div className="navigation-dropdown" ref={dropdownMore}>
@@ -672,14 +678,14 @@ const Mobilenav = (props) => {
               className="button2_cs_1"
 
             >
-              {/* <button
+              <button
                 style={{ width: "100%", borderRadius: "4px" }}
                 className="button2_cs_1"
                 href=""
                 onClick={() => {
                   setLoginpressed(true);
                   openModal();
-                }}>LOGIN</button>
+                }}>Contact Me</button>
               <button
                 style={{ width: "100%", borderRadius: "4px" }}
                 className="button2_cs_1"
@@ -687,7 +693,7 @@ const Mobilenav = (props) => {
                 onClick={() => {
                   setLoginpressed(false);
                   openModal();
-                }}>SIGNUP</button> */}
+                }}>Get Consultation</button>
               {/* <Modal status={isModalOpen} closeModal={closeModal}> {loginpressed ? <LoginSignup closeModal={closeModal} /> : <Signup closeModal={closeModal} />} </Modal> */}
 
             </a>

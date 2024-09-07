@@ -16,12 +16,7 @@ const Blogs = () => {
         
         <CardGrid />
 
-        <CardTestimonial 
-          heading="MOST POPULAR "
-          shadeHeading="News"
-          spanHeading=""
-          content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's Lorem Ipsum is simply dummy text of the printing"
-          button="Learn more"/>
+       
     
         
         

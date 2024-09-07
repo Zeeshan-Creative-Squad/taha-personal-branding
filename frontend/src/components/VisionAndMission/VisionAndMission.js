@@ -37,13 +37,10 @@ const VisionAndMission = (props) => {
           <div className="col-lg-6 left-section">
             <h2 className='secondary-h1'>{props.title}{props.aboutTitle}</h2>
 
-            <h1 className='head-h2'
-              data-background-text={props.bgText ?? ""}
-            >
- {props.heading}
-               <span className='head-bg'>{props.shadeHeading}</span>
+            <h1 className='head-h2'>
              
-              <span className='head-h2'>{props.afterShadeHeading}</span></h1>
+ {props.heading} <span className='span-head'>{props.spanHead}</span>
+              </h1>
             <div className="d-flex flex-container">
               <div className="text-container">
                 <div>
@@ -52,7 +49,7 @@ const VisionAndMission = (props) => {
                   <p className='bluepara'>{props.bluepara}</p>
                   {props.button && (
                     <div className="button-container">
-                      <Link to={linkTo} className='button_secondary'>
+                      <Link to={linkTo} className='connect-button'>
                         {props.button}
                       </Link>
                     </div>
