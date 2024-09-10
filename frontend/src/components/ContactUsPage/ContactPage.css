@@ -68,7 +68,7 @@
 .contact-form {
     color: white;
     border-radius: 21px;
-    max-width: 45%;
+    /* max-width: 45%; */
     flex: 1;
 }
 

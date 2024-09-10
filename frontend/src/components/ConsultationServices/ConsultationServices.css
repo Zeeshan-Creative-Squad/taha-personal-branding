@@ -1,0 +1,133 @@
+/* Container styling */
+.consultation-services {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 12px;
+  /* Adjust padding as needed */
+  /* background-color: #FFFFFF; */
+}
+
+/* Text styling */
+.consultation-services .h2-main {
+  color: #3F1626;
+  font-size: 22px;
+  margin-top: 22px;
+}
+
+.consultation-services .head-h1 {
+  color: #131313;
+}
+
+.consultation-services .font-weight-bold-custom {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  color: black;
+  font-size: 45px;
+  margin-top: 22px;
+}
+
+.consultation-services .card-custom {
+  border-radius: 20px;
+}
+
+.consultation-services .icon-container {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.icon-image {
+  width: 65px;
+  height: auto;
+  background-color: white;
+  border-radius: 60%;
+  padding: 8px;
+  box-shadow: 0 0 0 5px white;
+  display: flex;
+}
+
+.consultation-services .card-body {
+  padding: 40px 50px;
+  background-color: #131313;
+  border-radius: 20px;
+ 
+}
+
+.consultation-services .card-title-custom {
+  font-weight: bold;
+  color: #FFFFFF;
+  margin-top: 16px;
+  padding: 1.5vh 0vh;
+}
+
+.consultation-services .card-text-custom {
+  color: #717C93;
+  padding: 16px 0px;
+}
+
+.consultation-services .content-wrapper {
+  margin-top: 0; /* Ensure no extra margin at the top */
+}
+
+/* Media queries for responsiveness */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .consultation-services .font-weight-bold-custom {
+    font-size: 24px;
+  }
+
+  .consultation-services .card-custom {
+    padding: 5px 6px;
+  }
+  .consultation-services .icon-container {
+    justify-content: center;
+  }
+  .consultation-services .para_main {
+    text-align: center;
+  }
+  .consultation-services .card-title-custom{
+    text-align: center;
+  }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .consultation-services .font-weight-bold-custom {
+    font-size: 30px;
+  }
+
+  .consultation-services .card-custom {
+    padding: 5px 8px;
+  }
+  .consultation-services .icon-container {
+    justify-content: center;
+  }
+  .consultation-services .card-title-custom{
+    text-align: center;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .consultation-services .font-weight-bold-custom {
+    font-size: 35px;
+  }
+
+  .consultation-services .card-custom {
+    padding: 5px 10px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .consultation-services .font-weight-bold-custom {
+    font-size: 45px;
+  }
+
+  /* .consultation-services .card-custom {
+    padding: 5px 12px;
+  } */
+}

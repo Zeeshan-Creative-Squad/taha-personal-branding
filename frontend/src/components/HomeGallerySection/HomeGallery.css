@@ -1,5 +1,5 @@
 .HomeGallery-container {
-    background-color: rgb(230, 228, 228);
+    background-color: #131313;
     padding: 3vh 0vh 0vh 0vh;
 }
 
@@ -22,11 +22,8 @@
 
 
 .HomeGallery-container .head-h1 {
-    font-size: 50px;
-    color: #1F2F54;
-    font-weight: 560;
-
-
+    font: normal normal bold 80px/88px Open Sans;
+letter-spacing: -4.16px;
 }
 
 .HomeGallery-container .swiper-slide {
@@ -111,7 +108,7 @@
 }
 
 .HomeGallery-container .connect-button {
-    color: white;
+
 }
 
 

@@ -1,6 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="39.623" height="39.624" viewBox="0 0 39.623 39.624">
-  <g id="Group_2225" data-name="Group 2225" transform="translate(-249.5 -692.5)">
-    <rect id="Rectangle_1717" data-name="Rectangle 1717" width="38.623" height="38.624" rx="4" transform="translate(250 693)" fill="none" stroke="#eaebeb" stroke-width="1"/>
-    <path id="Icon_material-location-on" data-name="Icon material-location-on" d="M13.277,3A5.772,5.772,0,0,0,7.5,8.777c0,4.332,5.777,10.728,5.777,10.728s5.777-6.4,5.777-10.728A5.772,5.772,0,0,0,13.277,3Zm0,7.84A2.063,2.063,0,1,1,15.34,8.777,2.064,2.064,0,0,1,13.277,10.84Z" transform="translate(256.035 701.06)" fill="#eaebeb"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="32.783" height="32.784" viewBox="0 0 32.783 32.784">
+  <g id="Group_1810" data-name="Group 1810" transform="translate(0.4 0.4)">
+    <rect id="Rectangle_339" data-name="Rectangle 339" width="31.983" height="31.983" rx="5" transform="translate(0)" fill="none" stroke="#eaebeb" stroke-width="0.8"/>
+    <g id="Icon_ion-location" data-name="Icon ion-location" transform="translate(10.51 8.319)">
+      <path id="Path_4389" data-name="Path 4389" d="M12.231,2.25A5.371,5.371,0,0,0,6.75,7.491,12.217,12.217,0,0,0,8.614,12.93a40.19,40.19,0,0,0,2.74,4.221,1.088,1.088,0,0,0,1.755,0,40.358,40.358,0,0,0,2.74-4.221,12.23,12.23,0,0,0,1.862-5.439A5.371,5.371,0,0,0,12.231,2.25Zm0,7.673a2.192,2.192,0,1,1,2.192-2.192,2.192,2.192,0,0,1-2.192,2.192Z" transform="translate(-6.75 -2.25)" fill="#eaebeb"/>
+    </g>
   </g>
 </svg>

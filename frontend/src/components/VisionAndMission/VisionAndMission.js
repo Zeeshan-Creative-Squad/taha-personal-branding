@@ -4,7 +4,7 @@ import './VisionAndMission.css';
 
 
 const VisionAndMission = (props) => {
-  let linkTo = '#'; 
+  let linkTo = '#';
 
   switch (props.button) {
     case 'About Us':
@@ -27,20 +27,20 @@ const VisionAndMission = (props) => {
   }
 
   return (
-    <div className="ourservices-container" style={{background: props.background}}>
+    <div className="ourservices-container" style={{ background: props.background }}>
       <div className='container'>
         <div className={`row ${props.flexdirection === 'row-reverse' ? 'flex-lg-row-reverse' : 'flex-lg-row'} flex-column`}>
           <div className="col-lg-6 right-section">
-            <img src={props.image} className='large-img' alt='banner-img'/>
-          
+            <img src={props.image} className='large-img' alt='banner-img' />
+
           </div>
           <div className="col-lg-6 left-section">
             <h2 className='secondary-h1'>{props.title}{props.aboutTitle}</h2>
 
-            <h1 className='head-h2'>
-             
- {props.heading} <span className='span-head'>{props.spanHead}</span>
-              </h1>
+            <h1 className='head-h1'>
+
+              {props.heading} <span className='span-head'>{props.spanHead}</span>
+            </h1>
             <div className="d-flex flex-container">
               <div className="text-container">
                 <div>

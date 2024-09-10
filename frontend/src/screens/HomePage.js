@@ -1,23 +1,22 @@
 import React from 'react'
-import NewsAndUpdatesHero from '../components/NewsAndUpdatesHero/NewsAndUpdatesHero'
 import VisionAndMission from '../components/VisionAndMission/VisionAndMission'
-import NewsLetter from '../components/NewsLetter/NewsLetter'
 import CardTestimonial from '../components/OurServices/CardBoxServicesSection'
 import Homehero from '../components/HomeHero/HomeHero'
-// import Testimonials from '../components/Testimonials/Testimonials'
-import WhatWe from '../components/WhatWeDo/whatWe'
+import ProjectsDone from '../components/ProjectsDones/ProjectsDone'
 import OurProcess from '../components/OurProcess/OurProcess';
-import ContactForm from '../components/ContactForm/ContactForm';
 import Sponsor from '../components/Sponsor/Sponsor';
-import Testimonials from '../components/OurTestimonials/Testimonials';
+import ConnectPopup from '../components/OurTestimonials/ConnectPopup';
+import ConsultationServices from '../components/ConsultationServices/ConsultationServices'
+import HomeGallery from '../components/HomeGallerySection/HomeGallery'
 
 const HomePage = () => {
   return (
     <div>
       <Homehero />
-      <WhatWe />
+      <ProjectsDone />
       <Sponsor
       />
+      <ConsultationServices />
       <VisionAndMission
         // flexdirection="row-reverse"
         heading="Get 1 to 1 Consultation with"
@@ -32,7 +31,7 @@ const HomePage = () => {
         shadeHeading="WE DO"
         background="transparent linear-gradient(313deg, #FFFFFF00 0%, #FFFFFE00 60%, #A5CD375C 100%, #bbff00 100%) 0% 0% no-repeat"/> */}
 
-      <OurProcess heading="WHY " shadeHeading="CHOOSE US" />
+      {/* <OurProcess heading="WHY " shadeHeading="CHOOSE US" /> */}
 
       <CardTestimonial
         heading="MOST POPULAR "
@@ -42,7 +41,7 @@ const HomePage = () => {
         button="Learn more" />
       {/* <HappyCustomer /> */}
 
-      <Testimonials />
+      <ConnectPopup />
 
 
 
@@ -50,8 +49,8 @@ const HomePage = () => {
 
       {/* <HomeGallery homeSection={true}/> */}
 
-      <NewsLetter />
-      <ContactForm />
+      {/* <NewsLetter />
+      <ContactForm /> */}
 
     </div>
   )

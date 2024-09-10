@@ -1,8 +1,8 @@
 import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
-import './whatWe.css'; // Import the external CSS file
+import './ProjectsDone.css'; // Import the external CSS file
 
-const WhatWe = () => {
+const ProjectsDone = () => {
   return (
     <Container className="container container-custom">
       <Row className="justify-content-center">
@@ -41,4 +41,4 @@ const WhatWe = () => {
   );
 };
 
-export default WhatWe;
+export default ProjectsDone;
