@@ -5,13 +5,12 @@
 }
 
 .Homehero-content .head-h1 {
-    font: normal normal bold 80px/89px Open Sans;
+    font: normal normal bold 75px/89px Open Sans;
     padding: 0px 20px 0px 00px;
 }
 
 .Homehero-content .para_main {
     margin-bottom: 14px;
-    width: 85%;
 }
 
 .Homehero-content .connect-button {
@@ -40,6 +39,7 @@
     gap: 14px;
     align-items: center;
     justify-content: center;
+    padding: 0vh 2vh;
 }
 
 .home-hero .text-button-container .button-icon {
@@ -51,10 +51,10 @@
     color: #717C93;
 }
 
-.social-media-icons {
+.home-hero .social-media-icons {
     display: flex;
     gap: 12px;
-    padding: 2.2vh 0vh;
+    padding: 2.7vh 0vh 0vh 0vh;
     align-items: center;
 }
 
@@ -72,6 +72,25 @@
     left: 0;
     z-index: 1;
 }
+
+.image-background-container {
+    position: relative;
+    /* Ensure it can be positioned with z-index */
+    z-index: 1;
+    /* Set z-index so it can be layered behind other elements */
+    background-color: #f0f0f0;
+    /* Background color or image */
+    border-bottom-left-radius: 50px;
+    /* Adjust as needed */
+    border-bottom-right-radius: 50px;
+    /* Adjust as needed */
+    overflow: hidden;
+    /* Ensure the image doesn’t overflow the container */
+    padding-bottom: 20px;
+    /* Optional: Add padding if needed */
+
+}
+
 
 @keyframes rotate {
     from {
@@ -143,8 +162,9 @@
     }
 
     .Homehero-content .connect-button {
-        padding: 9px 42px;
-        font-size: 8px;
+        padding: 9px 28px;
+        font-size: 12px;
+        /* width: 140px; */
     }
 
     .social-media-icons {
@@ -169,7 +189,7 @@
 @media (max-width: 480px) {
     .Homehero-content .head-h1 {
         font-size: 3em;
-        line-height: 1.5;
+        line-height: 1.2;
         padding: 0px;
     }
 
@@ -182,8 +202,16 @@
         max-width: 30px;
     }
 
-    .banner-img {
+    .home-hero .banner-img {
         width: 80%;
         margin: 0 auto;
+    }
+
+    .home-hero .get-consult {
+
+        font: normal normal 600 12px/30px Open Sans;
+        letter-spacing: 0px;
+        margin-top: 8px;
+        line-height: 2;
     }
 }

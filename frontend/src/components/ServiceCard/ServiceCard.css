@@ -65,8 +65,31 @@
     padding: 5vh 0.5vh;
 }
 
+.ServiceCard-container .cardbox-main {}
+
 @media(min-width:1300px) {
     .ServiceCard-container .service-card {
         padding: 45px 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .ServiceCard-container .cardbox-main {
+        flex-direction: row-reverse;
+        text-align: center;
+    }
+    .ServiceCard-container .head-h1 {
+        font: normal normal bold 50px/60px Open Sans;
+    }
+    .ServiceCard-container .service-card {
+        border-radius: 30px;
+        padding: 32px 20px;
+        background-color: hsla(0, 0%, 28%, 0.7);
+        transition: transform 0.3s ease, background-color 0.3s ease;
+        margin-top: 14px;
+        /* height: 100%; */
+    }
+    .ServiceCard-container .connect-button {
+        font-size: 13px;
     }
 }

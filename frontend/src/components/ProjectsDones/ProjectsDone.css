@@ -26,9 +26,9 @@
 /* Card styling */
 .container-custom .card-custom {
   height: 100%;
-  border-radius: 10px;
+  border-radius: 25px;
   background-color: #131313;
-  padding: 35px 120px;
+  padding: 35px 100px;
   align-items: center;
   width: 100%;
   justify-content: center;

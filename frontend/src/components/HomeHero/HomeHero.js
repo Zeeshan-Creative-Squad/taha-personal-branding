@@ -1,12 +1,10 @@
 import React from 'react';
 import './HomeHero.css';
 
-
 const Homehero = () => {
   return (
     <div className="home-hero">
       <div className="container">
-
         <div className="row align-items-center home-hero">
           <div className="col-lg-6">
             <div className="Homehero-content">
@@ -37,6 +35,7 @@ const Homehero = () => {
               </div>
             </div>
           </div>
+
           <div className="col-lg-6 d-flex mt-4">
             <img src="/images/creatives/home-hero-boy.png" alt="Banner" className="img-fluid mx-auto banner-img" />
           </div>

@@ -2,10 +2,12 @@ html,
 body {
   height: 100%;
   margin: 0;
-  font-family: 'Mulish', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  /* Update to Open Sans */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 
 ::-webkit-scrollbar {
   width: 8px;
@@ -53,7 +55,7 @@ body {
   margin: 0;
   font-weight: 400;
   color: #9F9F9F;
-  font: normal normal normal 16px/35px Lato;
+  font: normal normal normal 16px/30px Open Sans;
   letter-spacing: 0px;
   font-size: 16px;
   margin-top: 8px;
@@ -280,21 +282,21 @@ body {
   font: normal normal normal 16px/13px Novar;
 }
 
-
 .connect-button {
   background: #ACF96D 0% 0% no-repeat padding-box;
   color: #000000;
   border: none;
-  padding: 10px 60px;
+  padding: 11px 60px;
   border-radius: 34px;
   opacity: 1;
-  font-size: 16px;
   cursor: pointer;
+  /* width: 100%; */
+  font: normal normal 600 16px/30px Open Sans;
 }
 
 .connect-button:hover {
-  background-color: rgba(66, 66, 66, 0.267);
-
+  background-color: rgba(129, 129, 129, 0.267);
+  color: #fff;
 }
 
 .button-secondary {

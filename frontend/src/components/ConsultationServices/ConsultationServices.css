@@ -17,6 +17,8 @@
 }
 
 .consultation-services .head-h1 {
+  font: normal normal bold 70px/88px Open Sans;
+  letter-spacing: -4.16px;
   color: #131313;
 }
 
@@ -38,20 +40,17 @@
 }
 
 .icon-image {
-  width: 65px;
-  height: auto;
   background-color: white;
-  border-radius: 60%;
-  padding: 8px;
-  box-shadow: 0 0 0 5px white;
-  display: flex;
+  border-radius: 40px;
+  padding: 14px;
+  width: 100px;
+  height: 100px;
 }
 
 .consultation-services .card-body {
-  padding: 40px 50px;
+  padding: 75px 45px;
   background-color: #131313;
   border-radius: 20px;
- 
 }
 
 .consultation-services .card-title-custom {
@@ -67,7 +66,8 @@
 }
 
 .consultation-services .content-wrapper {
-  margin-top: 0; /* Ensure no extra margin at the top */
+  margin-top: 0;
+  /* Ensure no extra margin at the top */
 }
 
 /* Media queries for responsiveness */
@@ -79,16 +79,30 @@
   }
 
   .consultation-services .card-custom {
-    padding: 5px 6px;
+    /* padding: 5px 6px; */
   }
+
   .consultation-services .icon-container {
     justify-content: center;
   }
+
   .consultation-services .para_main {
     text-align: center;
   }
-  .consultation-services .card-title-custom{
+
+  .consultation-services .card-title-custom {
     text-align: center;
+  }
+
+  .consultation-services .head-h1 {
+    font: normal normal bold 55px/88px Open Sans;
+  }
+
+  .consultation-services .card-body {
+    padding: 48px 20px;
+    background-color: #131313;
+    border-radius: 20px;
+    margin-top: 10px;
   }
 
 }
@@ -102,10 +116,12 @@
   .consultation-services .card-custom {
     padding: 5px 8px;
   }
+
   .consultation-services .icon-container {
     justify-content: center;
   }
-  .consultation-services .card-title-custom{
+
+  .consultation-services .card-title-custom {
     text-align: center;
   }
 }

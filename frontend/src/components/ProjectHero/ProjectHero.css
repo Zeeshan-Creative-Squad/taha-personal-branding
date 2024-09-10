@@ -1,5 +1,5 @@
 .project-hero {
-    background-color: #1b1b1b;
+    background-color: #131313;
     color: #fff;
     padding: 22vh 0;
     position: relative;
@@ -10,11 +10,9 @@
     padding: 0px 180px 0px 0px;
 }
 
-
 .project-details .project-title {
     font-size: 3rem;
     font-weight: 700;
-
 }
 
 .project-details .highlight {
@@ -27,15 +25,20 @@
 }
 
 .project-hero .connect-button {
-    background-color: transparent;
+    background-color: #464646;
     border: 1px solid #9F9F9F;
     color: #9F9F9F;
+    border: none;
+    margin-right: 10px;
+    padding: 8px 45px;
 }
 
-.tags {
+.project-hero .tags {
     padding: 2vh 0vh;
-    
+    display: flex;
+    flex-wrap: wrap;
 }
+
 
 .tags .project-badge {
     background-color: #333;

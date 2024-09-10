@@ -64,12 +64,12 @@ function ServiceCard() {
     return (
         <div className='ServiceCard-container py-5'>
             <div className='container my-3 my-xl-5'>
-                <div className='text-content text-center'>
+                {/* <div className='text-content text-center'>
                     <h3 className='body-heading'>Transforming Ideas into Digital Realities</h3>
                     <p className='body-paragraph my-4'>We follow an orderly full-cycle development process to ensure your online presence is both impactful and inspiring.</p>
-                </div>
+                </div> */}
 
-                <div className='row  pt-5 justify-content-center gy-5'>
+                <div className='row pt-5 justify-content-center gy-2 cardbox-main'>
                     <div className='col-lg-4 text-section'>
                         <h1 className='head-h1'>
                             The values behind my work

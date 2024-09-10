@@ -27,7 +27,7 @@
 
 .semi-contact-form .form-control {
   background: none;
-  color: #fff;
+  color: #EAEBEB;
   border: none;
   /* Removed border to keep only border-bottom */
   border-bottom: 1px solid gray;
@@ -37,14 +37,91 @@
 }
 
 .semi-contact-form .form-control::placeholder {
-  color: transparent;
+  color: #EAEBEB;
 }
 
 .semi-contact-form .connect-button {
   background-color: #ACF96D;
   color: #000000;
+  border: none;
 }
 
-.semi-contact-form .submit-btn:hover {
+/* .semi-contact-form .submit-btn:hover {
   background-color: #00cc00;
+} */
+
+.semi-contact-form .phone-div {
+  margin-top: 16px;
+}
+
+.semi-contact-form .msg-div {
+  margin-top: 16px;
+}
+
+/* @media (max-width:768px) {
+  .semi-contact-form .phone-div {
+    margin-top: 0px;
+  }
+
+  .semi-contact-form .msg-div {
+    margin-top: 0px;
+  }
+} */
+
+@media (max-width: 768px) {
+  .semi-contact-form {
+    padding: 4vh 2vh;
+    /* Adjusted padding for smaller screens */
+  }
+
+  .semi-contact-form .contact-form {
+    padding: 15px;
+    /* Reduced padding */
+  }
+
+  .semi-contact-form .head-h1 {
+    font-size: 7vw;
+    /* Responsive font size for heading */
+    letter-spacing: -1vw;
+  }
+
+  .semi-contact-form .form-control {
+    padding: 8px;
+    /* Reduced padding for form controls */
+    margin-bottom: 12px;
+    /* Reduced margin-bottom */
+  }
+
+  .semi-contact-form .connect-button {
+    /* padding: 10px 16px; */
+    border: none;
+    width: 100%;
+    /* Adjusted padding for button */
+    font-size: 1rem;
+    /* Responsive font size */
+  }
+
+  .semi-contact-form .phone-div,
+  .semi-contact-form .msg-div {
+    margin-top: 8px;
+    /* Reduced margin-top */
+  }
+}
+
+@media (max-width: 576px) {
+  .semi-contact-form .head-h1 {
+    font-size: 12vw;
+  }
+
+  .semi-contact-form .form-control {
+    padding: 6px;
+    /* Further reduced padding */
+  }
+
+  .semi-contact-form .connect-button {
+    /* padding: 6px 12px; */
+    /* Further adjusted padding */
+    /* font-size: 0.8rem; */
+    /* Further reduced font size */
+  }
 }

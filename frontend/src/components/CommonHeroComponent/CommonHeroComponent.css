@@ -75,12 +75,12 @@
 
 .Common-Hero-content .para_main {
   text-align: left;
-  padding: 0vh 32vh;
+  padding: 0vh 24vh;
 }
 
 @media (max-width: 768px) {
   .Common-Hero-content .head-h1 {
-    font-size: 50px;
+    /* font-size: 50px; */
   }
 
   .Common-Hero-content .para_main {
@@ -120,5 +120,4 @@
     width: 100%;
     margin-left: 5px;
   }
-
 }

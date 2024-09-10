@@ -41,6 +41,10 @@ const VisionAndMission = (props) => {
 
               {props.heading} <span className='span-head'>{props.spanHead}</span>
             </h1>
+            <h1 className='second-head-h1'>
+
+              {props.Heading} <span className='span-head'>{props.SpanHead}</span>
+            </h1>
             <div className="d-flex flex-container">
               <div className="text-container">
                 <div>

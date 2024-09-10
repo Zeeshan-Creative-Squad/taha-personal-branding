@@ -5,10 +5,20 @@
 }
 
 .ourservices-container .head-h1 {
-  color: #131313;
+  color: #FFFFFF;
   font: normal normal bold 80px/88px Open Sans;
-
 }
+
+.ourservices-container .second-head-h1 {
+  color: #131313;
+  font-weight: 900;
+  margin: 0px;
+  margin-bottom: 16px;
+  font: normal normal bold 80px/89px Open Sans;
+  letter-spacing: -4.16px;
+  opacity: 1;
+}
+
 
 .ourservices-container .span-head {
   font: normal normal bold 64px/89px Open Sans;
@@ -87,7 +97,7 @@
   text-decoration: none;
   color: #070707;
   border: 1.3px solid #070707;
-
+  border: none;
 }
 
 .ourservices-container .bluepara {
@@ -102,10 +112,6 @@
 .ourservices-container .bluespan {
   color: #1972B7;
   font-weight: 700;
-}
-
-.ourservices-container .connect-button {
-  border: none;
 }
 
 .ourservices-container .head-bg {}
@@ -194,5 +200,19 @@
     color: rgba(0, 0, 0, 0.1);
     white-space: nowrap;
     font: normal normal normal 140px/219px Novar;
+  }
+
+  .ourservices-container .second-head-h1 {
+    color: #131313;
+    font-weight: 900;
+    margin: 0px;
+    margin-bottom: 16px;
+    font: normal normal bold 50px/65px Open Sans;
+    letter-spacing: -4.16px;
+    opacity: 1;
+  }
+
+  .ourservices-container .connect-button {
+    font-size: 12px;
   }
 }

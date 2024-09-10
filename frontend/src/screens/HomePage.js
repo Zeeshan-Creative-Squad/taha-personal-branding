@@ -41,7 +41,7 @@ const HomePage = () => {
         button="Learn more" />
       {/* <HappyCustomer /> */}
 
-      <ConnectPopup />
+      {/* <ConnectPopup /> */}
 
 
 

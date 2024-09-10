@@ -19,11 +19,9 @@
     cursor: pointer;
 }
 
-
-
 .HomeGallery-container .head-h1 {
     font: normal normal bold 80px/88px Open Sans;
-letter-spacing: -4.16px;
+    letter-spacing: -4.16px;
 }
 
 .HomeGallery-container .swiper-slide {
@@ -64,9 +62,7 @@ letter-spacing: -4.16px;
     text-decoration: none;
     font-size: .8rem;
     transition: .3s;
-
 }
-
 
 .HomeGallery-container .card-box a:hover {
     cursor: pointer;
@@ -107,9 +103,7 @@ letter-spacing: -4.16px;
     padding: 5vh 0vh;
 }
 
-.HomeGallery-container .connect-button {
-
-}
+.HomeGallery-container .connect-button {}
 
 
 .HomeGallery-container .blog-upper-content .blog-btn {
@@ -126,14 +120,16 @@ letter-spacing: -4.16px;
     color: #E1A92A;
 }
 
-
-
 .HomeGallery-container .btn-arrow-icon {
     width: 10px;
     height: 15px;
 }
 
 @media(max-width:768px) {
+    /* .HomeGallery-container .blog-upper-content {
+        flex-direction: row-reverse;
+    } */
+
     .HomeGallery-container .blog-upper-content .blog-btn {
         display: flex;
         align-items: center;
@@ -146,7 +142,7 @@ letter-spacing: -4.16px;
     }
 
     .HomeGallery-container .head-h1 {
-        font-size: 32px;
+        /* font-size: 32px; */
     }
 
     .HomeGallery-container .para_main {
@@ -160,5 +156,9 @@ letter-spacing: -4.16px;
 
     .HomeGallery-container .services-content-class {
         text-align: center;
+    }
+
+    .HomeGallery-container .connect-button {
+        font-size: 14px;
     }
 }
