@@ -1,8 +1,8 @@
 /* Main Wrapper */
 .contact-wrapper {
-    background-color: #111;
+    background-color: #131313;
     color: #fff;
-    padding: 18vh 0vh;
+    padding: 31vh 0vh 10vh;
     font-family: Arial, sans-serif;
 }
 
@@ -13,24 +13,25 @@
 
 .contact-wrapper .head-h1 {
     font: normal normal bold 80px/89px Open Sans;
+    margin-bottom: 18px;
 }
 
 .contact-wrapper .contact-header .highlight-text {
     color: #8EC63F;
 }
 
-
 .contact-wrapper .contact-body {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     flex-wrap: wrap;
 }
 
 .contact-wrapper .contact-form {
     flex: 0 0 62%;
     background-color: #222;
-    padding: 60px 60px;
-    border-radius: 20px;
+    padding: 55px 60px 0px;
+    border-radius: 28px;
+    height: 570px;
 }
 
 .contact-wrapper .contact-form .form-group {
@@ -42,12 +43,14 @@
 .contact-wrapper .contact-form input,
 .contact-form textarea {
     width: 100%;
-    padding: 12px;
+    padding: 20px 12px;
     background-color: #131313;
     border: none;
     color: #fff;
     font-size: 14px;
-    border-radius: 15px;
+    border-radius: 14px;
+    padding-left: 22px;
+    margin-bottom: 0px;
 }
 
 .contact-wrapper .contact-form input::placeholder,
@@ -57,17 +60,17 @@
 
 .contact-wrapper .contact-form textarea {
     resize: none;
-    height: 120px;
+    height: 175px;
 }
 
-.contact-wrapper .contact-form .newsletter-checkbox {
+/* .contact-wrapper .contact-form .newsletter-checkbox {
     margin-top: 20px;
-    /* display: flex; */
+    display: flex;
     align-items: center;
     display: flex;
     align-items: center;
     gap: 10px;
-}
+} */
 
 .contact-wrapper .contact-form .newsletter-checkbox input {
     margin-right: 10px;
@@ -90,12 +93,19 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    background-color: var(--eerie-black);
+    border-radius: 24px;
+    flex-direction: column;
+    padding: 2px 36px;
 }
 
 .contact-wrapper .contact-details .contact-item {
     background-color: #222;
-    padding: 30px 22px;
-    border-radius: 20px;
+    padding: 37px 40px;
+    width: 455px;
+    border-radius: 30px;
     margin-bottom: 20px;
 }
 
@@ -111,24 +121,50 @@
 .contact-wrapper .contact-details .para_main {
     font-size: 22px;
     color: #fff;
-    padding: 10px 0px;
+    /* padding: 10px 0px; */
 }
 
 .contact-wrapper .head-h3 {
     font-size: 20px;
-    padding: 5px 0px 10px 0px;
+    padding: 5px 0px 18px 0px;
 }
 
 .contact-wrapper .form-actions-contact {
-    display: flex;
-    align-items: center;
     justify-content: space-between;
-    margin-top: 20px;
+    align-items: center;
+    margin-top: 12px;
+    display: flex;
 }
 
-.contact-wrapper .connect-button {}
+.contact-wrapper .main-group {
+    grid-column-gap: 16px;
+    /* grid-row-gap: 16px; */
+    flex-direction: column;
+    display: flex;
+}
 
+.contact-wrapper .contact-number {
+    margin: 0;
+    font-weight: 400;
+    color: #9F9F9F;
+    font: normal normal normal 16px/30px Open Sans;
+    letter-spacing: 0px;
+    font-size: 16px;
+    margin-top: 8px;
+    line-height: 2;
+}
+
+.contact-wrapper .connect-button {
+    padding: 8px 50px;
+}
+
+/* For tablets (768px and below) */
 @media (max-width: 768px) {
+    .contact-wrapper {
+        padding: 8vh 2vw;
+        /* Reduced padding for smaller screens */
+    }
+
     .contact-wrapper .contact-body {
         flex-direction: column;
     }
@@ -136,6 +172,125 @@
     .contact-wrapper .contact-form,
     .contact-details {
         flex: 0 0 100%;
+        /* Full width for form and details */
         margin-bottom: 20px;
     }
+
+    .contact-wrapper .head-h1 {
+        font-size: 50px;
+        /* Adjust font size for heading */
+    }
+
+    .contact-wrapper .para_main {
+        font-size: 16px;
+        /* Smaller font for description */
+    }
+
+    .contact-wrapper .contact-details .contact-item {
+        padding: 20px;
+        width: 100%;
+        /* Make the contact details fill width */
+    }
+
+    .contact-wrapper .connect-button {
+        padding: 8px 30px;
+        /* Adjust button size */
+    }
+}
+
+/* For mobile phones (576px and below) */
+@media (max-width: 576px) {
+    .contact-wrapper {
+        padding: 5vh 2vw;
+        /* Further reduce padding */
+    }
+
+    .contact-wrapper .head-h1 {
+        font-size: 40px;
+        /* Smaller font size for mobile */
+    }
+
+    .contact-wrapper .para_main {
+        font-size: 14px;
+        /* Adjust font for readability */
+    }
+
+    .contact-wrapper .contact-form {
+        padding: 20px;
+        /* Smaller padding for mobile */
+    }
+
+    .contact-wrapper .contact-details .contact-item {
+        padding: 15px;
+    }
+
+    .contact-wrapper .connect-button {
+        padding: 6px 20px;
+        /* Adjust button padding */
+    }
+}
+
+/* For extra-small screens (400px and below) */
+@media (max-width: 400px) {
+    .contact-wrapper .head-h1 {
+        font-size: 80px;
+        /* Further reduce heading font size */
+    }
+
+    .contact-wrapper .para_main {
+        font-size: 12px;
+        /* Smaller font for very small screens */
+    }
+
+    .contact-wrapper .contact-form {
+        padding: 20px 15px;
+        /* Tighter padding */
+    }
+
+    .contact-wrapper .contact-details .contact-item {
+        padding: 18px 15px;
+        align-items: center;
+        border-radius: 14px;
+
+        /* Smaller padding for items */
+    }
+
+    .contact-wrapper .connect-button {
+        padding: 5px 15px;
+        /* Compact button for small screens */
+    }
+
+    .contact-wrapper .contact-form .form-group {
+        flex-direction: column;
+        gap: 20px;
+        /* margin-bottom: 0px; */
+    }
+
+    .contact-wrapper .form-actions-contact {
+        flex-direction: column;
+        margin-top: 0px;
+    }
+
+    .contact-wrapper .connect-button {
+        width: 100%;
+        font-size: 12px;
+        padding: 8px 110px;
+    }
+
+    .contact-wrapper .contact-details .para_main {
+        font-size: 15px;
+        color: #fff;
+    }
+
+    .contact-wrapper .contact-number {
+        font-size: 12px;
+        padding: 0px 10px;
+    }
+
+    .contact-wrapper .contact-side-boxes {}
+
+    .contact-wrapper .contact-details {
+        padding: 5px 0px;
+    }
+
 }

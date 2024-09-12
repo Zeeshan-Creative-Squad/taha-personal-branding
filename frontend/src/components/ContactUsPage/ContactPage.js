@@ -7,13 +7,13 @@ const ContactPage = () => {
             <div className='container'>
                 <div className="contact-header">
                     <h1 className='head-h1'>Get in<span className='spanHead'> Touch</span></h1>
-                    <p className='para_main'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim urna porttitor neque elementum cursus. Bibendum.</p>
+                    <p className='para_main py-2'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim urna porttitor neque elementum cursus. Bibendum.</p>
                 </div>
 
                 <div className="contact-body">
                     <div className="contact-form">
                         <h1 className='head-h3'>Send a message</h1>
-                        <form>
+                        <form className='main-group'>
                             <div className="form-group">
                                 <input type="text" placeholder="Your First Name" />
                                 <input type="text" placeholder="Your Last Name" />
@@ -31,7 +31,7 @@ const ContactPage = () => {
                                 </div>
                                 <div className='mt-3'>
 
-                                <button type="submit" className="connect-button">Submit Now</button>
+                                    <button type="submit" className="connect-button">Submit Now</button>
                                 </div>
                             </div>
 
@@ -39,20 +39,27 @@ const ContactPage = () => {
                     </div>
 
                     <div className="contact-details">
-                        <div className="contact-item d-flex">
-                            <img src='/images/icons/phone-icon.svg' className='img-fluid' />
-                            <p className='para_main'>Email Address</p>
-                            <p className='para_main'>hello@tahasheikh.com</p>
+                        <div className="contact-item">
+                            <div className='d-flex gap-3 contact-side-boxes'>
+                                <img src='/images/icons/phone-icon.svg' className='img-fluid' />
+                                <p className='para_main'>Email Address</p>
+                            </div>
+
+                            <p className='contact-number'>hello@tahasheikh.com</p>
                         </div>
-                        <div className="contact-item d-flex">
-                            <img src='/images/icons/phone-icon.svg' className='img-fluid' />
-                            <p className='para_main'>Contact Us</p>
-                            <p className='para_main'>+92 300 1234567</p>
+                        <div className="contact-item">
+                            <div className='d-flex gap-3 contact-side-boxes'>
+                                <img src='/images/icons/phone-icon.svg' className='img-fluid' />
+                                <p className='para_main'>Contact Us</p>
+                            </div>
+                            <p className='contact-number'>+92 300 1234567</p>
                         </div>
-                        <div className="contact-item d-flex">
-                            <img src='/images/icons/phone-icon.svg' className='img-fluid' />
-                            <p className='para_main'>Location</p>
-                            <p className='para_main'>Karachi, Pakistan</p>
+                        <div className="contact-item">
+                            <div className='d-flex gap-3 contact-side-boxes'>
+                                <img src='/images/icons/phone-icon.svg' className='img-fluid' />
+                                <p className='para_main'>Location</p>
+                            </div>
+                            <p className='contact-number'>Karachi, Pakistan</p>
                         </div>
                     </div>
                 </div>

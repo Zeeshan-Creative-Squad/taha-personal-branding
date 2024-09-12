@@ -9,10 +9,10 @@ const HomeGallery = ({ homeSection = false }) => {
     <div className='HomeGallery-container standard-padding-space'>
       <div className="blog-upper-content">
         <div className="container">
-          <div className="row d-flex justify-content-between align-items-end">
+          <div className="row d-flex justify-content-between">
             <div className="col-md-6">
               <div className="blog-text-content">
-                <h1 className="head-h1 mb-0">About <span className='spanHead'>Us</span></h1>
+                <h1 className="head-h1">About <span className='spanHead'>Us</span></h1>
                 {/* {content && <p className="body-paragraph">{content}</p>} */}
 
               </div>

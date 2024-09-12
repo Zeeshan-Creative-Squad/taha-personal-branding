@@ -103,7 +103,9 @@
     padding: 5vh 0vh;
 }
 
-.HomeGallery-container .connect-button {}
+.HomeGallery-container .connect-button {
+    padding: 8px 80px;
+}
 
 
 .HomeGallery-container .blog-upper-content .blog-btn {
@@ -159,6 +161,6 @@
     }
 
     .HomeGallery-container .connect-button {
-        font-size: 14px;
+        font-size: 12px;
     }
 }

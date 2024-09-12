@@ -17,7 +17,11 @@
     padding: 40px;
     background-color: hsla(0, 0%, 28%, 0.7);
     transition: transform 0.3s ease, background-color 0.3s ease;
-    /* height: 100%; */
+    /* height: 100%; */   
+}
+
+.ServiceCard-container .services-card-content {
+    padding: 15px 15px;
 }
 
 .ServiceCard-container .service-card:hover {
@@ -91,5 +95,8 @@
     }
     .ServiceCard-container .connect-button {
         font-size: 13px;
+    }
+    .ServiceCard-container .text-section {
+        padding: 5vh 1.2vh;
     }
 }

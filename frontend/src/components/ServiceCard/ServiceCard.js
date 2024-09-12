@@ -81,7 +81,7 @@ function ServiceCard() {
                         cardData.map((ele) => {
                             return (
 
-                                <div className='col-lg-4'>
+                                <div className='col-lg-4 services-card-content'>
                                     <ServiceCardBox
                                         img={ele.img}
                                         title={ele.title}

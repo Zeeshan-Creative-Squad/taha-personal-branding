@@ -22,6 +22,7 @@ import LocationPages from "./components/LocationPages_/LocationPages"
 import CaseStudiesPage from "./screens/CaseStudiesPage";
 import CaseStudyInner from "./screens/CaseStudyInner";
 import ConsultationPage from "./screens/ConsultationPage";
+import ContactFormPage from "./screens/ContactFormPage";
 
 const App = () => {
 
@@ -39,7 +40,7 @@ const App = () => {
         <Route path="/casestudy-inner" element={<CaseStudyInner />} />
         {/* <Route path="/blogs/:id" element={<BlogInnerPage />} /> */}
         {/* <Route path="/blogs" element={<Blogs />} /> */}
-        <Route path="/contact" element={<ContactPage />} />
+        <Route path="/contact" element={<ContactFormPage />} />
 
         <Route path="/admin" element={<AdminScreen />} />
         <Route path="/admin/blogs" element={<BlogsScreen />} />

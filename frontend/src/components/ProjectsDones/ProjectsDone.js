@@ -6,7 +6,7 @@ const ProjectsDone = () => {
   return (
     <Container className="container container-custom">
       <Row className="justify-content-center">
-        <Col md={4} sm={12} className="mb-4">
+        <Col md={4} sm={12} className="mb-4 customer-cont">
           <Card className="card-custom">
             <Card.Body>
               <Card.Title className="card-title-custom">140+</Card.Title>

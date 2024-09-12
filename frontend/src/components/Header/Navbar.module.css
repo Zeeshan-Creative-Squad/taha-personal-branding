@@ -18,7 +18,7 @@
   align-items: center;
   flex-direction: row;
   background: transparent;
-  margin-top: 30px;
+  margin-top: 50px;
   border-radius: 50px;
   padding: 0vh 1vh;
 
@@ -40,7 +40,7 @@
 }
 .navList a {
   text-decoration: none;
-  color: white;
+  color: #9F9F9F;
   font-size: 14px;
 }
 .link {
@@ -53,10 +53,10 @@
   
 }
 .link:hover {
-  color: #888888;
+  color: #FFFFFF;
 }
 .activeLink {
-  color: #888888;
+  color: #FFFFFF;
 }
 .buttonCont {
   height: 100%;
