@@ -99,4 +99,4 @@ function ServiceCard() {
     )
 }
 
-export default ServiceCard
+export default ServiceCard;

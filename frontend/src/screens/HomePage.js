@@ -8,6 +8,7 @@ import Sponsor from '../components/Sponsor/Sponsor';
 import ConnectPopup from '../components/OurTestimonials/ConnectPopup';
 import ConsultationServices from '../components/ConsultationServices/ConsultationServices'
 import HomeGallery from '../components/HomeGallerySection/HomeGallery'
+import DesignGrids from '../components/DesignGrids/DesignGrids'
 
 const HomePage = () => {
   return (
@@ -24,8 +25,9 @@ const HomePage = () => {
         Para="Lorem Ipsum has been the printer took a galley of type and scrambled survived not only five finance software has love the financial haveing on centuries Lorem Ipsum has been the rinter took a galley of type and scrambled survived not only ive finance software has love the financial haveing on centuries" homeTitle=""
         button="Get Consultation"
         image="/images/creatives/boy-about-image.png"
-
       />
+
+      <DesignGrids />
 
       {/* <WhatWe  Heading="WHAT " heading="HOME STAGING" Para="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, Pellentesque habitant morbi tristique senectus et netus et malesuada fames something turpis egestas making better molestie. Nunc egestas erat lacus, vitae eleifend nisi eleifend making something realy good" homeTitle="" button="READ MORE" image="/images/creatives/slider-home--staging.png"
         shadeHeading="WE DO"

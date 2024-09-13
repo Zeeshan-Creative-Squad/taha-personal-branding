@@ -7,6 +7,7 @@
 .ourservices-container .head-h1 {
   color: #FFFFFF;
   font: normal normal bold 80px/88px Open Sans;
+  padding: 0px 40px 0px 0px;
 }
 
 .ourservices-container .second-head-h1 {
@@ -21,7 +22,7 @@
 
 
 .ourservices-container .span-head {
-  font: normal normal bold 64px/89px Open Sans;
+  font: normal normal bold 78px/89px Open Sans;
   letter-spacing: -4.16px;
   color: #ACF96D;
   position: relative;
@@ -51,7 +52,7 @@
 }
 
 .ourservices-container .left-section {
-  padding: 10vh 3vh;
+  padding: 10vh 0vh;
 }
 
 .ourservices-container .right-section {
@@ -60,7 +61,7 @@
 
 .ourservices-container .large-img {
   width: 100%;
-  padding: 2vh 4vh;
+  padding: 0vh 0vh;
 }
 
 .ourservices-container .flex-container {

@@ -286,7 +286,7 @@ body {
   background: #ACF96D 0% 0% no-repeat padding-box;
   color: #000000;
   border: none;
-  padding: 9px 60px;
+  padding: 9.5px 55px;
   border-radius: 34px;
   opacity: 1;
   cursor: pointer;
@@ -330,7 +330,7 @@ body {
   .container-sm,
   .container-xl,
   .container-xxl {
-      max-width: 75% !important;
+    max-width: 75% !important;
   }
 }
 

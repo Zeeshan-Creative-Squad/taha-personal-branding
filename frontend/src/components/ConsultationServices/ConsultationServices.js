@@ -6,7 +6,7 @@ const ConsultationServices = () => {
   return (
     <Container className="container ">
       <div className='consultation-services'>
-      <Row className='align-items-center flex-row-reverse flex-md-row'>
+      <Row className='flex-row-reverse flex-md-row'>
         <Col md={4} className="text-md-left text-lg-left mb-4 text-center text-lg-start ">
           <div className="content-wrapper">
             <h1 className="head-h1">Consultation Services</h1>
