@@ -1,7 +1,7 @@
 /* DesignCard.css */
 
 /* Basic styling for the card */
-.custom-card {
+.Design-container .custom-card {
     background-color: #131313;
     /* Dark background */
     border-radius: 10px;
@@ -12,7 +12,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.custom-card .head-h1 {
+.Design-container .custom-card .head-h1 {
     line-height: 1.5;
     padding: 1.5vh 0vh 0vh 0vh;
 }
@@ -26,19 +26,19 @@
 }
 
 
-.card-img-top {
+.Design-container .card-img-top {
     display: block;
     margin: 0 auto;
     width: 80%;
     padding: 20px 0;
 }
 
-.tags {
+.Design-container .tags {
     display: flex;
     gap: 10px;
 }
 
-.tags .connect-button {
+.Design-container .tags .connect-button {
     background-color: #464646;
     border: 1px solid #9F9F9F;
     color: #9F9F9F;
@@ -47,23 +47,23 @@
     padding: 8px 45px;
 }
 
-.card-title {
+.Design-container .card-title {
     font-size: 1.5rem;
     font-weight: bold;
 }
 
-.card-text {
+.Design-container .card-text {
     font-size: 0.9rem;
     margin-top: 10px;
 }
 
-.btn-outline-light {
+.Design-container .btn-outline-light {
     margin-top: 15px;
     border: none;
     color: #fff;
 }
 
-.btn-outline-light:hover {
+.Design-container .btn-outline-light:hover {
     background-color: #fff;
     color: #222;
 }

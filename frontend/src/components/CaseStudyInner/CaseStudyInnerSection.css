@@ -18,3 +18,9 @@
 .main-section-container .case-study-inner-section {
     padding: 0vh 8vh;
 }
+
+@media (max-width: 768px) {
+    .main-section-container .case-study-inner-section {
+        padding: 0vh 2vh;
+    }
+}

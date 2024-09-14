@@ -30,7 +30,7 @@
     color: #9F9F9F;
     border: none;
     margin-right: 10px;
-    padding: 8px 45px;
+    padding: 8px 60px;
 }
 
 .project-hero .tags {
@@ -38,7 +38,6 @@
     display: flex;
     flex-wrap: wrap;
 }
-
 
 .tags .project-badge {
     background-color: #333;
@@ -90,4 +89,85 @@
 
 .project-hero .Li-text {
     color: #9F9F9F;
+}
+
+/* MEDIA QUERIES */
+
+/* Adjust for small screen (mobile) */
+@media (max-width: 768px) {
+    .project-hero {
+        padding: 5vh 5vw;
+        height: auto;
+    }
+
+    .project-details .project-title {
+        font-size: 2rem;
+        text-align: center;
+        padding: 20px 0px;
+    }
+
+    .project-details .project-description {
+        font-size: 1rem;
+    }
+
+    .project-hero .connect-button {
+        padding: 8px 35px;
+    }
+
+    .tags .project-badge {
+        font-size: 0.8rem;
+        padding: 6px 10px;
+        margin-right: 5px;
+    }
+
+    .project-info li {
+        width: 100%;
+    }
+
+    .project-hero .para_main {
+        padding: 0 5vw;
+        text-align: center;
+    }
+
+    .project-hero .tags {
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+}
+
+/* Extra small screen (mobile portrait) */
+@media (max-width: 480px) {
+    /* .project-hero {
+        padding: 10vh 3vw;
+        height: auto;
+    } */
+
+    .project-details .project-title {
+        font-size: 2rem;
+        text-align: center;
+        padding: 20px 0px;
+    }
+
+    .project-details .project-description {
+        font-size: 0.9rem;
+    }
+
+    .project-hero .connect-button {
+        padding: 2px 10px;
+        font-size: 0.8rem;
+    }
+
+    .tags .project-badge {
+        font-size: 0.7rem;
+        padding: 5px 8px;
+    }
+
+    .project-info {
+        font-size: 1rem;
+        flex-direction: column;
+    }
+
+    .project-hero .semi-text {
+        font-size: 18px;
+    }
 }

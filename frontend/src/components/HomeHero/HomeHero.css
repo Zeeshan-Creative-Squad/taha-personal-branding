@@ -77,7 +77,7 @@
     z-index: 1;
 }
 
-.image-background-container {
+.home-hero .image-background-container {
     position: relative;
     /* Ensure it can be positioned with z-index */
     z-index: 1;
@@ -92,7 +92,12 @@
     /* Ensure the image doesn’t overflow the container */
     padding-bottom: 20px;
     /* Optional: Add padding if needed */
+}
 
+.banner-img {
+    width: 700px;
+    position: relative;
+    transform: translateY(-50px);
 }
 
 
@@ -118,22 +123,86 @@
     transform: translateY(-18px);
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1600px) {
     .home-hero {
         height: auto;
     }
 
     .Homehero-content .head-h1 {
         font-size: 2.5em;
-        text-align: center;
+
+    }
+
+    .home-hero .Homehero-content {
+        padding: 2vh 0vh 2vh 0vh;
     }
 
     .Homehero-content .para_main {
-        width: 90%;
+        width: 100%;
+
+    }
+
+    .Homehero-content .head-h1 {
+        font-size: 3em;
+    }
+
+    .Homehero-content .para_main {
+        width: 100%;
+    }
+
+    .social-media-icons {}
+
+    .home-hero .banner-img {
+        width: 100%;
+        margin: 0 auto;
+        transform: translateY(-50px);
+        padding: 2vh 0vh;
+    }
+
+    .home-hero .button-text-container {
+        display: flex;
+        align-items: center;
+        gap: 28px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .home-hero {
+        height: auto;
+        flex-direction: row-reverse;
+
+    }
+
+    .home-hero .Homehero-content {
+        padding: 2vh 0vh 2vh 0vh;
+    }
+
+    .Homehero-content .head-h1 {
+        font-size: 2.5em;
+        text-align: center;
+        padding: 0px;
+    }
+
+    .Homehero-content .para_main {
+        width: 100%;
         text-align: center;
     }
 
     .social-media-icons {
+        justify-content: center;
+    }
+
+    .home-hero .banner-img {
+        width: 100%;
+        margin: 0 auto;
+        transform: translateY(-0px);
+        padding: 2vh 0vh;
+    }
+
+    .home-hero .button-text-container {
+        display: flex;
+        align-items: center;
+        gap: 28px;
         justify-content: center;
     }
 }
@@ -184,9 +253,10 @@
         height: auto;
     }
 
-    .banner-img {
+    .home-hero .banner-img {
         width: 100%;
-        height: auto;
+        margin: 0 auto;
+        transform: translateY(-0px);
     }
 }
 
@@ -208,8 +278,9 @@
     }
 
     .home-hero .banner-img {
-        width: 80%;
+        width: 100%;
         margin: 0 auto;
+        transform: translateY(-0px);
     }
 
     .home-hero .get-consult {

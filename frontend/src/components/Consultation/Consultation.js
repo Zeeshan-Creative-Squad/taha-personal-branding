@@ -11,21 +11,16 @@ const Consultation = () => {
 
             <VisionAndMission Para="Lorem Ipsum has been the printer took a galley of type and scrambled survived not only five finance software has love the financial haveing on centuries Lorem Ipsum has been the rinter took a galley of type and scrambled survived not only ive finance software has love the financial haveing on centuries Lorem Ipsum has been the printer took a galley of type and scrambled survived not only five finance software has love the financial haveing on centuries Lorem Ipsum has been the rinter took a galley of type and scrambled survived not only ive finance software has love the financial haveing on centuries finance software has love the financial haveing on centuries"
                 image="/images/creatives/about-banner-boy.png"
-                Heading="Tech Graduates consultation "
-                button="Book your Consultation"
-                background="#F5F5F5" />
+                heading="Tech Mentorship &  "
+                spanHead="Career Guidance"
+                button="Learn More"
+                background="#131313" />
 
             <VisionAndMission flexdirection="row-reverse" Para="Lorem Ipsum has been the printer took a galley of type and scrambled survived not only five finance software has love the financial haveing on centuries Lorem Ipsum has been the rinter took a galley of type and scrambled survived not only ive finance software has love the financial haveing on centuries Lorem Ipsum has been the printer took a galley of type and scrambled survived not only five finance software has love the financial haveing on centuries Lorem Ipsum has been the rinter took a galley of type and scrambled survived not only ive finance software has love the financial haveing on centuries finance software has love the financial haveing on centuries"
                 image="/images/creatives/about-banner-boy.png"
-                Heading="Your never build website"
-                button="Book your Consultation"
-                background="#F5F5F5" />
-
-            <VisionAndMission Para="Lorem Ipsum has been the printer took a galley of type and scrambled survived not only five finance software has love the financial haveing on centuries Lorem Ipsum has been the rinter took a galley of type and scrambled survived not only ive finance software has love the financial haveing on centuries Lorem Ipsum has been the printer took a galley of type and scrambled survived not only five finance software has love the financial haveing on centuries Lorem Ipsum has been the rinter took a galley of type and scrambled survived not only ive finance software has love the financial haveing on centuries finance software has love the financial haveing on centuries"
-                image="/images/creatives/about-banner-boy.png"
-                Heading="Your neve build website Best on webflow "
-               button="Book your Consultation"
-                background="#F5F5F5" />
+                Heading="Project Consultation & Development"
+                button="Learn More"
+                background="#FFF" />
 
             <ContactForm />
         </div>
