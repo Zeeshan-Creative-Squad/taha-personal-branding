@@ -57,7 +57,7 @@ function TechMentorshipCards() {
                     <p className='body-paragraph my-4'>We follow an orderly full-cycle development process to ensure your online presence is both impactful and inspiring.</p>
                 </div> */}
 
-                <div className='row pt-5 justify-content-center gy-2 cardbox-main'>
+                <div className='row justify-content-center gy-2 cardbox-main'>
                     {/* <div className='col-lg-4 text-section'>
                         <h1 className='head-h1'>
                             The values behind my work

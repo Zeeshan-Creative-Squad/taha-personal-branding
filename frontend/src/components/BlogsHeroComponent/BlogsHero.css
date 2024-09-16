@@ -1,0 +1,350 @@
+.blogs-hero {
+    position: relative;
+    height: 100vh;
+    background-color: #131313;
+}
+
+.Homehero-content {
+    padding: 30vh 0vh 20vh;
+}
+
+.Homehero-content .head-h1 {
+    font: normal normal bold 75px/89px Open Sans;
+    padding: 0px 20px 0px 00px;
+}
+
+.Homehero-content .para_main {
+    margin-bottom: 14px;
+}
+
+.Homehero-content .connect-button {
+    margin-top: 12px;
+}
+
+.blogs-hero .get-consult {
+    margin: 0;
+    font-weight: 400;
+    font: normal normal 600 16px/30px Open Sans;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    letter-spacing: 0px;
+    margin-top: 8px;
+    line-height: 2;
+}
+
+.blogs-hero .text-button-container {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    justify-content: center;
+    padding: 0vh 2vh;
+}
+
+.blogs-hero .text-button-container .button-icon {
+    align-items: center;
+    margin-top: 6px;
+}
+
+.Homehero-content .main-head {
+    color: #717C93;
+}
+
+.blogs-hero .social-media-icons {
+    display: flex;
+    gap: 12px;
+    padding: 3vh 0vh 0vh 0vh;
+    align-items: center;
+}
+
+.blogs-hero .social-media-icons .span-line {
+    padding: 0px 14px;
+}
+
+.blogs-hero .swiper-container {
+    height: 100%;
+    position: relative;
+}
+
+.blogs-hero .swiper-slide {
+    position: relative;
+    left: 0;
+    z-index: 1;
+}
+
+.blogs-hero .image-background-container {
+    position: relative;
+    /* Ensure it can be positioned with z-index */
+    z-index: 1;
+    /* Set z-index so it can be layered behind other elements */
+    background-color: #f0f0f0;
+    /* Background color or image */
+    border-bottom-left-radius: 50px;
+    /* Adjust as needed */
+    border-bottom-right-radius: 50px;
+    /* Adjust as needed */
+    overflow: hidden;
+    /* Ensure the image doesn’t overflow the container */
+    padding-bottom: 20px;
+    /* Optional: Add padding if needed */
+}
+
+.banner-img {
+    width: 700px;
+    position: relative;
+    transform: translateY(-50px);
+}
+
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.social-media-icons img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.2s ease-in-out;
+    border-radius: 10px;
+}
+
+.social-media-icons img:hover {
+    /* animation: rotate 0.6s linear 1; */
+    transform: translateY(-18px);
+}
+
+.NewsLetter-container .form-container {}
+
+.NewsLetter-container .genral-btn {
+    background-color: #A5CD37;
+    border-radius: 50px;
+    border: none;
+}
+
+.blogs-hero .button-area-container .inp-container {
+    background: #1A1A1A;
+    padding-left: 5px;
+    /* margin: auto; */
+    /* margin-top: 20px; */
+    width: 70%;
+    overflow: hidden;
+}
+
+.blogs-hero .inp-container input {
+    /* width: 100%; */
+    border: none;
+    /* padding: 10px;
+    padding-left: 15px; */
+    color: #7070708e;
+    padding: 1vh 3vh;
+    background: transparent;
+}
+
+.blogs-hero .inp-container input::placeholder {
+    color: #707070a8;
+    padding: 0vh 0vh;
+}
+
+.blogs-hero .inp-container input:focus {
+    outline: none;
+}
+
+.blogs-hero .connect-button {
+    border-radius: 5px;
+    margin-top: 0px;
+    padding: 9px 26px;
+}
+
+@media (max-width: 1600px) {
+    .blogs-hero {
+        height: auto;
+    }
+
+    .Homehero-content .head-h1 {
+        font-size: 2.5em;
+
+    }
+
+    .blogs-hero .Homehero-content {
+        padding: 2vh 0vh 2vh 0vh;
+    }
+
+    .Homehero-content .para_main {
+        width: 100%;
+
+    }
+
+    .Homehero-content .head-h1 {
+        font-size: 3em;
+    }
+
+    .Homehero-content .para_main {
+        width: 100%;
+    }
+
+    .social-media-icons {}
+
+    .blogs-hero .banner-img {
+        width: 100%;
+        margin: 0 auto;
+        transform: translateY(-50px);
+        padding: 2vh 0vh;
+    }
+
+    .blogs-hero .button-text-container {
+        display: flex;
+        align-items: center;
+        gap: 28px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .blogs-hero {
+        height: auto;
+        flex-direction: row-reverse;
+
+    }
+
+    .blogs-hero .Homehero-content {
+        padding: 2vh 0vh 2vh 0vh;
+    }
+
+    .Homehero-content .head-h1 {
+        font-size: 2.5em;
+        text-align: center;
+        padding: 0px;
+    }
+
+    .Homehero-content .para_main {
+        width: 100%;
+        text-align: center;
+    }
+
+    .social-media-icons {
+        justify-content: center;
+    }
+
+    .blogs-hero .banner-img {
+        width: 100%;
+        margin: 0 auto;
+        transform: translateY(-0px);
+        padding: 2vh 0vh;
+    }
+
+    .blogs-hero .button-text-container {
+        display: flex;
+        align-items: center;
+        gap: 28px;
+        justify-content: center;
+    }
+}
+
+/* Small screens - mobile */
+@media (max-width: 768px) {
+    .blogs-hero {
+        padding: 25px 12px;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .Homehero-content {
+        text-align: center;
+        margin-bottom: 20px;
+        padding: 0vh;
+    }
+
+    .Homehero-content .head-h1 {
+        font-size: 3em;
+        padding: 0px;
+    }
+
+    .Homehero-content .para_main {
+        font-size: 1em;
+        width: 100%;
+    }
+
+    .blogs-hero .button-text-container {
+        gap: 10px;
+    }
+
+    .Homehero-content .connect-button {
+        padding: 4px 22px;
+        font-size: 12px;
+        width: 132px;
+    }
+
+    .social-media-icons {
+        display: flex;
+        gap: 8px;
+        padding: 3vh 0vh;
+        align-items: center;
+    }
+
+    .social-media-icons img {
+        max-width: 40px;
+        height: auto;
+    }
+
+    .blogs-hero .banner-img {
+        width: 100%;
+        margin: 0 auto;
+        transform: translateY(-0px);
+    }
+
+    .blogs-hero .inp-container input {
+        width: 53%;
+    }
+
+    .blogs-hero .button-area-container .inp-container {
+        width: 100%;
+    }
+
+
+    .blogs-hero .inp-container {
+        background: transparent;
+        border: 1px solid #70707033;
+        padding-left: 5px;
+        border-radius: 32px;
+        width: 100%;
+        margin: auto;
+        margin-top: 10px;
+        overflow: hidden;
+    }
+
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+    .Homehero-content .head-h1 {
+        font-size: 3em;
+        line-height: 1.2;
+        padding: 0px;
+    }
+
+    .Homehero-content .para_main {
+        font-size: 0.9em;
+        width: 100%;
+    }
+
+    .social-media-icons img {
+        max-width: 30px;
+    }
+
+    .blogs-hero .banner-img {
+        width: 100%;
+        margin: 0 auto;
+        transform: translateY(-0px);
+    }
+
+    .blogs-hero .get-consult {
+
+        font: normal normal 600 12px/30px Open Sans;
+        letter-spacing: 0px;
+        margin-top: 8px;
+        line-height: 2;
+    }
+}

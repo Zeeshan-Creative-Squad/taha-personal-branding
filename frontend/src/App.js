@@ -24,7 +24,7 @@ import CaseStudyInner from "./screens/CaseStudyInner";
 import ConsultationPage from "./screens/ConsultationPage";
 import ContactFormPage from "./screens/ContactFormPage";
 import TechMentorshipPage from "./screens/TechMentorshipPage";
-import BloginnerPage from "./screens/BlogInnerPage";
+import BlogsPage from "./screens/BlogsPage";
 
 const App = () => {
 
@@ -41,6 +41,7 @@ const App = () => {
         <Route path="/casestudy" element={<CaseStudiesPage />} />
         <Route path="/casestudy-inner" element={<CaseStudyInner />} />
         <Route path="/tech-mentorship" element={<TechMentorshipPage />} />
+        <Route path="/blogs" element={<BlogsPage />} />
         {/* <Route path="/blogs" element={<BloginnerPage />} /> */}
         {/* <Route path="/blogs" element={<Blogs />} /> */}
         <Route path="/contact" element={<ContactFormPage />} />
