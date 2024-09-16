@@ -1,65 +1,70 @@
 import React from 'react';
 import './ContactPage.css';
-import { Form, Button, Row, Col } from 'react-bootstrap';
-
 
 const ContactPage = () => {
     return (
-        <>
-        <div className="important-section">
-            <div className='container contact-container'>
-                <div className="contact-info">
-
-                    <h1 className='head-h1'>GET IN TOUCH</h1>
-                    <p className='para_main'>Lorem ipsum dolor sit amet in quis, consectetur eros adipiscing et elit. Suspendisse variu Lorem ipsum dolor si Lorem ipsum dolor sit amet in quis, consectetur eros adipiscing et elit. Suspendisse variu Lorem ipsum dolor si   </p>
-
-                    <div className="contact-details gap-3">
-    <img src="/images/icons/tel-icon.svg" alt="Phone" />
-    <p className="body-paragraph">+1 (123) 456-7890</p>
-   
-  </div>
-  <div className="contact-details gap-3">
-    <img src="/images/icons/email-icon.svg" alt="Email" />
-    <p className="body-paragraph">hello@etbhomestaging.com</p>
-  </div>
-                     <div className="contact-details gap-3">
-    <img src="/images/icons/location-icon.svg" alt="Location" />
-    <p className="body-paragraph">Milton, Ontario, Canada</p>
-  </div>
-  
+        <div className="contact-wrapper">
+            <div className='container'>
+                <div className="contact-header">
+                    <h1 className='head-h1'>Get in<span className='spanHead'> Touch</span></h1>
+                    <p className='para_main py-2'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim urna porttitor neque elementum cursus. Bibendum.</p>
                 </div>
-                <div className="contact-form">
-                    
-                    <Col lg={12}>
-                        <Form>
-                            <Row className='gy-3'>
-                                <Col lg={12}>
-                                    <Form.Group controlId="formName">
-                                        <Form.Control type="text" placeholder="Your Full Name" />
-                                    </Form.Group>
-                                </Col>
-                                <Col lg={12}>
-                                    <Form.Group controlId="formPhoneNumber">
-                                        <Form.Control type="email" placeholder="Your Email Address" />
-                                    </Form.Group>
-                                </Col>
-                            </Row>
-                            <Form.Group controlId="formEmail" className='mt-4'>
-                                <Form.Control type="text" placeholder="Phone Number" />
-                            </Form.Group>
-                            <Form.Group controlId="formMessage" className='mt-5'>
-                                <Form.Control type="text" placeholder='Write Your Message Here..' rows={3} />
-                            </Form.Group>
-                            <Button variant="dark" type="submit" className="mt-5 connect-button w-100">
-                                SUBMIT
-                            </Button>
-                        </Form>
-                    </Col>
+
+                <div className="contact-body">
+                    <div className="contact-form">
+                        <h1 className='head-h3'>Send a message</h1>
+                        <form className='main-group'>
+                            <div className="form-group">
+                                <input type="text" placeholder="Your First Name" />
+                                <input type="text" placeholder="Your Last Name" />
+                            </div>
+                            <div className="form-group">
+                                <input type="email" placeholder="Enter Your Email" />
+                                <input type="text" placeholder="Subject" />
+                            </div>
+                            <textarea placeholder="Type Your Message" rows="4"></textarea>
+
+                            <div className="form-actions-contact">
+                                <div className="newsletter-checkbox">
+                                    {/* <input type="checkbox" id="newsletter" /> */}
+                                    <p className='para_main'>Subscribe to our Newsletter</p>
+                                </div>
+                                <div className='mt-3'>
+
+                                    <button type="submit" className="connect-button">Submit Now</button>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+
+                    <div className="contact-details">
+                        <div className="contact-item">
+                            <div className='d-flex gap-3 contact-side-boxes'>
+                                <img src='/images/icons/phone-icon.svg' className='img-fluid' />
+                                <p className='para_main'>Email Address</p>
+                            </div>
+
+                            <p className='contact-number'>hello@tahasheikh.com</p>
+                        </div>
+                        <div className="contact-item">
+                            <div className='d-flex gap-3 contact-side-boxes'>
+                                <img src='/images/icons/phone-icon.svg' className='img-fluid' />
+                                <p className='para_main'>Contact Us</p>
+                            </div>
+                            <p className='contact-number'>+92 300 1234567</p>
+                        </div>
+                        <div className="contact-item">
+                            <div className='d-flex gap-3 contact-side-boxes'>
+                                <img src='/images/icons/phone-icon.svg' className='img-fluid' />
+                                <p className='para_main'>Location</p>
+                            </div>
+                            <p className='contact-number'>Karachi, Pakistan</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        
-        </>
     );
 }
 

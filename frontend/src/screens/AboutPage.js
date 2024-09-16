@@ -1,47 +1,44 @@
 import React from 'react';
 import CommonHeroComponent from '../components/CommonHeroComponent/CommonHeroComponent'
 import VisionAndMission from '../components/VisionAndMission/VisionAndMission';
-import TeamMembers from '../components/TeamMembers/teamMembers';
-import CardBoxAboutSection from '../components/CardsForAboutSection/CardBoxAboutSection'
-import NewsLetter from '../components/NewsLetter/NewsLetter'
-import BgTextContent from '../components/BgTextContent/BgTextContent';
-import ServicesCarousel from '../components/ServicesCarousel/ServicesCarousel';
 import ContactForm from '../components/ContactForm/ContactForm';
-
+import ServiceCard from '../components/ServiceCard/ServiceCard';
+import ConnectPopup from '../components/OurTestimonials/ConnectPopup';
 
 const AboutPage = () => {
   return (
     <div>
-      <CommonHeroComponent title="" Heading="ABOUT ETB HOME STAGING" Para="Lorem ipsum dolor sit amet in quis, consectetur eros adipiscing et elit. Suspendisse variu" backgroundImg="/images/creatives/about-home.jpg" />
+      <CommonHeroComponent title="" Heading="About" spanHead="Taha Sheikh" Para="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim urna porttitor neque elementum cursus. Bibendum." />
 
-      <VisionAndMission flexdirection="row-reverse" Para="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing"
-        image="/images/creatives/about-section-one.png"
-        afterShadeHeading="RE"
-        shadeHeading="WHO WE A"
-        background="#F5F5F5" />
-
-      <VisionAndMission Para="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing"
-        image="/images/creatives/about-section-two.png"
-        shadeHeading="WHY "
-        afterShadeHeading="ETB"
+      <VisionAndMission Para="Lorem Ipsum has been the printer took a galley of type and scrambled survived not only five finance software has love the financial haveing on centuries Lorem Ipsum has been the rinter took a galley of type and scrambled survived not only ive finance software has love the financial haveing on centuries Lorem Ipsum has been the printer took a galley of type and scrambled survived not only five finance software has love the financial haveing on centuries Lorem Ipsum has been the rinter took a galley of type and scrambled survived not only ive finance software has love the financial haveing on centuries finance software has love the financial haveing on centuries"
+        image="/images/creatives/branding-boy-two.png"
+        Heading="Your neve build website Best on webflow "
+        button="Explore Now"
         background="#FFF" />
 
+      <ServiceCard />
 
+      <VisionAndMission flexdirection="row-reverse" Para="Lorem Ipsum has been the printer took a galley of type and scrambled survived not only five finance software has love the financial haveing on centuries Lorem Ipsum has been the rinter took a galley of type and scrambled survived not only ive finance software has love the financial haveing on centuries Lorem Ipsum has been the printer took a galley of type and scrambled survived not only five finance software has love the financial haveing on centuries Lorem Ipsum has been the rinter took a galley of type and scrambled survived not only ive finance software has love the financial haveing on centuries finance software has love the financial haveing on centuries"
+        image="/images/creatives/branding-boy.png"
+        Heading="Your never build website"
+        button="Get Consultation"
+        background="#FFF"
+        padding="10vh 0vh" />
 
-
-
-      <VisionAndMission flexdirection="row-reverse" Para="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing"
+      {/* <VisionAndMission flexdirection="row-reverse" Para="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing"
         image="/images/creatives/about-section-three.png"
         shadeHeading="ETB BEN"
         afterShadeHeading="EFITS"
-        background="#F5F5F5" />
+        background="#F5F5F5" /> */}
 
 
-      <BgTextContent />
+      {/* <BgTextContent /> */}
 
-      <ServicesCarousel heading="OUR" shadeHeading="PROFICIENCY" />
+      {/* <ServicesCarousel heading="OUR" shadeHeading="PROFICIENCY" /> */}
+
 
       <ContactForm />
+      <ConnectPopup />
 
     </div>
   )

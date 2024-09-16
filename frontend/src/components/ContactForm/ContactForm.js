@@ -3,57 +3,41 @@ import './ContactForm.css';
 
 const ContactForm = () => {
   return (
-    <div className="contact-form-container ">
-      <div className='container'>
-        <div className='row align-items-lg-end'>
-
-          <div className="col-lg-6 contact-inf d-lg-block d-none">
-            <h1 className="head-h2">LET'S CONNECT</h1>
-            <p className="contact-detail">
-              <strong>ADDRESS</strong><br />
-              991 White St . Dawsonville GA 30534 , New York
-            </p>
-            <p className="contact-detail">
-              <strong>PHONE NUMBER</strong><br />
-              + 1 (123) 456-7890
-            </p>
-            <p className="contact-detail">
-              <strong>EMAIL</strong><br />
-              gmail@etbhomestaging.com
-            </p>
-          </div>
-          
-          <div className="col-lg-6 contact-for d-flex flex-md-row flex-column">
-
-          <div className="col-lg-6 d-lg-none contact-inf">
-            <h1 className="head-h2">LET'S CONNECT</h1>
-            <p className="contact-detail">
-              <strong>ADDRESS</strong><br />
-              991 White St . Dawsonville GA 30534 , New York
-            </p>
-            <p className="contact-detail">
-              <strong>PHONE NUMBER</strong><br />
-              + 1 (123) 456-7890
-            </p>
-            <p className="contact-detail">
-              <strong>EMAIL</strong><br />
-              gmail@etbhomestaging.com
-            </p>
-          </div>
-  <div className="input-column">
-    <input type="text" placeholder="Name" className="form-input" />
-    <input type="email" placeholder="Email" className="form-input" />
-    <input type="tel" placeholder="Phone" className="form-input" />
-  </div>
-  <div className="textarea-portion">
-    <textarea type="textarea" placeholder="Message*" className="form-textarea"></textarea>
-  </div>
- 
-</div>
+    <div className='semi-contact-form'>
+      <div className="container">
+        <div className='contact-form'>
+          <h2 className="head-h1 mb-4">Let's Connect</h2>
+          <form className='semi-contact-section'>
+            <div className="row">
+              <div className="col-md-6 mb-3">
+                {/* <label className="form-label text-white" htmlFor="fullName">Full Name</label> */}
+                <input type="text" id="fullName" className="form-control" placeholder="Full Name" />
+              </div>
+              <div className="col-md-6 mb-3">
+                {/* <label className="form-label text-white" htmlFor="email">Email Address</label> */}
+                <input type="email" id="email" className="form-control" placeholder="Email" />
+              </div>
+            </div>
+            <div className="row phone-div">
+              <div className="col-md-6 mb-3">
+                {/* <label className="form-label text-white" htmlFor="phone">Phone Number</label> */}
+                <input type="tel" id="phone" className="form-control" placeholder="Phone Number" />
+              </div>
+              <div className="col-md-6 mb-3">
+                {/* <label className="form-label text-white" htmlFor="subject">Subject</label> */}
+                <input type="text" id="subject" className="form-control" placeholder="Subject" />
+              </div>
+            </div>
+            <div className="mb-3 msg-div">
+              {/* <label className="form-label text-white" htmlFor="message">Write your message here</label> */}
+              <textarea id="message" className="form-control" rows="4" placeholder="Write your message here"></textarea>
+            </div>
+            <button type="submit" className="connect-button w-100 mt-5">Submit</button>
+          </form>
         </div>
       </div>
     </div>
   );
-}
+};
 
 export default ContactForm;

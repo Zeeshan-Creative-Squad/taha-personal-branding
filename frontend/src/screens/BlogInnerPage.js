@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
 import CommonHeroComponent from '../components/CommonHeroComponent/CommonHeroComponent';
 import Articles from '../components/NewsAndArticles/Articles';
 import BlogInner from '../components/BlogInnerSection/BlogInner';
@@ -15,7 +15,7 @@ const BloginnerPage = () => {
 
   const navigate = useNavigate()
 
-  const id  = useParams().id;
+  const id = useParams().id;
 
   let blogAPICalledId = false;
   let allBlogsCalled = false;
@@ -25,13 +25,13 @@ const BloginnerPage = () => {
     allBlogsCalled = true;
 
     setLoading(true);
-    
+
     axios
       .get(`/blogs`, {})
       .then((res) => {
         if (res.data.status === "success") {
           let Updated_recent_blogs = [];
-          
+
           let blog = res.data.data.find((item) => item.slug_url == id);
           setBlogsData(blog);
 
@@ -46,7 +46,7 @@ const BloginnerPage = () => {
           });
           console.log(blog)
           setRecentBlogs(Updated_recent_blogs.slice(0, 2));
-          console.log("",recentBlogs)
+          console.log("", recentBlogs)
           setLoading(false);
         }
       })
@@ -74,46 +74,46 @@ const BloginnerPage = () => {
   return (
     <div>
       {
-           loading  ? (
-            <div
-              style={{ width: "100%", height: "100vh" }}
-              className="d-flex justify-content-center align-items-center"
-            >
-              <Spinner
-                style={{ color: "#3F1626", width: "120px", height: "120px" }}
-              />
-            </div>
-          ) :(
-              blogsData && 
-              <>
-        <CommonHeroComponent  Para="Welcome to the world of interior design, where creativity, vision, and functionality converge to transform houses into dream homes."
-        backgroundImg="/images/creatives/blogsinner-hero.jpg"
-        
-                  Heading={blogsData.title}
+        loading ? (
+          <div
+            style={{ width: "100%", height: "100vh" }}
+            className="d-flex justify-content-center align-items-center"
+          >
+            <Spinner
+              style={{ color: "#3F1626", width: "120px", height: "120px" }}
+            />
+          </div>
+        ) : (
+          blogsData &&
+          <>
+            <CommonHeroComponent Para="Welcome to the world of interior design, where creativity, vision, and functionality converge to transform houses into dream homes."
+              backgroundImg="/images/creatives/blogsinner-hero.jpg"
 
-        />
-         {
-                  recentBlogs &&
+              Heading={blogsData.title}
 
-        <BlogInner 
-        text={blogsData.brief_paragraph}
-                  blogContent={blogsData.blogs_content}
-                  date={blogsData?.published_date}
-                  Heading={blogsData.title}/>
-                  
-                  
+            />
+            {
+              recentBlogs &&
+
+              <BlogInner
+                text={blogsData.brief_paragraph}
+                blogContent={blogsData.blogs_content}
+                date={blogsData?.published_date}
+                Heading={blogsData.title} />
+
+
+            }
+          </>
+        )
       }
-      </>
-  )
-}
 
 
 
-        <CardTestimonial 
-          heading="MOST POPULAR NEWS"
-          spanHeading=""
-          content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's Lorem Ipsum is simply dummy text of the printing"
-          button="Learn more"/>
+      <CardTestimonial
+        heading="MOST POPULAR NEWS"
+        spanHeading=""
+        content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's Lorem Ipsum is simply dummy text of the printing"
+        button="Learn more" />
     </div>
   )
 }

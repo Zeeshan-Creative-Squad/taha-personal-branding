@@ -1,0 +1,164 @@
+.case-studies {
+    padding: 250px 40px;
+}
+
+.case-study {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.case-studies .head-h1 {
+    font: normal normal bold 25px/38px Open Sans;
+    letter-spacing: -1.3px;
+    color: #131313;
+    padding: 30px 0px 0px 0px;
+    text-align: center;
+}
+
+.case-study img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.case-studies .translate-y-top {
+    transform: translateY(-180px);
+}
+
+.case-studies .translate-y-top-second {
+    transform: translateY(-120px);
+}
+
+.stay-static {
+    /* No transform applied here to keep it static */
+}
+
+.view-project {
+    display: inline-block;
+    margin-top: 10px;
+    color: #000;
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+.case-studies .tags {
+    padding: 2vh 0vh;
+}
+
+.tags .badge {
+    background-color: #EAEBEB;
+    color: #000000;
+    margin-right: 10px;
+    font-size: 14px;
+    border-radius: 30px;
+    padding: 15px 40px;
+}
+
+.case-studies .card-titles {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.case-studies .project-icon {
+    width: 20px;
+    height: 20px;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.case-studies .card-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+/* Media Queries for responsiveness */
+
+@media (max-width: 1200px) {
+    .case-studies {
+        padding: 150px 20px;
+    }
+
+    .case-studies .head-h1 {
+        font-size: 22px;
+    }
+
+    .tags .badge {
+        font-size: 13px;
+        padding: 12px 30px;
+    }
+
+    .case-study {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .case-studies {
+        padding: 100px 15px;
+    }
+
+    .case-studies .head-h1 {
+        font-size: 18px;
+        padding: 0px;
+    }
+
+    .tags .badge {
+        font-size: 12px;
+        padding: 10px 25px;
+    }
+
+    .case-study {
+        padding: 10px;
+    }
+
+    .case-studies .card-inner {
+        flex-direction: column;
+    }
+
+    .case-studies .tags {
+        padding: 2vh 0vh;
+    }
+
+    .tags .badge {
+        background-color: #EAEBEB;
+        color: #000000;
+        margin-right: 5px;
+        font-size: 14px;
+        border-radius: 30px;
+        padding: 15px 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .case-studies {
+        padding: 30px 0px;
+    }
+
+    .case-studies .head-h1 {
+        font-size: 16px;
+    }
+
+    .tags .badge {
+        font-size: 10px;
+        padding: 8px 20px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .case-study img {
+        width: 100%;
+    }
+
+    .case-studies .card-inner {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .case-studies .translate-y-top,
+    .case-studies .translate-y-top-second {
+        transform: none;
+    }
+}

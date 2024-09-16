@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { Links1, Links2, Links3, Links4 } from "../Navigationlinks";
 import './Mobilenav.css'
 
-
 const Mobilenav = (props) => {
   const [selected, setSelected] = useState(false);
   const [selected2, setSelected2] = useState(false);
@@ -17,16 +16,12 @@ const Mobilenav = (props) => {
   const [isDropdownOpenTopical, setIsDropdownOpenTopical] = useState(false);
   const [isDropdownOpenMore, setIsDropdownOpenMore] = useState(false);
 
-
-
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
-
 
   const dropdownRef = useRef();
   const dropdownTopical = useRef();
   const dropdownMore = useRef();
-
 
   let transfer = props.transfer;
   const mobiledropdown = (state) => {
@@ -113,7 +108,7 @@ const Mobilenav = (props) => {
           <div className={props.landingPage && 'd-none'}>
             <div className="d-flex justify-content-between align-content center navitems_cs1">
               <li style={{ color: "white" }}>
-                <Link onClick={() => props.hamburgerdropdown(transfer)} to="/"> HOME </Link>
+                <Link onClick={() => props.hamburgerdropdown(transfer)} to="/"> Home </Link>
               </li>
 
 
@@ -130,12 +125,12 @@ const Mobilenav = (props) => {
             </div>
             <div className={`d-flex justify-content-between align-content center navitems_cs1 ${props.landingPage && 'd-none'}`}>
               <li>
-                <Link onClick={() => props.hamburgerdropdown(transfer)} to="/about">ABOUT</Link>
+                <Link onClick={() => props.hamburgerdropdown(transfer)} to="/about">About</Link>
               </li>
             </div>
             <div className={`d-flex justify-content-between align-content center navitems_cs1 ${props.landingPage && 'd-none'}`}>
               <li>
-                <Link onClick={() => props.hamburgerdropdown(transfer)} to="/services">SERVICES</Link>
+                <Link onClick={() => props.hamburgerdropdown(transfer)} to="/services">Consultation</Link>
               </li>
             </div>
 
@@ -164,7 +159,7 @@ const Mobilenav = (props) => {
             >
 
               <div onClick={() => mobiledropdown2(selected2)}>
-              <h6 className="d-flex justify-content-between align-content-center">
+                <h6 className="d-flex justify-content-between align-content-center">
                   {" "}
                   <li
                     style={{ color: selected2 === true ? "#A5CD37" : "white" }}
@@ -199,7 +194,7 @@ const Mobilenav = (props) => {
                 </div>
               </div>
 
-              
+
               <div onClick={() => mobiledropdown3(selected3)}>
                 {" "}
                 <h6 className="d-flex justify-content-between align-content-center">
@@ -271,7 +266,7 @@ const Mobilenav = (props) => {
                     ))}
                   </ul>
                 </div>
-                </div>
+              </div>
               <div>
                 <h6 className="d-flex justify-content-between align-content-center">
                   {" "}
@@ -445,7 +440,7 @@ const Mobilenav = (props) => {
               <div>
                 <h6 className="d-flex justify-content-between align-content-center">
                   {" "}
-                 <li style={{ color: "white" }}>
+                  <li style={{ color: "white" }}>
                     <Link to="/mehfil" style={{ color: "inherit", textDecoration: "none" }} onClick={handleLinkClick}>
                       Mehfil
                     </Link>
@@ -530,11 +525,11 @@ const Mobilenav = (props) => {
                   ></i>
                 </h6>
                 <div
-                className={
-                  selected4 === true
-                    ? "mobsubmenu_cs1 show"
-                    : "mobsubmenu_cs1"
-                }
+                  className={
+                    selected4 === true
+                      ? "mobsubmenu_cs1 show"
+                      : "mobsubmenu_cs1"
+                  }
                 >
                   <ul id="ul2_cs1">
                     {Links3.map((e) => (
@@ -623,16 +618,21 @@ const Mobilenav = (props) => {
 
           <div className={`d-flex justify-content-between align-content center navitems_cs1 ${props.landingPage && 'd-none'}`}>
             <li>
-              <Link onClick={() => props.hamburgerdropdown(transfer)} to="/blogs">BLOGS</Link>
+              <Link onClick={() => props.hamburgerdropdown(transfer)} to="/blogs">Portfolio</Link>
             </li>
           </div>
 
           <div className={`d-flex justify-content-between align-content center navitems_cs1 ${props.landingPage && 'd-none'}`}>
             <li>
-              <Link onClick={() => props.hamburgerdropdown(transfer)} to="/contact">CONTACT</Link>
+              <Link onClick={() => props.hamburgerdropdown(transfer)} to="/blogs">My Agency</Link>
             </li>
           </div>
 
+          <div className={`d-flex justify-content-between align-content center navitems_cs1 ${props.landingPage && 'd-none'}`}>
+            <li>
+              <Link onClick={() => props.hamburgerdropdown(transfer)} to="/blogs">Blogs</Link>
+            </li>
+          </div>
 
           {/* <div className={`d-flex justify-content-between align-content center navitems_cs1 ${props.landingPage && 'd-none'}`}>
           <div className="navigation-dropdown" ref={dropdownMore}>
@@ -672,14 +672,14 @@ const Mobilenav = (props) => {
               className="button2_cs_1"
 
             >
-              {/* <button
+              <button
                 style={{ width: "100%", borderRadius: "4px" }}
                 className="button2_cs_1"
                 href=""
                 onClick={() => {
                   setLoginpressed(true);
                   openModal();
-                }}>LOGIN</button>
+                }}>Contact Me</button>
               <button
                 style={{ width: "100%", borderRadius: "4px" }}
                 className="button2_cs_1"
@@ -687,7 +687,7 @@ const Mobilenav = (props) => {
                 onClick={() => {
                   setLoginpressed(false);
                   openModal();
-                }}>SIGNUP</button> */}
+                }}>Get Consultation</button>
               {/* <Modal status={isModalOpen} closeModal={closeModal}> {loginpressed ? <LoginSignup closeModal={closeModal} /> : <Signup closeModal={closeModal} />} </Modal> */}
 
             </a>

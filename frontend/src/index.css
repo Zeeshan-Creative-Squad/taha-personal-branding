@@ -2,10 +2,12 @@ html,
 body {
   height: 100%;
   margin: 0;
-  font-family: 'Mulish', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  /* Update to Open Sans */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 
 ::-webkit-scrollbar {
   width: 8px;
@@ -52,38 +54,43 @@ body {
 .para_main {
   margin: 0;
   font-weight: 400;
-  color: #070707;
-  font: normal normal normal 16px/35px Lato;
+  color: #9F9F9F;
+  font: normal normal normal 16px/30px Open Sans;
   letter-spacing: 0px;
   font-size: 16px;
   margin-top: 8px;
   line-height: 2;
 }
 
+.spanHead {
+  font: normal normal bold 80px/89px Open Sans;
+  letter-spacing: -4.16px;
+  opacity: 1;
+  color: #ACF96D;
+}
+
 .body-paragraph {
-  text-align: center;
-font: normal normal normal 16px/35px Lato;
-letter-spacing: 0px;
-color: #FFFFFF;
-opacity: 1;
+  font: normal normal normal 16px/35px Lato;
+  letter-spacing: 0px;
+  color: #9F9F9F;
+  opacity: 1;
 }
 
 .head-h1 {
-  font-size: 70px;
-  font-weight: 9000;
-  color: #FFFFFF;
+  font-weight: 900;
   margin: 0px;
-  font: normal normal normal 70px/87px Novar;
   margin-bottom: 16px;
-  text-transform: uppercase;
+  font: normal normal bold 55px/50px Open Sans;
+  letter-spacing: -4.16px;
+  color: #FFFFFF;
+  opacity: 1;
 }
 
-.head-bg
-{
+.head-bg {
   background-image: linear-gradient(#78757581, #78757581);
   background-repeat: no-repeat;
   background-size: 100% 28px;
-  background-position: bottom ;
+  background-position: bottom;
 }
 
 .head-h2 {
@@ -100,10 +107,9 @@ opacity: 1;
 
 .head-h3 {
   font-size: 16px;
-  font: normal normal normal 34px/37px Novar;
+  font: normal normal 600 16px/30px Open Sans;
   letter-spacing: 0px;
-  color: #070707;
-  text-transform: uppercase;
+  color: #FFFFFF;
   opacity: 1;
 }
 
@@ -276,22 +282,21 @@ opacity: 1;
   font: normal normal normal 16px/13px Novar;
 }
 
-
 .connect-button {
-  background-color: transparent;
-  color: #FFFFFF;
+  background: #ACF96D 0% 0% no-repeat padding-box;
+  color: #000000;
   border: none;
-  padding: 16px 38px;
-  border-radius: 26px;
-  font-size: 14px;
+  padding: 9.5px 55px;
+  border-radius: 34px;
+  opacity: 1;
   cursor: pointer;
-  border: 1px solid white;
-  font: normal normal normal 16px/13px Novar;
+  /* width: 100%; */
+  font: normal normal 600 16px/30px Open Sans;
 }
 
 .connect-button:hover {
-  background-color: rgba(66, 66, 66, 0.267);
-
+  background-color: rgba(129, 129, 129, 0.267);
+  color: #fff;
 }
 
 .button-secondary {
@@ -317,18 +322,30 @@ opacity: 1;
   background-color: #A5CD37;
 }
 
+@media(min-width:1300px) {
+
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 75% !important;
+  }
+}
+
 @media (max-width: 992px) {
-  .head-h1
-  {
-    
-  font-size: 40px;
-  font-weight: 700;
+  .head-h1 {
+
+    font-size: 40px;
+    font-weight: 700;
   }
-  .head-h2
-  {
+
+  .head-h2 {
     font-size: 36px;
-  font-weight: 500;
+    font-weight: 500;
   }
+
   .h2_main {
     font-size: 16px;
   }

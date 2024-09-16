@@ -4,7 +4,7 @@ import './VisionAndMission.css';
 
 
 const VisionAndMission = (props) => {
-  let linkTo = '#'; 
+  let linkTo = '#';
 
   switch (props.button) {
     case 'About Us':
@@ -27,23 +27,24 @@ const VisionAndMission = (props) => {
   }
 
   return (
-    <div className="ourservices-container" style={{background: props.background}}>
+    <div className="ourservices-container" style={{ background: props.background, padding: props.padding }}>
       <div className='container'>
         <div className={`row ${props.flexdirection === 'row-reverse' ? 'flex-lg-row-reverse' : 'flex-lg-row'} flex-column`}>
           <div className="col-lg-6 right-section">
-            <img src={props.image} className='large-img' alt='banner-img'/>
-          
+            <img src={props.image} className='large-img' alt='banner-img' />
+
           </div>
           <div className="col-lg-6 left-section">
             <h2 className='secondary-h1'>{props.title}{props.aboutTitle}</h2>
 
-            <h1 className='head-h2'
-              data-background-text={props.bgText ?? ""}
-            >
- {props.heading}
-               <span className='head-bg'>{props.shadeHeading}</span>
-             
-              <span className='head-h2'>{props.afterShadeHeading}</span></h1>
+            <h1 className='head-h1'>
+
+              {props.heading} <span className='span-head'>{props.spanHead}</span>
+            </h1>
+            <h1 className='second-head-h1'>
+
+              {props.Heading} <span className='span-head'>{props.SpanHead}</span>
+            </h1>
             <div className="d-flex flex-container">
               <div className="text-container">
                 <div>
@@ -52,7 +53,7 @@ const VisionAndMission = (props) => {
                   <p className='bluepara'>{props.bluepara}</p>
                   {props.button && (
                     <div className="button-container">
-                      <Link to={linkTo} className='button_secondary'>
+                      <Link to={linkTo} className='connect-button'>
                         {props.button}
                       </Link>
                     </div>

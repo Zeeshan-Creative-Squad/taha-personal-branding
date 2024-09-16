@@ -1,0 +1,26 @@
+.main-section-container {
+    background-color: #131313;
+    padding: 6vh 0vh;
+}
+
+.main-section-container .img-conatiner {
+    padding: 3vh 0vh;
+}
+
+.main-section-container .Heading-stuff {
+    padding: 2vh 0vh;
+}
+
+.main-section-container .head-h1 {
+    padding: 10px 0px;
+}
+
+.main-section-container .case-study-inner-section {
+    padding: 0vh 8vh;
+}
+
+@media (max-width: 768px) {
+    .main-section-container .case-study-inner-section {
+        padding: 0vh 2vh;
+    }
+}
