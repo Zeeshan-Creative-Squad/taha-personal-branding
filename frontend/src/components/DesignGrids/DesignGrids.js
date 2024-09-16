@@ -5,10 +5,10 @@ const DesignGrids = () => {
     return (
         <div className="container mt-5 Design-container">
             <div className='text-container'>
-            <h2 className="head-h2">Most Popular Blogs & News</h2>
-            <p className="para_main text-center">Lorem Ipsum has been the printer took a galley of type and scrambled survived not only five finance software has love the financial haveing on centuries Lorem Ipsum has been the rinter took</p>
+                <h2 className="head-h2">Most Popular Blogs & News</h2>
+                <p className="para_main text-center">Lorem Ipsum has been the printer took a galley of type and scrambled survived not only five finance software has love the financial haveing on centuries Lorem Ipsum has been the rinter took</p>
             </div>
-            
+
             <div className="row">
                 {/* Card 1 */}
                 <div className="col-md-6">

@@ -24,7 +24,7 @@ const Consultation = () => {
             <VisionAndMission Para="Lorem Ipsum has been the printer took a galley of type and scrambled survived not only five finance software has love the financial haveing on centuries Lorem Ipsum has been the rinter took a galley of type and scrambled survived not only ive finance software has love the financial haveing on centuries Lorem Ipsum has been the printer took a galley of type and scrambled survived not only five finance software has love the financial haveing on centuries Lorem Ipsum has been the rinter took a galley of type and scrambled survived not only ive finance software has love the financial haveing on centuries finance software has love the financial haveing on centuries"
                 image="/images/creatives/about-banner-boy.png"
                 Heading="Your neve build website Best on webflow "
-               button="Book your Consultation"
+                button="Book your Consultation"
                 background="#F5F5F5" />
 
             <ContactForm />

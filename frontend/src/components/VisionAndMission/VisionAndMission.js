@@ -27,7 +27,7 @@ const VisionAndMission = (props) => {
   }
 
   return (
-    <div className="ourservices-container" style={{ background: props.background }}>
+    <div className="ourservices-container" style={{ background: props.background, padding: props.padding }}>
       <div className='container'>
         <div className={`row ${props.flexdirection === 'row-reverse' ? 'flex-lg-row-reverse' : 'flex-lg-row'} flex-column`}>
           <div className="col-lg-6 right-section">

@@ -79,6 +79,12 @@
 
 /* Media Queries */
 
+@media (max-width: 1600px) {
+   .blog-item {
+    width: 100%;
+   }
+}
+
 /* For tablets and below (up to 768px) */
 @media (max-width: 768px) {
     .blog-section {
@@ -111,33 +117,8 @@
     .blog-section .blog-title {
         text-align: center;
     }
+
     .blog-section .head-h1 {
         font: normal normal bold 55px/75px Open Sans;
-    }
-}
-
-/* For small laptops and larger tablets (769px to 1023px) */
-@media (min-width: 769px) and (max-width: 1023px) {
-    .blog-item {
-        width: 48%;
-        flex-direction: row;
-        padding: 20px;
-        /* Adjust padding as needed */
-    }
-
-    .blog-image {
-        width: 40%;
-    }
-
-    .blog-content {
-        width: 60%;
-        text-align: left;
-    }
-}
-
-/* For large screens (1024px and above) */
-@media (min-width: 1024px) {
-    .blog-item {
-        width: 48%;
     }
 }

@@ -4,13 +4,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 50px 12px; /* Adjust padding as needed */
+  padding: 50px 12px;
+  /* Adjust padding as needed */
   background-color: #FFFFFF;
 }
 
 /* Text styling */
 .container-custom .h2-main {
-  color: #3F1626; 
+  color: #3F1626;
   font-size: 22px;
   margin-top: 22px;
 }
@@ -36,23 +37,25 @@
   justify-content: center;
   gap: 10px;
   /* height: 250px; */
-  box-shadow: 0px 4px 20px -0px rgba(0,0,0,.1), /* Top shadow */
-  0px 4px 20px -0px rgba(0,0,0,.1);  /* Bottom shadow */
+  box-shadow: 0px 4px 20px -0px rgba(0, 0, 0, .1),
+    /* Top shadow */
+    0px 4px 20px -0px rgba(0, 0, 0, .1);
+  /* Bottom shadow */
 }
 
 .container-custom .card-title-custom {
   font: normal normal bold 80px/89px Open Sans;
-letter-spacing: 3.04px;
-color: #ACF96D;
-opacity: 1;
-padding: 20px 28px;
+  letter-spacing: 3.04px;
+  color: #ACF96D;
+  opacity: 1;
+  padding: 20px 28px;
 }
 
 .container-custom .card-text-custom {
   font: normal normal normal 18px/30px Open Sans;
-letter-spacing: 0px;
-color: #9F9F9F;
-text-align: center;
+  letter-spacing: 0px;
+  color: #9F9F9F;
+  text-align: center;
 }
 
 /* Media queries for responsiveness */
@@ -60,31 +63,41 @@ text-align: center;
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .container-custom .font-weight-bold-custom {
-      font-size: 24px;
+    font-size: 24px;
   }
+
   .container-custom .card-custom {
-      padding: 5px 6px;
+    padding: 5px 6px;
   }
-  
+
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) and (max-width: 768px) {
   .container-custom .font-weight-bold-custom {
-      font-size: 30px;
+    font-size: 30px;
   }
+
   .container-custom .card-custom {
-      padding: 5px 8px;
+    padding: 5px 8px;
   }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) and (max-width: 992px) {
   .container-custom .font-weight-bold-custom {
-      font-size: 35px;
+    font-size: 35px;
   }
+
+ 
+
   .container-custom .card-custom {
-      padding: 5px 10px;
+    height: 100%;
+    border-radius: 25px;
+    background-color: #131313;
+    padding: 35px 170px;
+    gap: 10px;
+
   }
 }
 

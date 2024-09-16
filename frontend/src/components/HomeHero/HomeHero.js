@@ -37,7 +37,7 @@ const Homehero = () => {
           </div>
 
           <div className="col-lg-6 d-flex mt-4">
-            <img src="/images/creatives/home-hero-boy.png" alt="Banner" className="img-fluid mx-auto banner-img" />
+            <img src="/images/creatives/home-branding-boy.png" alt="Banner" className="img-fluid mx-auto banner-img" />
           </div>
         </div>
 

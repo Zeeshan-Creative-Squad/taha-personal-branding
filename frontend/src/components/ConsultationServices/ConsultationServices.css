@@ -127,7 +127,7 @@
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) and (max-width: 992px) {
+@media (max-width: 768px) {
   .consultation-services .font-weight-bold-custom {
     font-size: 35px;
   }
@@ -135,12 +135,24 @@
   .consultation-services .card-custom {
     padding: 5px 10px;
   }
+
+  .consultation-services {
+    flex-direction: column;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .consultation-services .font-weight-bold-custom {
     font-size: 45px;
+  }
+
+  @media (max-width: 1600px) {
+    .consultation-services .head-h1 {
+      font: normal normal bold 50px/88px Open Sans;
+      letter-spacing: -4.16px;
+      color: #131313;
+    }
   }
 
   /* .consultation-services .card-custom {

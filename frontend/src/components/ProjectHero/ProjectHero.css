@@ -1,18 +1,30 @@
 .project-hero {
     background-color: #131313;
     color: #fff;
-    padding: 22vh 0;
+    padding: 15vh 5vw;
+    /* Reduced vertical padding and added horizontal padding */
     position: relative;
-    height: 60vh;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
 }
 
 .project-hero .para_main {
-    padding: 0px 180px 0px 0px;
+    padding: 0;
+    max-width: 800px;
+    /* Limit width for readability on larger screens */
+    text-align: center;
 }
 
+/* Project title */
 .project-details .project-title {
-    font-size: 3rem;
+    font-size: 4vw;
+    /* Fluid typography */
     font-weight: 700;
+    text-align: center;
 }
 
 .project-details .highlight {
@@ -20,38 +32,54 @@
 }
 
 .project-details .project-description {
-    font-size: 1.2rem;
+    font-size: 1.5vw;
+    /* Scale with screen size */
     margin-top: 15px;
+    text-align: center;
 }
 
+/* Connect button */
 .project-hero .connect-button {
     background-color: #464646;
     border: 1px solid #9F9F9F;
     color: #9F9F9F;
-    border: none;
     margin-right: 10px;
-    padding: 8px 45px;
+    padding: 1vw 4vw;
+    /* Dynamic padding for button */
+    font-size: 1.5vw;
+    margin-top: 2vh;
 }
 
+/* Responsive tags container */
 .project-hero .tags {
-    padding: 2vh 0vh;
+    padding: 2vh 0;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    /* Adjust spacing between tags */
 }
-
 
 .tags .project-badge {
     background-color: #333;
     color: #fff;
     margin-right: 10px;
-    padding: 8px 15px;
-    font-size: 0.9rem;
+    padding: 10px 20px;
+    font-size: 1vw;
+    /* Fluid size */
     border-radius: 20px;
 }
 
+/* Responsive project info */
 .project-info {
-    font-size: 1.1rem;
+    font-size: 1.2vw;
+    /* Dynamically adjust font size */
     display: flex;
+    flex-direction: column;
+    /* Stack items vertically on smaller screens */
+    align-items: center;
+    gap: 15px;
+    margin-top: 2vh;
 }
 
 .project-info ul {
@@ -60,12 +88,9 @@
 
 .project-info li {
     padding: 5px 0;
-    width: 170px;
-}
-
-.project-info .row {
-    margin-left: 0;
-    margin-right: 0;
+    width: auto;
+    /* Removed fixed width */
+    text-align: center;
 }
 
 .project-info a {
@@ -77,17 +102,125 @@
     text-decoration: underline;
 }
 
+/* Semi-text */
 .project-hero .semi-text {
     margin: 0;
     font-weight: 400;
     color: #FFFFFF;
-    font: normal normal bold 30px/88px Open Sans;
-    letter-spacing: 0px;
-    font-size: 20px;
+    font-size: 2.5vw;
+    /* Dynamic font size */
     margin-top: 8px;
-    line-height: 2;
+    line-height: 1.5;
+    text-align: center;
 }
 
 .project-hero .Li-text {
     color: #9F9F9F;
+}
+
+/* Tablet screens */
+@media (max-width: 1600px) {
+    .project-hero {
+        padding: 18vh 0vw;
+    }
+
+    .project-details .project-title {
+        font-size: 3vw;
+        text-align: left;
+    }
+
+    .project-details .project-description {
+        font-size: 2vw;
+    }
+
+    .project-hero .connect-button {
+        padding: 10px 40px;
+        font-size: 2vw;
+    }
+
+    .tags .project-badge {
+        font-size: 1.2vw;
+        padding: 8px 15px;
+    }
+
+    .project-info {
+        font-size: 1.5vw;
+    }
+
+    .project-hero .semi-text {
+        font-size: 3vw;
+    }
+}
+
+/* Mobile screens */
+@media (max-width: 768px) {
+    .project-hero {
+        padding: 8vh 4vw;
+    }
+
+    .project-details .project-title {
+        font-size: 6vw;
+    }
+
+    .project-details .project-description {
+        font-size: 3vw;
+    }
+
+    .project-hero .connect-button {
+        padding: 0px 20px;
+        font-size: 2.5vw;
+    }
+
+    .tags .project-badge {
+        font-size: 1.5vw;
+        padding: 8px 12px;
+    }
+
+    .project-info {
+        font-size: 2vw;
+    }
+
+    .project-hero .semi-text {
+        font-size: 4vw;
+    }
+    .project-hero .tags {
+        gap: 0px;
+    }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+    .project-hero {
+        padding: 3vh 2vw;
+    }
+
+    .project-details .project-title {
+        font-size: 7vw;
+    }
+
+    .project-details .project-description {
+        font-size: 3.5vw;
+    }
+
+    .project-hero .connect-button {
+        padding: 0px 20px;
+        font-size: 2.5vw;
+    }
+
+    .project-hero .tags {
+        gap: 0px;
+    }
+
+    .tags .project-badge {
+        font-size: 2vw;
+        padding: 6px 10px;
+    }
+
+    .project-info {
+        font-size: 2.5vw;
+    }
+
+    .project-hero .semi-text {
+        font-size: 5vw;
+    }
 }
