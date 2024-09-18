@@ -9,7 +9,7 @@ const DesignGrids = () => {
                 <p className="para_main text-center">Lorem Ipsum has been the printer took a galley of type and scrambled survived not only five finance software has love the financial haveing on centuries Lorem Ipsum has been the rinter took a galley of type and scrambled survived not only ive finance software has love the financial haveing on centuries</p>
             </div>
 
-            <div className="row">
+            <div className="row all-cards">
                 {/* Card 1 */}
                 <div className="col-md-6 col-sm-12 mb-4">
                     <div className="card custom-card">

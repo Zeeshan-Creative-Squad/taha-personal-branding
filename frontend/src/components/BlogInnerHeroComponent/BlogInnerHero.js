@@ -13,6 +13,10 @@ const BlogInnerHero = () => {
             </h1>
           </div>
 
+          <div>
+
+          </div>
+
           <div className="col-lg-6 d-flex mt-4 banner-section">
             <img
               src="/images/creatives/blog-inner.png"

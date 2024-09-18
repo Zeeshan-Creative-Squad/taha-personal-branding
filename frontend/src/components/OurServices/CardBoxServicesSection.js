@@ -102,7 +102,7 @@ function CardTestimonial({
       <div className="container">
         <h2 className="head-h1">{heading}</h2>
         <p className="para_main">
-        {content}
+          {content}
         </p>
 
         <div className="blog-list">

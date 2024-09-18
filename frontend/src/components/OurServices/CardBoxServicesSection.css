@@ -15,14 +15,14 @@
     padding: 0 20vh;
 }
 
-.blog-subheading {
+.blog-section .blog-subheading {
     font-size: 1.1em;
     margin-bottom: 40px;
     color: #b0b0b0;
 }
 
 /* Blog List */
-.blog-list {
+.blog-section .blog-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -30,7 +30,7 @@
     padding: 5vh 0;
 }
 
-.blog-item {
+.blog-section .blog-item {
     display: flex;
     background-color: #1f1f1f;
     border-radius: 15px;
@@ -41,18 +41,18 @@
     transition: transform 0.3s ease;
 }
 
-.blog-item:hover {
+.blog-section .blog-item:hover {
     transform: scale(1.05);
 }
 
-.blog-image {
+.blog-section .blog-image {
     width: 40%;
     object-fit: cover;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
 }
 
-.blog-content {
+.blog-section .blog-content {
     padding: 25px 35px;
     width: 60%;
     display: flex;
@@ -61,7 +61,7 @@
     text-align: left;
 }
 
-.blog-date {
+.blog-section .blog-date {
     font-size: 0.9em;
     color: #FFFFFF;
     margin-bottom: 10px;
@@ -69,7 +69,7 @@
     letter-spacing: 0px;
 }
 
-.blog-title {
+.blog-section .blog-title {
     font: normal normal 400 25px/36px Open Sans;
     letter-spacing: -1.3px;
     color: #FFFFFF;
@@ -81,7 +81,7 @@
 /* Media Queries */
 
 @media (max-width: 1600px) {
-    .blog-item {
+    .blog-section .blog-item {
         width: 100%;
     }
 }
@@ -92,7 +92,7 @@
         padding: 28px 10px;
     }
 
-    .blog-item {
+    .blog-section .blog-item {
         width: 100%;
         flex-direction: column;
         align-items: center;
@@ -100,12 +100,12 @@
         /* Adjust padding as needed */
     }
 
-    .blog-image {
+    .blog-section .blog-image {
         width: 100%;
         border-radius: 15px 15px 0 0;
     }
 
-    .blog-content {
+    .blog-section .blog-content {
         width: 100%;
         text-align: center;
         padding: 10px 0px 0px 0px;

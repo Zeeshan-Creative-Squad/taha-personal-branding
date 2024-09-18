@@ -45,6 +45,12 @@
     margin-top: 6px;
 }
 
+.blogs-hero .spanHead {
+    font: normal normal normal 25px/50px Open Sans;
+    letter-spacing: -1.3px;
+    color: #ACF96D;
+}
+
 .Homehero-content .main-head {
     color: #717C93;
 }
@@ -88,9 +94,7 @@
     /* Optional: Add padding if needed */
 }
 
-.blog-banner {
-    
-}
+.blog-banner {}
 
 
 @keyframes rotate {
@@ -311,6 +315,12 @@
         margin: auto;
         margin-top: 10px;
         overflow: hidden;
+    }
+
+    .blogs-hero .spanHead {
+        font: normal normal normal 20px/50px Open Sans;
+        letter-spacing: -1.3px;
+        color: #ACF96D;
     }
 
 }

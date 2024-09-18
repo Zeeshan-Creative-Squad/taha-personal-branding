@@ -9,8 +9,9 @@ const BlogsHero = () => {
         <div className="row align-items-center home-hero">
           <div className="col-lg-6">
             <div className="Homehero-content">
+              <h3 className="spanHead">LATEST BLOG</h3>
               <h1 className="head-h1">
-              Resources and tips for your business.
+                Resources and tips for your business.
               </h1>
               <p className="para_main">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim

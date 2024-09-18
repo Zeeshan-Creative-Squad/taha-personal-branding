@@ -47,11 +47,12 @@
 
 .tags .badge {
     background-color: #EAEBEB;
+    font: normal normal normal 16px/30px Open Sans;
+    letter-spacing: 0px;
     color: #000000;
     margin-right: 10px;
-    font-size: 14px;
     border-radius: 30px;
-    padding: 15px 40px;
+    padding: 8px 40px;
 }
 
 .case-studies .card-titles {
