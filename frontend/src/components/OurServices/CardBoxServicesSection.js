@@ -1,29 +1,25 @@
-import React, { useState, useEffect } from 'react';
-import "./CardBoxServicesSection.css"
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
+import React, { useState, useEffect } from "react";
+import "./CardBoxServicesSection.css";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
 import { Autoplay } from "swiper/modules";
 import CardBox from "./CardBox";
-import axios from "axios"
-import { useNavigate } from 'react-router-dom';
-import { Spinner } from 'react-bootstrap';
-
-
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
+import { Spinner } from "react-bootstrap";
 
 function CardTestimonial({
   subHeading,
   heading,
   content,
   shadeHeading,
-  button
+  button,
 }) {
-
   const [recentBlogs, setRecentBlogs] = useState([]);
 
   const [loading, setLoading] = useState(false);
 
-  const navigate = useNavigate()
-
+  const navigate = useNavigate();
 
   let blogAPICalledId = false;
   let allBlogsCalled = false;
@@ -77,50 +73,57 @@ function CardTestimonial({
   const blogs = [
     {
       id: 1,
-      date: 'April 13, 2023',
-      title: 'Design, technology, and the things I cherish',
-      imageUrl: '/images/creatives/popular-blog-image.png'
+      date: "April 13, 2023",
+      title: "Design, technology, and the things I cherish",
+      imageUrl: "/images/creatives/popular-blog-image.png",
     },
     {
       id: 2,
-      date: 'April 13, 2023',
-      title: 'Design, technology, and the things I cherish',
-      imageUrl: '/images/creatives/popular-blog-image.png'
+      date: "April 13, 2023",
+      title: "Design, technology, and the things I cherish",
+      imageUrl: "/images/creatives/popular-blog-image.png",
     },
     {
       id: 3,
-      date: 'April 13, 2023',
-      title: 'Design, technology, and the things I cherish',
-      imageUrl: '/images/creatives/popular-blog-image.png'
+      date: "April 13, 2023",
+      title: "Design, technology, and the things I cherish",
+      imageUrl: "/images/creatives/popular-blog-image.png",
     },
     {
       id: 4,
-      date: 'April 13, 2023',
-      title: 'Design, technology, and the things I cherish',
-      imageUrl: '/images/creatives/popular-blog-image.png'
-    }
+      date: "April 13, 2023",
+      title: "Design, technology, and the things I cherish",
+      imageUrl: "/images/creatives/popular-blog-image.png",
+    },
   ];
 
   return (
     <div className="blog-section">
-      <div className='container'>
-        <h2 className="head-h1">Most Popular Blogs & News</h2>
-        <p className="para_main">Lorem Ipsum has been the printer took a galley of type and scrambled survived not only five finance software has love the financial haveing on centuries Lorem Ipsum has been the rinter took</p>
+      <div className="container">
+        <h2 className="head-h1">{heading}</h2>
+        <p className="para_main">
+        {content}
+        </p>
 
         <div className="blog-list">
-          {blogs.map(blog => (
+          {blogs.map((blog) => (
             <div key={blog.id} className="blog-item">
-              <img src={blog.imageUrl} alt={blog.title} className="blog-image" />
+              <img
+                src={blog.imageUrl}
+                alt={blog.title}
+                className="blog-image"
+              />
               <div className="blog-content">
                 <p className="blog-date">{blog.date}</p>
                 <h3 className="blog-title">{blog.title}</h3>
               </div>
             </div>
           ))}
+          <button className="connect-button w-100">{button}</button>
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default CardTestimonial
+export default CardTestimonial;

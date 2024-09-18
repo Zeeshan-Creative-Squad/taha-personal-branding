@@ -8,6 +8,7 @@
 
 .blog-section .head-h1 {
     font: normal normal bold 80px/89px Open Sans;
+    padding: 0vh 12vh;
 }
 
 .blog-section .para_main {
@@ -80,9 +81,9 @@
 /* Media Queries */
 
 @media (max-width: 1600px) {
-   .blog-item {
-    width: 100%;
-   }
+    .blog-item {
+        width: 100%;
+    }
 }
 
 /* For tablets and below (up to 768px) */
@@ -119,6 +120,11 @@
     }
 
     .blog-section .head-h1 {
-        font: normal normal bold 55px/75px Open Sans;
+        font: normal normal bold 50px/75px Open Sans;
+        padding: 0px;
+    }
+
+    .blog-section .connect-button {
+        font-size: 12px;
     }
 }
