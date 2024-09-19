@@ -77,7 +77,7 @@
 
 /* Media Queries for responsiveness */
 
-@media (max-width: 1200px) {
+@media (max-width: 1600px) {
     .case-studies {
         padding: 150px 20px;
     }
@@ -93,6 +93,29 @@
 
     .case-study {
         padding: 15px;
+    }
+
+    .case-study img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .case-studies .translate-y-top {
+        transform: translateY(-120px);
+    }
+
+    .case-studies .translate-y-top-second {
+        transform: translateY(-90px);
+    }
+
+    .tags .badge {
+        background-color: #EAEBEB;
+        font: normal normal normal 12px/30px Open Sans;
+        letter-spacing: 0px;
+        color: #000000;
+        margin-right: 10px;
+        border-radius: 30px;
+        padding: 2px 25px;
     }
 }
 

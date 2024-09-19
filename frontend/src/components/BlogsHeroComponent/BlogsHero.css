@@ -142,7 +142,7 @@
     /* padding: 10px;
     padding-left: 15px; */
     color: #7070708e;
-    padding: 1vh 3vh;
+    padding: 1vh 1vh;
     background: transparent;
 }
 
@@ -159,6 +159,11 @@
     border-radius: 5px;
     margin-top: 0px;
     padding: 9px 26px;
+}
+
+.blogs-hero .email-icon {
+    padding: 0px 6px;
+    align-items: center;
 }
 
 @media (max-width: 1600px) {
@@ -191,16 +196,21 @@
     .social-media-icons {}
 
     .blogs-hero .blog-banner {
-        width: 100%;
-        margin: 0 auto;
-        transform: translateY(-50px);
-        padding: 2vh 0vh;
+        width: 70%;
+        transform: translateY(-0px);
+        padding: 26vh 0vh;
     }
 
     .blogs-hero .button-text-container {
         display: flex;
         align-items: center;
         gap: 28px;
+    }
+
+    .blogs-hero .spanHead {
+        font: normal normal normal 25px/50px Open Sans;
+        letter-spacing: -1.3px;
+        color: #ACF96D;
     }
 }
 
