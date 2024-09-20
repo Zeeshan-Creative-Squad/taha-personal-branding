@@ -36,10 +36,10 @@ const HomePage = () => {
       {/* <OurProcess heading="WHY " shadeHeading="CHOOSE US" /> */}
 
       <CardTestimonial
-        heading="MOST POPULAR "
-        shadeHeading="News"
+        heading="I help move your business forward with design. "
+        shadeHeading=""
         spanHeading=""
-        content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's Lorem Ipsum is simply dummy text of the printing"
+        // content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's Lorem Ipsum is simply dummy text of the printing"
         button="Learn more" />
       {/* <HappyCustomer /> */}
 

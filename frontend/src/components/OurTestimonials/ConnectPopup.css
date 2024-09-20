@@ -142,8 +142,9 @@
     .Testimonials-container {
         padding: 10vh 4vh;
     }
+
     .Testimonials-container .connect-button {
         width: 100%;
-        font-size: 14px;
+        font-size: 12px;
     }
 }

@@ -433,7 +433,7 @@ const Navbar = ({ noLinearBackground, landingPage = false, noLinearBackgroundVid
                       ? `${styles.activeLink} ${styles.link}`
                       : styles.link
                   }
-                  to="/about"
+                  to="/consultation"
                 >
                   Consultation
                 </NavLink>
@@ -457,7 +457,7 @@ const Navbar = ({ noLinearBackground, landingPage = false, noLinearBackgroundVid
                       ? `${styles.activeLink} ${styles.link}`
                       : styles.link
                   }
-                  to="/blogs"
+                  to="/casestudy"
                 >
                   My Agency
                 </NavLink>
@@ -470,7 +470,7 @@ const Navbar = ({ noLinearBackground, landingPage = false, noLinearBackgroundVid
                       ? `${styles.activeLink} ${styles.link}`
                       : styles.link
                   }
-                  to="/contact"
+                  to="/blogs"
                 >
                   Blogs
                 </NavLink>
@@ -531,7 +531,7 @@ const Navbar = ({ noLinearBackground, landingPage = false, noLinearBackgroundVid
                   <button className="connect-button">Contact Me</button>
                 </Link>
                 {/* <Modal status={isModalOpen} closeModal={closeModal}> {loginpressed ? <LoginSignup /> : <Signup />} </Modal> */}
-               
+
               </div>
             </div>
           </Container>

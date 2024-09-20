@@ -17,7 +17,7 @@
 }
 
 .consultation-services .head-h1 {
-  font: normal normal bold 70px/88px Open Sans;
+  font: normal normal bold 70px/78px Open Sans;
   letter-spacing: -4.16px;
   color: #131313;
 }
@@ -95,7 +95,7 @@
   }
 
   .consultation-services .head-h1 {
-    font: normal normal bold 55px/88px Open Sans;
+    font: normal normal bold 55px/78px Open Sans;
   }
 
   .consultation-services .card-body {
@@ -103,6 +103,10 @@
     background-color: #131313;
     border-radius: 20px;
     margin-top: 0px;
+  }
+
+  .consultation-services .connect-button {
+    font-size: 12px;
   }
 }
 

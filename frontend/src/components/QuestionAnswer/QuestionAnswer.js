@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import './QuestionAnswer.css'; // Import custom CSS
 
 const QuestionAnswer = () => {
-    const [openIndex, setOpenIndex] = useState(null);
+    // Initialize the state to open the first question by default
+    const [openIndex, setOpenIndex] = useState(0);
 
     const faqs = [
         {
@@ -29,7 +30,6 @@ const QuestionAnswer = () => {
 
     return (
         <div className="container faq-section">
-
             <div className="row">
                 <div className="col-md-6 faq-container">
                     <h1 className="head-h1">Questions Answers</h1>

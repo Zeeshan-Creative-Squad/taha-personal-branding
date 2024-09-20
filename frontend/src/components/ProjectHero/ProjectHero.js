@@ -7,7 +7,7 @@ const ProjectHero = (props) => {
             <div className="container">
                 <div className="row">
                     {/* Left Column */}
-                    <div className="col-md-8 project-details">
+                    <div className="col-lg-6 project-details">
                         <h1 className="project-title">
                             {props.title} <span className="highlight">{props.highlight}</span>
                         </h1>
@@ -20,7 +20,7 @@ const ProjectHero = (props) => {
                     </div>
 
                     {/* Right Column */}
-                    <div className="col-md-4 project-info">
+                    <div className="col-lg-6 project-info">
                         <ul className="list-unstyled">
                             <div className="row">
                                 <div className="col-md-6">

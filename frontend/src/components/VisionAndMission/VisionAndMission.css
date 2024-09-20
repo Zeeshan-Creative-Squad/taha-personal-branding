@@ -218,4 +218,11 @@
   .ourservices-container .connect-button {
     font-size: 12px;
   }
+
+  .ourservices-container .span-head {
+    font: normal normal bold 50px/60px Open Sans;
+    letter-spacing: -4.16px;
+    color: #ACF96D;
+    position: relative;
+  }
 }

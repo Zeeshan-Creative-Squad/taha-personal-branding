@@ -12,6 +12,7 @@ const TechMentorshipPage = () => {
                 Heading="Tech Mentorship "
                 spanHead=" & Career Guidance"
                 Para="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim urna porttitor neque elementum cursus. Bibendum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim urna porttitor neque elementum cursus. Bibendum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim urna porttitor neque elementum cursus. Bibendum."
+                padding="2vh 0vh"
             />
 
             <TechMentorshipCards />

@@ -6,6 +6,8 @@ import CardTestimonial from '../components/OurServices/CardBoxServicesSection';
 import { useNavigate, useParams } from 'react-router-dom';
 import axios from 'axios';
 import { Spinner } from 'react-bootstrap';
+import BlogInnerHero from '../components/BlogInnerHeroComponent/BlogInnerHero';
+import ConnectPopup from '../components/OurTestimonials/ConnectPopup';
 
 const BloginnerPage = () => {
   const [blogsData, setBlogsData] = useState();
@@ -73,7 +75,7 @@ const BloginnerPage = () => {
 
   return (
     <div>
-      {
+      {/* {
         loading ? (
           <div
             style={{ width: "100%", height: "100vh" }}
@@ -84,15 +86,11 @@ const BloginnerPage = () => {
             />
           </div>
         ) : (
-          blogsData &&
-          <>
-            <CommonHeroComponent Para="Welcome to the world of interior design, where creativity, vision, and functionality converge to transform houses into dream homes."
-              backgroundImg="/images/creatives/blogsinner-hero.jpg"
-
-              Heading={blogsData.title}
-
-            />
-            {
+          blogsData && */}
+      <>
+        <BlogInnerHero
+        />
+        {/* {
               recentBlogs &&
 
               <BlogInner
@@ -102,18 +100,23 @@ const BloginnerPage = () => {
                 Heading={blogsData.title} />
 
 
-            }
-          </>
-        )
-      }
+            } */}
+      </>
+      {/* )
+      } */}
+
+      <BlogInner />
+
+
 
 
 
       <CardTestimonial
-        heading="MOST POPULAR NEWS"
+        heading="Most Popular News & Blogs"
         spanHeading=""
-        content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's Lorem Ipsum is simply dummy text of the printing"
         button="Learn more" />
+
+      <ConnectPopup />
     </div>
   )
 }
