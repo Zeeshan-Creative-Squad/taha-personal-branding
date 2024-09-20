@@ -9,6 +9,7 @@ import ConnectPopup from '../components/OurTestimonials/ConnectPopup';
 import ConsultationServices from '../components/ConsultationServices/ConsultationServices'
 import HomeGallery from '../components/HomeGallerySection/HomeGallery'
 import DesignGrids from '../components/DesignGrids/DesignGrids'
+import SectionComponent from '../components/SectionComponent/SectionComponent'
 
 const HomePage = () => {
   return (
@@ -18,14 +19,13 @@ const HomePage = () => {
       <Sponsor
       />
       <ConsultationServices />
-      <VisionAndMission
-        // flexdirection="row-reverse"
+      <SectionComponent
         heading="Get 1 to 1 Consultation with"
         spanHead="Taha Sheikh"
         Para="Lorem Ipsum has been the printer took a galley of type and scrambled survived not only five finance software has love the financial haveing on centuries Lorem Ipsum has been the rinter took a galley of type and scrambled survived not only ive finance software has love the financial haveing on centuries" homeTitle=""
         button="Get Consultation"
-        image="/images/creatives/boy-about-image.png"
-      />
+        image="/images/creatives/boy-about-image.png" />
+
 
       <DesignGrids />
 

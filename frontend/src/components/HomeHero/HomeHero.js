@@ -1,7 +1,9 @@
 import React from 'react';
 import './HomeHero.css';
+import { useNavigate } from 'react-router-dom';
 
 const Homehero = () => {
+  const navigate = useNavigate();
   return (
     <div className="home-hero">
       <div className="container">
@@ -12,7 +14,7 @@ const Homehero = () => {
               <p className='para_main'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim urna porttitor neque elementum cursus. Bibendum.</p>
               <div className="button-text-container">
                 <a href="#" style={{ textDecoration: "none" }}>
-                  <button className="connect-button">Let's Connect</button>
+                  <button onClick={() => navigate('/contact')} className="connect-button">Let's Connect</button>
                 </a>
                 <div className='text-button-container'>
                   <p className="get-consult">Get Consultations</p>

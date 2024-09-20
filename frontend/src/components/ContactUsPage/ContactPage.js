@@ -19,6 +19,7 @@ const ContactPage = () => {
                                 <input type="text" placeholder="Your Last Name" />
                             </div>
                             <div className="form-group">
+
                                 <input type="email" placeholder="Enter Your Email" />
                                 <input type="text" placeholder="Subject" />
                             </div>
@@ -40,8 +41,8 @@ const ContactPage = () => {
 
                     <div className="contact-details">
                         <div className="contact-item">
-                            <div className='d-flex gap-3 contact-side-boxes'>
-                                <img src='/images/icons/phone-icon.svg' className='img-fluid' />
+                            <div className='d-flex gap-3 contact-side-boxes align-items-center'>
+                                <img src='/images/icons/email-icon-contact.svg' className='img-fluid' />
                                 <p className='para_main'>Email Address</p>
                             </div>
 
@@ -49,14 +50,14 @@ const ContactPage = () => {
                         </div>
                         <div className="contact-item">
                             <div className='d-flex gap-3 contact-side-boxes'>
-                                <img src='/images/icons/phone-icon.svg' className='img-fluid' />
+                                <img src='/images/icons/phone-icon-contact.svg' className='img-fluid' />
                                 <p className='para_main'>Contact Us</p>
                             </div>
                             <p className='contact-number'>+92 300 1234567</p>
                         </div>
                         <div className="contact-item">
                             <div className='d-flex gap-3 contact-side-boxes'>
-                                <img src='/images/icons/phone-icon.svg' className='img-fluid' />
+                                <img src='/images/icons/location-icon-contact.svg' className='img-fluid' />
                                 <p className='para_main'>Location</p>
                             </div>
                             <p className='contact-number'>Karachi, Pakistan</p>

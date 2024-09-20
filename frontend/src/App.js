@@ -52,7 +52,6 @@ const App = () => {
         <Route path='/location/:slug' element={<LocationPages />} />
         <Route path='/admin/location-pages' element={<LocationScreen />} />
         <Route path="/login" element={<LoginScreen />} />
-
       </Routes>
       <Footer />
     </Router>
