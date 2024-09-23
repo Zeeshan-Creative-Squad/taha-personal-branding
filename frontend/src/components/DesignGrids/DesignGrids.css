@@ -44,7 +44,12 @@
 .Design-container .tags {
   display: flex;
   gap: 10px;
+  padding: 2vh 0vh;
   /* position: relative; */
+}
+
+.Design-container .para_main {
+  padding: 0px 140px;
 }
 
 /* .tags::after {
@@ -84,8 +89,8 @@
 }
 
 .Design-container .btn-outline-light:hover {
-  background-color: #fff;
-  color: #222;
+  background-color: #333333;
+  color: #ffffff;
 }
 
 .Design-container .design-images {

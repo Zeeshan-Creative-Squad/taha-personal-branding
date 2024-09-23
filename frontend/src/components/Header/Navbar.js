@@ -321,12 +321,6 @@ const Navbar = ({ noLinearBackground, landingPage = false, noLinearBackgroundVid
                         </Link>
                       ))}
 
-
-
-
-
-
-
                       {/* Khidmat-e-Khalq Dropdown */}
                       <div className="navigation-dropdown">
                         <div className="dropdown-trigger d-flex align-items-center"
@@ -445,7 +439,7 @@ const Navbar = ({ noLinearBackground, landingPage = false, noLinearBackgroundVid
                       ? `${styles.activeLink} ${styles.link}`
                       : styles.link
                   }
-                  to="/services"
+                  to="/"
                 >
                   portfolio
                 </NavLink>
@@ -461,8 +455,6 @@ const Navbar = ({ noLinearBackground, landingPage = false, noLinearBackgroundVid
                 >
                   My Agency
                 </NavLink>
-
-
                 <NavLink
                   onMouseEnter={mouseLeaveHandler}
                   className={({ isActive }) =>
