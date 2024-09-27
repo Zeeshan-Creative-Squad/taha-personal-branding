@@ -1,0 +1,401 @@
+/* Main Wrapper */
+.payment-wrapper {
+    background-color: #131313;
+    color: #fff;
+    padding: 31vh 0vh 10vh;
+    font-family: Arial, sans-serif;
+}
+
+.payment-wrapper .contact-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.payment-wrapper .head-h1 {
+    font: normal normal bold 80px/89px Open Sans;
+    margin-bottom: 18px;
+}
+
+.payment-wrapper .contact-header .highlight-text {
+    color: #8EC63F;
+}
+
+.payment-wrapper .contact-body {
+
+    /* justify-content: space-between; */
+
+}
+
+.payment-wrapper .contact-form {
+    flex: 0 0 62%;
+    background-color: #222;
+    padding: 55px;
+    border-radius: 28px;
+    height: 600px;
+}
+
+.payment-wrapper .contact-form .form-group {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.payment-wrapper .contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 20px 12px;
+    background-color: #131313;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 14px;
+    padding-left: 22px;
+    margin-bottom: 0px;
+}
+
+.payment-wrapper .contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #777;
+}
+
+.payment-wrapper .contact-form textarea {
+    resize: none;
+    height: 175px;
+}
+
+/* .payment-wrapper .contact-form .newsletter-checkbox {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+} */
+
+.payment-wrapper .contact-form .newsletter-checkbox input {
+    margin-right: 10px;
+
+}
+
+.payment-wrapper .contact-form .submit-btn {
+    margin-top: 30px;
+    background-color: #8EC63F;
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.payment-wrapper .contact-details {
+    flex: 0 0 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    background-color: var(--eerie-black);
+    border-radius: 24px;
+    flex-direction: column;
+    padding: 2px 0px 2px 36px;
+}
+
+.payment-wrapper .contact-details .contact-item {
+    background-color: #222;
+    padding: 37px 40px;
+    width: 455px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+}
+
+/* .payment-wrapper .contact-details .contact-item p {
+    margin: 0;
+    color: #bbb;
+} */
+
+.payment-wrapper .contact-details .contact-item p strong {
+    color: #fff;
+}
+
+.payment-wrapper .contact-details .para_main {
+    font-size: 22px;
+    color: #fff;
+    margin-top: 0px;
+    /* padding: 10px 0px; */
+}
+
+.payment-wrapper .head-h3 {
+    font-size: 20px;
+    padding: 5px 0px 18px 0px;
+}
+
+.payment-wrapper .form-actions-contact {
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+    display: flex;
+}
+
+.payment-wrapper .main-group {
+    grid-column-gap: 16px;
+    /* grid-row-gap: 16px; */
+    flex-direction: column;
+    display: flex;
+}
+
+.payment-wrapper .contact-number {
+    margin: 0;
+    font-weight: 400;
+    color: #9F9F9F;
+    font: normal normal normal 16px/30px Open Sans;
+    letter-spacing: 0px;
+    font-size: 16px;
+    margin-top: 8px;
+    line-height: 2;
+}
+
+.payment-wrapper .connect-button {
+    padding: 8px 50px;
+}
+
+
+.payment-form-container {
+    background-color: #181818;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.payment-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    color: #FFFFFF;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    padding: 10px;
+    background-color: #2a2a2a;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.input-group input::placeholder {
+    color: #777;
+}
+
+.card-select-group {
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    color: #FFFFFF;
+    padding: 0vh 0vh 2vh 0vh;
+}
+
+.card-options {
+    display: flex;
+    gap: 20px;
+}
+
+.card-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #555;
+    border-radius: 5px;
+}
+
+.card-option input {
+    display: none;
+}
+
+.card-option.selected {
+    border-color: #00FF00;
+    background-color: #2a2a2a;
+}
+
+.card-icon {
+    width: 40px;
+    height: 25px;
+}
+
+.master-card {
+    /* background-image: url('/path/to/mastercard-icon.png'); */
+    /* Replace with your icons */
+    background-size: cover;
+}
+
+.visa {
+    /* background-image: url('/path/to/visa-icon.png'); */
+    /* Replace with your icons */
+    background-size: cover;
+}
+
+.submit-button {
+    grid-column: span 2;
+    padding: 15px;
+    background-color: #00FF00;
+    color: #181818;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #00cc00;
+}
+
+
+/* For tablets (768px and below) */
+@media (max-width: 768px) {
+    .payment-wrapper {
+        padding: 8vh 2vw;
+        /* Reduced padding for smaller screens */
+    }
+
+    .payment-wrapper .contact-body {
+        flex-direction: column;
+    }
+
+    .payment-wrapper .contact-form,
+    .contact-details {
+        flex: 0 0 100%;
+        /* Full width for form and details */
+        margin-bottom: 20px;
+    }
+
+    .payment-wrapper .head-h1 {
+        font-size: 50px;
+        /* Adjust font size for heading */
+    }
+
+    .payment-wrapper .para_main {
+        font-size: 16px;
+        /* Smaller font for description */
+    }
+
+    .payment-wrapper .contact-details .contact-item {
+        padding: 20px;
+        width: 100%;
+        /* Make the contact details fill width */
+    }
+
+    .payment-wrapper .connect-button {
+        padding: 8px 30px;
+        /* Adjust button size */
+    }
+}
+
+/* For mobile phones (576px and below) */
+@media (max-width: 576px) {
+    .payment-wrapper {
+        padding: 5vh 2vw;
+        /* Further reduce padding */
+    }
+
+    .payment-wrapper .head-h1 {
+        font-size: 40px;
+        /* Smaller font size for mobile */
+    }
+
+    .payment-wrapper .para_main {
+        font-size: 14px;
+        /* Adjust font for readability */
+    }
+
+    .payment-wrapper .contact-form {
+        padding: 20px;
+        /* Smaller padding for mobile */
+    }
+
+    .payment-wrapper .contact-details .contact-item {
+        padding: 15px;
+    }
+
+    .payment-wrapper .connect-button {
+        padding: 6px 20px;
+        /* Adjust button padding */
+    }
+}
+
+/* For extra-small screens (400px and below) */
+@media (max-width: 400px) {
+    .payment-wrapper .head-h1 {
+        font-size: 80px;
+        /* Further reduce heading font size */
+    }
+
+    .payment-wrapper .para_main {
+        font-size: 12px;
+        /* Smaller font for very small screens */
+    }
+
+    .payment-wrapper .contact-form {
+        padding: 20px 15px;
+        /* Tighter padding */
+    }
+
+    .payment-wrapper .contact-details .contact-item {
+        padding: 18px 15px;
+        align-items: center;
+        border-radius: 14px;
+
+        /* Smaller padding for items */
+    }
+
+    .payment-wrapper .connect-button {
+        padding: 5px 15px;
+        /* Compact button for small screens */
+    }
+
+    .payment-wrapper .contact-form .form-group {
+        flex-direction: column;
+        gap: 20px;
+        /* margin-bottom: 0px; */
+    }
+
+    .payment-wrapper .form-actions-contact {
+        flex-direction: column;
+        margin-top: 0px;
+    }
+
+    .payment-wrapper .connect-button {
+        width: 100%;
+        font-size: 12px;
+        padding: 8px 110px;
+    }
+
+    .payment-wrapper .contact-details .para_main {
+        font-size: 15px;
+        color: #fff;
+    }
+
+    .payment-wrapper .contact-number {
+        font-size: 12px;
+        padding: 0px 10px;
+    }
+
+    .payment-wrapper .contact-side-boxes {}
+
+    .payment-wrapper .contact-details {
+        padding: 5px 0px;
+    }
+
+}

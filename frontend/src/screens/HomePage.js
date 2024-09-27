@@ -26,6 +26,13 @@ const HomePage = () => {
         button="Get Consultation"
         image="/images/creatives/boy-about-image.png" />
 
+      <VisionAndMission flexdirection="row-reverse" Para="Lorem Ipsum has been the printer took a galley of type and scrambled survived not only five finance software has love the financial haveing on centuries Lorem Ipsum has been the rinter took a galley of type and scrambled survived not only ive finance software has love the financial haveing on centuries Lorem Ipsum has been the printer took a galley of type and scrambled survived not only five finance software has love the financial haveing on centuries Lorem Ipsum has been the rinter took a galley of type and scrambled survived not only ive finance software has love the financial haveing on centuries finance software has love the financial haveing on centuries"
+        image="/images/creatives/about-banner-boy.png"
+        heading="Join My  "
+        spanHead="Community"
+        button="Join Now"
+        background="#131313" />
+
 
       <DesignGrids />
 

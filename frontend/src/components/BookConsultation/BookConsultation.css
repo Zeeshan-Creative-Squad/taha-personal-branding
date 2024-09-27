@@ -1,0 +1,114 @@
+.consultation-container {
+    background-color: #181818;
+    color: white;
+    /* padding: 30px; */
+    font-family: Arial, sans-serif;
+    padding: 5vh 0vh;
+}
+
+
+
+.consultation-container .head-h1 {
+    font: normal normal bold 80px/50px Open Sans;
+    text-align: center;
+}
+
+.consultation-container .head-h2 {
+    font: normal normal normal 28px/50px Novar;
+    color: #fff;
+    text-align: center;
+}
+
+.consultation-container .para_main {
+    text-align: center;
+}
+
+
+.header-section .highlight {
+    color: #00FF00;
+}
+
+.calendar-time-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 20px;
+
+}
+
+.calendar-section,
+.timeslots-section {
+    background-color: #1e1e1e;
+    padding: 50px;
+    border-radius: 20px;
+    width: 100%;
+}
+
+.month-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.month-navigation button {
+    background-color: #2a2a2a;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.calendar {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.calendar th,
+.calendar td {
+    padding: 6px 16px;
+    border: none;
+
+
+}
+
+.highlight-day {
+    background-color: #ACF96D;
+    color: black;
+    font-weight: bold;
+}
+
+.consultation-container .head-h3 {
+    font: normal normal 600 20px/30px Open Sans;
+}
+
+.timeslots {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    text-align: center;
+}
+
+.timeslot {
+    padding: 10px;
+    background-color: #2a2a2a;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    text-align: center;
+    width: 150px;
+    /* Set a fixed width or adjust as needed */
+}
+
+.timeslot:hover {
+    background-color: #ACF96D;
+    color: black;
+}
+
+.highlight {
+    background-color: #ACF96D;
+    color: black;
+    text-align: center;
+    border-radius: 7px;
+}

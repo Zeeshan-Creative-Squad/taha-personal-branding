@@ -38,8 +38,8 @@ const Homehero = () => {
             </div>
           </div>
 
-          <div className="col-lg-6 d-flex mt-4">
-            <img src="/images/creatives/home-branding-boy.png" alt="Banner" className="img-fluid mx-auto banner-img" />
+          <div className="col-lg-6 d-flex image-section-col">
+            <img src="/images/creatives/section-home-img.png" alt="Banner" className="img-fluid mx-auto banner-img" />
           </div>
         </div>
 

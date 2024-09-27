@@ -94,10 +94,14 @@
     /* Optional: Add padding if needed */
 }
 
+.home-hero .image-section-col {
+    padding: 2vh 0vh 0vh 0vh;
+}
+
 .banner-img {
-    width: 680px;
+    width: 50%;
     position: relative;
-    transform: translateY(-50px);
+    transform: translateY(0px);
 }
 
 
@@ -111,14 +115,14 @@
     }
 }
 
-.social-media-icons img {
+.home-hero .social-media-icons img {
     max-width: 100%;
     height: auto;
     transition: transform 0.2s ease-in-out;
     border-radius: 10px;
 }
 
-.social-media-icons img:hover {
+.home-hero .social-media-icons img:hover {
     /* animation: rotate 0.6s linear 1; */
     transform: translateY(-18px);
 }
@@ -150,7 +154,7 @@
         width: 100%;
     }
 
-    .social-media-icons {}
+    .home-hero .social-media-icons {}
 
     .home-hero .banner-img {
         width: 88%;
@@ -188,7 +192,7 @@
         text-align: center;
     }
 
-    .social-media-icons {
+    .home-hero .social-media-icons {
         justify-content: center;
     }
 
@@ -241,14 +245,14 @@
         width: 132px;
     }
 
-    .social-media-icons {
+    .home-hero .social-media-icons {
         display: flex;
         gap: 8px;
         padding: 3vh 0vh;
         align-items: center;
     }
 
-    .social-media-icons img {
+    .home-hero .social-media-icons img {
         max-width: 40px;
         height: auto;
     }
@@ -273,7 +277,7 @@
         width: 100%;
     }
 
-    .social-media-icons img {
+    .home-hero .social-media-icons img {
         max-width: 30px;
     }
 
