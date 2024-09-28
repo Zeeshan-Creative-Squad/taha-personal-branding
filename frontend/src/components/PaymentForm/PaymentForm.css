@@ -2,7 +2,7 @@
 .payment-wrapper {
     background-color: #131313;
     color: #fff;
-    padding: 31vh 0vh 10vh;
+    padding: 0vh 0vh 0vh;
     font-family: Arial, sans-serif;
 }
 
@@ -14,6 +14,7 @@
 .payment-wrapper .head-h1 {
     font: normal normal bold 80px/89px Open Sans;
     margin-bottom: 18px;
+    text-align: center;
 }
 
 .payment-wrapper .contact-header .highlight-text {
@@ -21,13 +22,13 @@
 }
 
 .payment-wrapper .contact-body {
-
-    /* justify-content: space-between; */
-
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
 }
 
 .payment-wrapper .contact-form {
-    flex: 0 0 62%;
+  width: 100%;
     background-color: #222;
     padding: 55px;
     border-radius: 28px;
@@ -63,20 +64,6 @@
     height: 175px;
 }
 
-/* .payment-wrapper .contact-form .newsletter-checkbox {
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-} */
-
-.payment-wrapper .contact-form .newsletter-checkbox input {
-    margin-right: 10px;
-
-}
-
 .payment-wrapper .contact-form .submit-btn {
     margin-top: 30px;
     background-color: #8EC63F;
@@ -93,36 +80,23 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    grid-column-gap: 16px;
-    grid-row-gap: 16px;
+    gap: 20px;
     background-color: var(--eerie-black);
     border-radius: 24px;
-    flex-direction: column;
-    padding: 2px 0px 2px 36px;
+    padding: 20px;
 }
 
 .payment-wrapper .contact-details .contact-item {
     background-color: #222;
     padding: 37px 40px;
-    width: 455px;
     border-radius: 30px;
     margin-bottom: 20px;
-}
-
-/* .payment-wrapper .contact-details .contact-item p {
-    margin: 0;
-    color: #bbb;
-} */
-
-.payment-wrapper .contact-details .contact-item p strong {
-    color: #fff;
 }
 
 .payment-wrapper .contact-details .para_main {
     font-size: 22px;
     color: #fff;
     margin-top: 0px;
-    /* padding: 10px 0px; */
 }
 
 .payment-wrapper .head-h3 {
@@ -130,35 +104,15 @@
     padding: 5px 0px 18px 0px;
 }
 
-.payment-wrapper .form-actions-contact {
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 12px;
-    display: flex;
-}
-
-.payment-wrapper .main-group {
-    grid-column-gap: 16px;
-    /* grid-row-gap: 16px; */
-    flex-direction: column;
-    display: flex;
-}
-
 .payment-wrapper .contact-number {
     margin: 0;
     font-weight: 400;
     color: #9F9F9F;
     font: normal normal normal 16px/30px Open Sans;
-    letter-spacing: 0px;
     font-size: 16px;
     margin-top: 8px;
     line-height: 2;
 }
-
-.payment-wrapper .connect-button {
-    padding: 8px 50px;
-}
-
 
 .payment-form-container {
     background-color: #181818;
@@ -207,8 +161,14 @@
 
 .card-options {
     display: flex;
-    gap: 20px;
+    gap: 40px;
 }
+
+.icon-cards {
+    width: 18px;
+    height: 18px;
+}
+
 
 .card-option {
     display: flex;
@@ -220,30 +180,9 @@
     border-radius: 5px;
 }
 
-.card-option input {
-    display: none;
-}
-
 .card-option.selected {
-    border-color: #00FF00;
+    border-color: #4f504f;
     background-color: #2a2a2a;
-}
-
-.card-icon {
-    width: 40px;
-    height: 25px;
-}
-
-.master-card {
-    /* background-image: url('/path/to/mastercard-icon.png'); */
-    /* Replace with your icons */
-    background-size: cover;
-}
-
-.visa {
-    /* background-image: url('/path/to/visa-icon.png'); */
-    /* Replace with your icons */
-    background-size: cover;
 }
 
 .submit-button {
@@ -262,140 +201,81 @@
     background-color: #00cc00;
 }
 
-
-/* For tablets (768px and below) */
-@media (max-width: 768px) {
-    .payment-wrapper {
-        padding: 8vh 2vw;
-        /* Reduced padding for smaller screens */
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .payment-wrapper .head-h1 {
+        font-size: 60px;
+        line-height: 1.2;
     }
 
     .payment-wrapper .contact-body {
         flex-direction: column;
+        align-items: center;
     }
 
     .payment-wrapper .contact-form,
-    .contact-details {
-        flex: 0 0 100%;
-        /* Full width for form and details */
-        margin-bottom: 20px;
+    .payment-wrapper .contact-details {
+        flex: 1 0 100%;
+        width: 100%;
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 992px) {
+    .payment-wrapper .contact-form,
+    .payment-wrapper .contact-details {
+        padding: 30px;
     }
 
+    .payment-form {
+        grid-template-columns: 1fr; /* Single-column on tablets */
+    }
+}
+
+@media (max-width: 768px) {
     .payment-wrapper .head-h1 {
         font-size: 50px;
-        /* Adjust font size for heading */
     }
 
-    .payment-wrapper .para_main {
-        font-size: 16px;
-        /* Smaller font for description */
-    }
-
-    .payment-wrapper .contact-details .contact-item {
+    .payment-wrapper .contact-form,
+    .payment-wrapper .contact-details {
         padding: 20px;
-        width: 100%;
-        /* Make the contact details fill width */
     }
 
-    .payment-wrapper .connect-button {
-        padding: 8px 30px;
-        /* Adjust button size */
+    .payment-form {
+        grid-template-columns: 1fr; /* Single-column on smaller screens */
     }
-}
-
-/* For mobile phones (576px and below) */
-@media (max-width: 576px) {
-    .payment-wrapper {
-        padding: 5vh 2vw;
-        /* Further reduce padding */
-    }
-
-    .payment-wrapper .head-h1 {
-        font-size: 40px;
-        /* Smaller font size for mobile */
-    }
-
-    .payment-wrapper .para_main {
-        font-size: 14px;
-        /* Adjust font for readability */
-    }
-
-    .payment-wrapper .contact-form {
-        padding: 20px;
-        /* Smaller padding for mobile */
-    }
-
-    .payment-wrapper .contact-details .contact-item {
-        padding: 15px;
-    }
-
-    .payment-wrapper .connect-button {
-        padding: 6px 20px;
-        /* Adjust button padding */
-    }
-}
-
-/* For extra-small screens (400px and below) */
-@media (max-width: 400px) {
-    .payment-wrapper .head-h1 {
-        font-size: 80px;
-        /* Further reduce heading font size */
-    }
-
-    .payment-wrapper .para_main {
-        font-size: 12px;
-        /* Smaller font for very small screens */
-    }
-
-    .payment-wrapper .contact-form {
-        padding: 20px 15px;
-        /* Tighter padding */
-    }
-
-    .payment-wrapper .contact-details .contact-item {
-        padding: 18px 15px;
-        align-items: center;
-        border-radius: 14px;
-
-        /* Smaller padding for items */
-    }
-
-    .payment-wrapper .connect-button {
-        padding: 5px 15px;
-        /* Compact button for small screens */
-    }
-
     .payment-wrapper .contact-form .form-group {
         flex-direction: column;
         gap: 20px;
-        /* margin-bottom: 0px; */
+        margin-bottom: 20px;
     }
-
-    .payment-wrapper .form-actions-contact {
-        flex-direction: column;
-        margin-top: 0px;
-    }
-
     .payment-wrapper .connect-button {
         width: 100%;
-        font-size: 12px;
-        padding: 8px 110px;
     }
-
-    .payment-wrapper .contact-details .para_main {
-        font-size: 15px;
+    .payment-wrapper {
+        background-color: #131313;
         color: #fff;
+        padding: 4vh 0vh 1vh;
+        font-family: Arial, sans-serif;
+    }
+}
+
+@media (max-width: 576px) {
+    .payment-wrapper .head-h1 {
+        font-size: 40px;
+        line-height: 1.1;
     }
 
-    .payment-wrapper .contact-number {
-        font-size: 12px;
-        padding: 0px 10px;
+    .payment-wrapper .contact-details .contact-item {
+        width: 100%;
     }
 
-    .payment-wrapper .contact-side-boxes {}
-
-    .payment-wrapper .contact-details {
-        padding: 5px 0px;
+    .submit-button {
+        padding: 12px; /* Adjust button size for mobile */
     }
 
+    .payment-form-container {
+        padding: 15px;
+    }
 }

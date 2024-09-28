@@ -23,18 +23,19 @@ const TechMentorshipPage = () => {
             <PaymentForm />
 
             <TechMentorshipCards />
-            <TextContent
+            {/* <TextContent
                 img="/images/creatives/home-text-2.png"
                 subHeading=""
-                heading="At your fingertips: "
-                headingAfterBr="  a dedicated career "
-                headingAfterBrmore="coach"
+                heading="At your fingertips : "
+                headingAfterBr="   "
+                spanHead="  a dedicated career coach"
+                headingAfterBrmore=""
                 paragraph="Lorem ipsum dolor sit amet in quis, consectetur eros adipiscing et elit. Suspendisse varius enim in eros elementum tristique. Duis cursus,"
                 btn={false}
                 btnText=""
                 shiftRow={true}
                 listData={["Professional Sports", "Automotive", "Construction", "Technology", "Healthcare", "E-Commerce", "Hospitality", "Finance", "Real Estate", "Retail", "Education", "Legal"]}
-            />
+            /> */}
 
             <SectionComponent
                 flexdirection="row-reverse"
@@ -58,7 +59,7 @@ const TechMentorshipPage = () => {
                 button="Learn More"
                 background="#131313" /> */}
 
-            <QuestionAnswer />
+            {/* <QuestionAnswer /> */}
             <ConnectPopup />
         </div>
     )

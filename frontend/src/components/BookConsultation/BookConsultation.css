@@ -1,13 +1,11 @@
 .consultation-container {
     background-color: #181818;
     color: white;
-    /* padding: 30px; */
     font-family: Arial, sans-serif;
-    padding: 5vh 0vh;
+    padding: 5vh 0;
 }
 
-
-
+/* Main heading styling */
 .consultation-container .head-h1 {
     font: normal normal bold 80px/50px Open Sans;
     text-align: center;
@@ -21,19 +19,20 @@
 
 .consultation-container .para_main {
     text-align: center;
+    padding: 0 15px;
+    /* Add padding for better readability on small screens */
 }
-
 
 .header-section .highlight {
     color: #00FF00;
 }
 
+/* Flexbox layout for calendar and time slots */
 .calendar-time-container {
     display: flex;
     justify-content: center;
     margin-top: 40px;
     gap: 20px;
-
 }
 
 .calendar-section,
@@ -58,6 +57,7 @@
     cursor: pointer;
 }
 
+/* Calendar styling */
 .calendar {
     width: 100%;
     margin-top: 20px;
@@ -68,8 +68,6 @@
 .calendar td {
     padding: 6px 16px;
     border: none;
-
-
 }
 
 .highlight-day {
@@ -82,9 +80,11 @@
     font: normal normal 600 20px/30px Open Sans;
 }
 
+/* Grid layout for time slots */
 .timeslots {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    /* 3 columns by default */
     gap: 10px;
     text-align: center;
 }
@@ -98,7 +98,6 @@
     transition: background-color 0.2s;
     text-align: center;
     width: 150px;
-    /* Set a fixed width or adjust as needed */
 }
 
 .timeslot:hover {
@@ -111,4 +110,112 @@
     color: black;
     text-align: center;
     border-radius: 7px;
+}
+
+/* Responsive styles */
+
+/* Large screen adjustments */
+@media (max-width: 1200px) {
+    .consultation-container .head-h1 {
+        font-size: 60px;
+        line-height: 1.2;
+    }
+
+    .calendar-time-container {
+        flex-direction: column;
+        /* Stack calendar and time slots vertically */
+        gap: 40px;
+        /* Add more spacing between the sections */
+    }
+
+    .timeslots {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 columns for larger tablets */
+    }
+
+    .calendar-section,
+    .timeslots-section {
+        padding: 40px;
+    }
+}
+
+/* Tablet adjustments */
+@media (max-width: 992px) {
+    .consultation-container .head-h1 {
+        font-size: 50px;
+    }
+
+    .consultation-container .head-h2 {
+        font-size: 24px;
+    }
+
+    .calendar-time-container {
+        flex-direction: column;
+    }
+
+    .calendar-section,
+    .timeslots-section {
+        padding: 30px;
+    }
+
+    .timeslots {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 columns on tablets */
+    }
+
+    .timeslot {
+        width: auto;
+        /* Remove fixed width to adapt to container size */
+    }
+
+    .consultation-container .spanHead {
+        font: normal normal bold 50px/50px Open Sans;
+        text-align: center;
+    }
+
+    .calendar th,
+    .calendar td {
+        padding: 1px 0px;
+        border: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .consultation-container .head-h1 {
+        font-size: 40px;
+        line-height: 1.1;
+    }
+
+    .consultation-container .head-h2 {
+        font-size: 20px;
+    }
+
+    .para_main {
+        font-size: 14px;
+        padding: 0 15px;
+        /* Add padding for mobile readability */
+    }
+
+    .calendar-time-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .calendar-section,
+    .timeslots-section {
+        padding: 10px 4px;
+        margin-bottom: 20px;
+
+    }
+
+    .timeslots {
+        grid-template-columns: repeat(1, 1fr);
+        /* 1 column on mobile */
+    }
+
+    .timeslot {
+        width: 100%;
+
+
+    }
 }

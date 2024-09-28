@@ -9,7 +9,8 @@ import ConnectPopup from '../components/OurTestimonials/ConnectPopup';
 import ConsultationServices from '../components/ConsultationServices/ConsultationServices'
 import HomeGallery from '../components/HomeGallerySection/HomeGallery'
 import DesignGrids from '../components/DesignGrids/DesignGrids'
-import SectionComponent from '../components/SectionComponent/SectionComponent'
+import SectionComponent from '../components/SectionComponent/SectionComponent';
+import DigitalServices from "../components/360 Digital Services/DigitalServices";
 
 const HomePage = () => {
   return (
@@ -35,6 +36,7 @@ const HomePage = () => {
 
 
       <DesignGrids />
+      <DigitalServices />
 
       {/* <WhatWe  Heading="WHAT " heading="HOME STAGING" Para="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, Pellentesque habitant morbi tristique senectus et netus et malesuada fames something turpis egestas making better molestie. Nunc egestas erat lacus, vitae eleifend nisi eleifend making something realy good" homeTitle="" button="READ MORE" image="/images/creatives/slider-home--staging.png"
         shadeHeading="WE DO"

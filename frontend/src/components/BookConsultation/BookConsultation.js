@@ -26,7 +26,7 @@ const BookConsultation = () => {
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td></td><td></td><td className="highlight-day">1</td><td>2</td><td>3</td><td>4</td><td>5</td>
+                                    <td></td><td></td><td className="">1</td><td>2</td><td>3</td><td>4</td><td>5</td>
                                 </tr>
                                 <tr>
                                     <td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td>
@@ -49,18 +49,10 @@ const BookConsultation = () => {
                         <div className="timeslots">
                             <button className="timeslot highlight d-flex flex-column">2:00 PM <span>3:00 PM</span></button>
                             <button className="timeslot d-flex flex-column">3:00 PM <span>4:00 PM</span></button>
-                            <button className="timeslot  d-flex flex-column">4:00 PM <span>5:00 PM</span></button>
-                            <button className="timeslot  d-flex flex-column">5:00 PM <span>6:00 PM</span></button>
-                            <button className="timeslot  d-flex flex-column">6:00 PM <span>7:00 PM</span></button>
-                            <button className="timeslot  d-flex flex-column">7:00 PM <span>8:00 PM</span></button>
-
-                            {/* <button className="timeslot">4:00 PM</button>
-                            <button className="timeslot">5:00 PM</button>
-                            <button className="timeslot">6:00 PM</button>
-                            <button className="timeslot">7:00 PM</button>
-                            <button className="timeslot">8:00 PM</button>
-                            <button className="timeslot">9:00 PM</button>
-                            <button className="timeslot">10:00 PM</button> */}
+                            <button className="timeslot d-flex flex-column">4:00 PM <span>5:00 PM</span></button>
+                            <button className="timeslot d-flex flex-column">5:00 PM <span>6:00 PM</span></button>
+                            <button className="timeslot d-flex flex-column">6:00 PM <span>7:00 PM</span></button>
+                            <button className="timeslot d-flex flex-column">7:00 PM <span>8:00 PM</span></button>
                         </div>
                     </div>
                 </div>

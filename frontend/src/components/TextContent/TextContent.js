@@ -25,6 +25,7 @@ function TextContent({
   headingAfterBr = "",
   headingAfterBrmore = "",
   headingYellow,
+  spanHead,
   paragraph,
   btn = false,
   btnText,
@@ -50,8 +51,9 @@ function TextContent({
             </div>
             <div className='text-content col-lg-6 text-center text-lg-start'>
               {subHeading && <h6 className='color-red sub-heading mb-3'>{subHeading} <span className='d-lg-inline d-none'>_____</span></h6>}
-              <h3 className='font-bebus body-heading'>
+              <h3 className='font-bebus head-h1'>
                 {heading}<br className='d-none'></br>
+                <span className='spanHead'>{spanHead}</span>
                 {headingAfterBr}{headingYellow && <span className='color-yellow'>{headingYellow}</span>}
                 <br></br>
                 {headingAfterBrmore}{headingYellow && <span className='color-yellow'>{headingYellow}</span>}
@@ -86,7 +88,7 @@ function TextContent({
                 <div>
                   <div className='d-flex gap-3 align-items-center founder-div'>
                     {/* <img src='/images/creatives/Taha-Sheikh.jfif' alt='person' className='' /> */}
-                    <img src={imgg} alt='person' className='' style={{width: "100px"}}/>
+                    <img src={imgg} alt='person' className='' style={{ width: "100px" }} />
                     <div>
                       <p className='sub-heading color-red mb-0'>{title}</p>
                       <p className='body-paragraph mb-3'>{designation}</p>

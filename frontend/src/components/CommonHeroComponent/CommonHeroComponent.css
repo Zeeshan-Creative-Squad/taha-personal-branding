@@ -80,7 +80,14 @@
 
 @media (max-width: 768px) {
   .Common-Hero-content .head-h1 {
-    /* font-size: 50px; */
+    font-size: 50px;
+  }
+
+  .common-hero .spanHead {
+    font: normal normal bold 50px/89px Open Sans;
+    letter-spacing: -4.16px;
+    opacity: 1;
+    color: #ACF96D;
   }
 
   .Common-Hero-content .para_main {
