@@ -13,29 +13,30 @@ const TechMentorshipPage = () => {
     return (
         <div>
             <CommonHeroComponent
-                Heading="Tech Mentorship "
-                spanHead=" & Career Guidance"
+                Heading="Tech Mentorship & "
+                spanHead=" Career Guidance"
                 Para="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim urna porttitor neque elementum cursus. Bibendum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim urna porttitor neque elementum cursus. Bibendum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim urna porttitor neque elementum cursus. Bibendum."
                 padding="2vh 0vh"
             />
+            <TechMentorshipCards />
 
             <BookConsultation />
             <PaymentForm />
 
-            <TechMentorshipCards />
-            {/* <TextContent
-                img="/images/creatives/home-text-2.png"
+
+            <TextContent
                 subHeading=""
                 heading="At your fingertips : "
                 headingAfterBr="   "
                 spanHead="  a dedicated career coach"
+                img="/images/creatives/about-banner-boy.png"
                 headingAfterBrmore=""
                 paragraph="Lorem ipsum dolor sit amet in quis, consectetur eros adipiscing et elit. Suspendisse varius enim in eros elementum tristique. Duis cursus,"
                 btn={false}
                 btnText=""
-                shiftRow={true}
+                shiftRow={false}
                 listData={["Professional Sports", "Automotive", "Construction", "Technology", "Healthcare", "E-Commerce", "Hospitality", "Finance", "Real Estate", "Retail", "Education", "Legal"]}
-            /> */}
+            />
 
             <SectionComponent
                 flexdirection="row-reverse"

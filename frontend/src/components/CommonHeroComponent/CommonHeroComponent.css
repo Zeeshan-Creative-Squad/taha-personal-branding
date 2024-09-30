@@ -20,7 +20,7 @@
 .Common-Hero-content {
   color: rgb(0, 0, 0);
   max-width: 1200px;
-  margin-top: 80px;
+  padding: 14vh 0vh 0vh 0vh;
 }
 
 .common-hero .ads-hero-content {
@@ -65,6 +65,7 @@
 
 .Common-Hero-content .head-h1 {
   font: normal normal bold 80px/89px Open Sans;
+  padding: 0vh 15vh;
 }
 
 .Common-Hero-content .h1_main {
@@ -81,6 +82,7 @@
 @media (max-width: 768px) {
   .Common-Hero-content .head-h1 {
     font-size: 50px;
+    padding: 0vh 0vh;
   }
 
   .common-hero .spanHead {

@@ -44,8 +44,8 @@ function TextContent({
         style={transparentBg ? { backgroundColor: "transparent" } : { backgroundColor: "#101010" }}
       >
         <div className='my-4'>
-          <div className={`main row align-items-center gy-3 ${shiftRow && "flex-row-reverse"}`}>
-            <div className='img-container col-lg-6 px-4'>
+          <div className={`row row-class align-items-center gy-3 ${shiftRow && "flex-row-reverse"}`}>
+            <div className='img-container col-lg-6 px-5'>
               <img src={img} className='img-fluid' alt='text content ' />
               {/* <img src={imgg} className='img-fluid imgg-style' alt='text content ' /> */}
             </div>
@@ -69,7 +69,7 @@ function TextContent({
                   {listData.map((ele) => {
                     return (
                       <div className='col-lg-6 '>
-                        <div class="d-flex align-items-center my-2 icon-list gap-2 " ><img src="/images/icons/list-card-bullets.png" alt="icon" class="list-bullet d-lg-block d-none" /><p class="body-paragraph my-0 list-para">{ele}</p></div>
+                        <div class="d-flex align-items-center my-2 icon-list gap-2 " ><img src="/images/icons/green-bullet.png" alt="icon" class="list-bullet d-lg-block d-none" /><p class="body-paragraph my-0 list-para">{ele}</p></div>
                       </div>
                     )
                   })}

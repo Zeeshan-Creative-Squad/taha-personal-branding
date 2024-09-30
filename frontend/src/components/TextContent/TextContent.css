@@ -21,6 +21,8 @@
 .TextContent-container .list-bullet {
     margin: 0;
     margin-right: 5px;
+    width: 24px;
+    height: 24px;
 }
 
 .TextContent-container .body-heading {
@@ -37,6 +39,16 @@
     .TextContent-container {
         padding-top: 3rem;
         padding-bottom: 3rem;
+    }
+
+    .TextContent-container .row-class {
+        flex-direction: row-reverse;
+    }
+    .TextContent-container .head-h1 {
+        font: normal normal bold 50px/88px Open Sans;
+    }
+    .TextContent-container .spanHead {
+        font: normal normal bold 50px/88px Open Sans;
     }
 
     .TextContent-container .imgg-style {
