@@ -3,11 +3,9 @@ import VisionAndMission from '../components/VisionAndMission/VisionAndMission'
 import CardTestimonial from '../components/OurServices/CardBoxServicesSection'
 import Homehero from '../components/HomeHero/HomeHero'
 import ProjectsDone from '../components/ProjectsDones/ProjectsDone'
-import OurProcess from '../components/OurProcess/OurProcess';
 import Sponsor from '../components/Sponsor/Sponsor';
 import ConnectPopup from '../components/OurTestimonials/ConnectPopup';
 import ConsultationServices from '../components/ConsultationServices/ConsultationServices'
-import HomeGallery from '../components/HomeGallerySection/HomeGallery'
 import DesignGrids from '../components/DesignGrids/DesignGrids'
 import SectionComponent from '../components/SectionComponent/SectionComponent';
 import DigitalServices from "../components/360 Digital Services/DigitalServices";
@@ -52,7 +50,7 @@ const HomePage = () => {
         button="Learn more" />
       {/* <HappyCustomer /> */}
 
-      {/* <ConnectPopup /> */}
+      <ConnectPopup />
 
 
 

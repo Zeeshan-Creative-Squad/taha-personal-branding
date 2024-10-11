@@ -82,49 +82,49 @@ const DigitalServices = ({ paddingTop, paddingBottom }) => (
       <p className="para_main text-center">Lorem Ipsum has been the printer took a galley of type and scrambled survived not only five finance software has love the financial haveing on centuries Lorem Ipsum has been the rinter took a galley of type and scrambled survived not only ive finance software has love the financial haveing on centuries</p>
       <div className="row text-center justify-content-center row gx-lg-4 g-3 pt-2 mb-0 gy-4 what-people-say-container">
 
-      <Swiper
-  slidesPerView={3}
-  pagination={{ clickable: true }}
-  autoplay={{ delay: 2500, disableOnInteraction: false }}
-  loop={true}
-  modules={[Autoplay, Pagination]}
-  observer={true}
-  observeParents={true}
-  parallax={true}
-  breakpoints={{
-    // Mobile: Small screens (phones)
-    320: {
-      slidesPerView: 1,
-    },
-    // Tablets in portrait mode
-    640: {
-      slidesPerView: 1,
-    },
-    // Tablets in landscape mode
-    768: {
-      slidesPerView: 2,
-    },
-    // Larger tablets or smaller laptops
-    1024: {
-      slidesPerView: 3,
-    },
-    // Desktops or larger screens
-    1300: {
-      slidesPerView: 3,
-    },
-  }}
->
-  {cardData.map((ele, index) => (
-    <SwiperSlide key={index} className='services-card-content'>
-      <ServiceCardBox
-        img={ele.img}
-        title={ele.title}
-        content={ele.content}
-        link={ele.link}
-      />
-    </SwiperSlide>
-  ))}
-</Swiper>
+        <Swiper
+          slidesPerView={3}
+          pagination={{ clickable: true }}
+          autoplay={{ delay: 2500, disableOnInteraction: false }}
+          loop={true}
+          modules={[Autoplay, Pagination]}
+          observer={true}
+          observeParents={true}
+          parallax={true}
+          breakpoints={{
+            // Mobile: Small screens (phones)
+            320: {
+              slidesPerView: 1,
+            },
+            // Tablets in portrait mode
+            640: {
+              slidesPerView: 1,
+            },
+            // Tablets in landscape mode
+            768: {
+              slidesPerView: 2,
+            },
+            // Larger tablets or smaller laptops
+            1024: {
+              slidesPerView: 3,
+            },
+            // Desktops or larger screens
+            1300: {
+              slidesPerView: 3,
+            },
+          }}
+        >
+          {cardData.map((ele, index) => (
+            <SwiperSlide key={index} className='services-card-content'>
+              <ServiceCardBox
+                img={ele.img}
+                title={ele.title}
+                content={ele.content}
+                link={ele.link}
+              />
+            </SwiperSlide>
+          ))}
+        </Swiper>
 
         {/* <ServiceItem
           navlink={Links1}

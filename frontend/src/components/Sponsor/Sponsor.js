@@ -49,6 +49,27 @@ function Sponsor({ offOnSlide }) {
             <SwiperSlide>
               <img src="/images/creatives/sponsor.png" alt="sponsor icon" />
             </SwiperSlide>
+            <SwiperSlide>
+              <img src="/images/creatives/sponsor.png" alt="sponsor icon" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src="/images/creatives/sponsor.png" alt="sponsor icon" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src="/images/creatives/sponsor.png" alt="sponsor icon" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src="/images/creatives/sponsor.png" alt="sponsor icon" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src="/images/creatives/sponsor.png" alt="sponsor icon" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src="/images/creatives/sponsor.png" alt="sponsor icon" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src="/images/creatives/sponsor.png" alt="sponsor icon" />
+            </SwiperSlide>
 
           </Swiper>
         </div>

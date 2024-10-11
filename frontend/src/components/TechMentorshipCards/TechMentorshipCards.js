@@ -81,7 +81,6 @@ function TechMentorshipCards() {
                         })
                     }
                 </div>
-
             </div>
         </div>
     )
