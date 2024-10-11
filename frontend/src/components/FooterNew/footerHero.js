@@ -54,9 +54,7 @@ const footerHero = () => {
               <li>
                 <Link to={"/about"}>About</Link>
               </li>
-              <li>
-                <Link to={"/barber-razors"}>Gallery</Link>
-              </li>
+             
               <li>
                 <Link to={"/news"}>Blogs</Link>
               </li>

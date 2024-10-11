@@ -8,7 +8,7 @@ const BlogsHero = () => {
       <div className="container">
         <div className="row align-items-center home-hero">
           <div className="col-lg-6">
-            <div className="Homehero-content">
+            <div className="Bloghero-content">
               <h3 className="spanHead">LATEST BLOG</h3>
               <h1 className="head-h1">
                 Resources and tips for your business.

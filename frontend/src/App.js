@@ -26,6 +26,8 @@ import ContactFormPage from "./screens/ContactFormPage";
 import TechMentorshipPage from "./screens/TechMentorshipPage";
 import BlogsPage from "./screens/BlogsPage";
 import BloginnerPage from "./screens/BlogInnerPage";
+import PrivacyPolicyPage from "./screens/PrivacyPolicyPage";
+import RefundPolicyPage from "./screens/RefundPolicyPage";
 
 const App = () => {
 
@@ -46,6 +48,8 @@ const App = () => {
         <Route path="/blogs-inner" element={<BloginnerPage />} />
         {/* <Route path="/blogs" element={<Blogs />} /> */}
         <Route path="/contact" element={<ContactFormPage />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
+        <Route path="/refund-policy" element={<RefundPolicyPage />} />
 
         <Route path="/admin" element={<AdminScreen />} />
         <Route path="/admin/blogs" element={<BlogsScreen />} />
