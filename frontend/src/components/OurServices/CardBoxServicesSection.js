@@ -119,7 +119,7 @@ function CardTestimonial({
               </div>
             </div>
           ))}
-          <button className="connect-button w-100">{button}</button>
+          <button onClick={() => navigate("/blogs-inner")} className="connect-button w-100">{button}</button>
         </div>
       </div>
     </div>
