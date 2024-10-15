@@ -95,9 +95,9 @@
 }
 
 .section-container .connect-button {
-  
+
     text-decoration: none;
-   
+
 }
 
 .section-container .bluepara {
@@ -116,7 +116,15 @@
 
 .section-container .head-bg {}
 
+
+
 /* Media Queries for Responsive Design */
+/* @media (max-width: 1280px) {
+    .section-container .large-img {
+        width: 100%;
+        padding: 20vh 0vh 0vh 0vh;
+    }
+} */
 
 /* Tablets and below */
 @media (max-width: 992px) {
