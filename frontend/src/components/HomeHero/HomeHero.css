@@ -173,7 +173,7 @@
 @media (max-width: 1024px) {
     .home-hero {
         height: auto;
-        flex-direction: row-reverse;
+        /* flex-direction: row-reverse; */
     }
 
     .home-hero .Homehero-content {
@@ -182,21 +182,21 @@
 
     .Homehero-content .head-h1 {
         font-size: 2.5em;
-        text-align: center;
+
         padding: 0px;
     }
 
     .Homehero-content .para_main {
         width: 100%;
-        text-align: center;
+
     }
 
     .home-hero .social-media-icons {
-        justify-content: center;
+        /* justify-content: center; */
     }
 
     .home-hero .banner-img {
-        width: 100%;
+        width: 55%;
         margin: 0 auto;
         transform: translateY(-0px);
         padding: 2vh 0vh;
@@ -206,7 +206,7 @@
         display: flex;
         align-items: center;
         gap: 28px;
-        justify-content: center;
+
     }
 }
 

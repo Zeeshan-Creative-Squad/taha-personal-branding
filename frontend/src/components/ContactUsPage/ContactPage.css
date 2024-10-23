@@ -175,6 +175,25 @@
     }
 }
 
+@media (max-width: 1024px) {
+    .contact-wrapper .contact-details .contact-item {
+        background-color: #222;
+        padding: 37px 40px;
+        width: 330px;
+        border-radius: 30px;
+        margin-bottom: 20px;
+    }
+
+    .contact-wrapper .contact-form {
+        flex: 0 0 62%;
+        background-color: #222;
+        padding: 45px;
+        border-radius: 28px;
+        height: 570px;
+    }
+
+}
+
 /* For tablets (768px and below) */
 @media (max-width: 768px) {
     .contact-wrapper {

@@ -73,7 +73,7 @@ const footerHero = () => {
                 <a href="#">License agreement</a>
               </li>
               <li>
-                <a href="#">Privacy policy</a>
+                <Link to={"/privacy-policy"}>Privacy Policy</Link>
               </li>
               <li>
                 <a href="#">Cookies policy</a>
@@ -90,7 +90,7 @@ const footerHero = () => {
                 className="contact-icon"
               />
               <a href="mailto:sales@hbcarecanada.com" className="contact-link">
-                sales@hbcarecanada.com
+                taha@gmail.com
               </a>
             </p>
             <p className="specific-paragraph">
