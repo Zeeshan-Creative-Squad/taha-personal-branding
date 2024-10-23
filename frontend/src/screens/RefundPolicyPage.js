@@ -3,10 +3,7 @@ import RefundPolicy from '../components/RefundPolicy/RefundPolicy'
 
 const RefundPolicyPage = () => {
   return (
-
-          <RefundPolicy />
-      
-
+    <RefundPolicy />
   )
 }
 

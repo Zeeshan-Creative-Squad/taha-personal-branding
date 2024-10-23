@@ -8,6 +8,7 @@
   text-align: left;
   /* Center text */
   background-color: #131313;
+  padding: 13vh 0vh 0vh 0vh;
 }
 
 .Privacy-Policy .text-center {
@@ -18,10 +19,11 @@
 .Privacy-Policy .body-heading {
   text-align: left;
   font-size: 30px;
+  color: #ACF96D;
 }
 
 .Privacy-Policy .body-paragraph {
-  text-align: left;
+ 
 }
 
 .Privacy-Policy .main {

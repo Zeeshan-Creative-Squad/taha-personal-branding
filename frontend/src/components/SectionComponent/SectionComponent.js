@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './SectionComponent.css';
 
-
 const SectionComponent = (props) => {
     let linkTo = '#';
 
@@ -23,9 +22,8 @@ const SectionComponent = (props) => {
             linkTo = '/blog';
             break;
         default:
-            linkTo = '#'; // Default case
+            linkTo = '#'; 
     }
-
     return (
         <div className="section-container" style={{ background: props.background, padding: props.padding }}>
             <div className='container'>

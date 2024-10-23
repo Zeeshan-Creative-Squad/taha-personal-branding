@@ -3,9 +3,7 @@ import PrivacyPolicy from '../components/Privacy/PrivacyPolicy';
 
 function PrivacyPolicyPage() {
   return (
-   
-        <PrivacyPolicy/>
-  
+    <PrivacyPolicy />
   )
 }
 

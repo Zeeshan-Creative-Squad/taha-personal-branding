@@ -193,12 +193,12 @@ export const blogContent = [
     helmet: (
       <Helmet>
 
-<title>Boost Your HVAC Company's Search Engine Rank with SEO Strategies</title>
-<meta name="keywords" content="HVAC Company's Search Engine Rank with SEO Strategies"></meta>
-<link rel="canonical" href="https://www.creativesquad.ca/blogs/how-to-improve-your-hvac-companys-search-engine-rank-by-heating-up-your-seo-strategies"/>
-<meta name="description" content="Learn how to improve your HVAC company's search engine rank by heating up your SEO strategies. Get tips and tricks on how to optimize your website and content for better visibility and results."></meta>
+        <title>Boost Your HVAC Company's Search Engine Rank with SEO Strategies</title>
+        <meta name="keywords" content="HVAC Company's Search Engine Rank with SEO Strategies"></meta>
+        <link rel="canonical" href="https://www.creativesquad.ca/blogs/how-to-improve-your-hvac-companys-search-engine-rank-by-heating-up-your-seo-strategies" />
+        <meta name="description" content="Learn how to improve your HVAC company's search engine rank by heating up your SEO strategies. Get tips and tricks on how to optimize your website and content for better visibility and results."></meta>
 
-    </Helmet>
+      </Helmet>
     ),
     img: "https://th.bing.com/th/id/OIP.apiGjkHhW8FIby4pG4lqJQHaEJ?pid=ImgDet&rs=1",
     category: "Search Engine Optimization",
@@ -329,10 +329,10 @@ export const blogContent = [
       <Helmet>
 
         <title>Search Engine Optimization & Search Engine Marketing Trends 2023</title>
-<meta name="keywords" content="Search Engine Optimization & Search Engine Marketing Trends 2023"></meta>
-<link rel="canonical" href="https://www.creativesquad.ca/blogs/search-engine-optimization-and-search-engine-marketing-trends-2023"/>
-<meta name="description" content="Stay up-to-date on the latest SEO and SEM trends in 2023. Learn the most effective strategies that will help you succeed in search engine optimization and marketing and keep you ahead of the competition."></meta>
-      
+        <meta name="keywords" content="Search Engine Optimization & Search Engine Marketing Trends 2023"></meta>
+        <link rel="canonical" href="https://www.creativesquad.ca/blogs/search-engine-optimization-and-search-engine-marketing-trends-2023" />
+        <meta name="description" content="Stay up-to-date on the latest SEO and SEM trends in 2023. Learn the most effective strategies that will help you succeed in search engine optimization and marketing and keep you ahead of the competition."></meta>
+
       </Helmet>
     ),
 
@@ -455,7 +455,7 @@ export const blogContent = [
   },
   {
     id: `building-your-social-media-marketing-strategy-for-2023`,
-    helmet:(<Helmet>
+    helmet: (<Helmet>
       <title>Building Your Social Media Marketing Strategy for 2023 </title>
       <meta name="description" content="Take your social media presence to the next level in 2023. Get the step-by-step guide on how to create a comprehensive social media marketing strategy that will generate leads and increase customer engagement." />
       <meta name="keywords" content="Social Media Marketing Strategy, 2023, Comprehensive, Generate Leads, Increase Customer Engagement" />
@@ -870,11 +870,11 @@ export const blogContent = [
   {
     id: `what-is-the-difference-between-motion-graphics-and-animation`,
     helmet: <Helmet>
-    <title>What is the Difference Between Motion Graphics and Animation?</title>
-    <meta name="description" content="Learn the differences between motion graphics and animation and how they can be used to create engaging visual content. Find out what makes them unique and how they can be used to bring your ideas to life." />
-    <meta name="keywords" content="Motion Graphics, Animation, Differences, Visual Content" />
-    <link rel="canonical" href="https://www.creativesquad.ca/blogs/what-is-the-difference-between-motion-graphics-and-animation" />
-  </Helmet>,
+      <title>What is the Difference Between Motion Graphics and Animation?</title>
+      <meta name="description" content="Learn the differences between motion graphics and animation and how they can be used to create engaging visual content. Find out what makes them unique and how they can be used to bring your ideas to life." />
+      <meta name="keywords" content="Motion Graphics, Animation, Differences, Visual Content" />
+      <link rel="canonical" href="https://www.creativesquad.ca/blogs/what-is-the-difference-between-motion-graphics-and-animation" />
+    </Helmet>,
 
     title: `What is the Difference Between
     Motion Graphics and Animation?`,

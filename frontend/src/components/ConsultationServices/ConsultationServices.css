@@ -1,12 +1,9 @@
-/* Container styling */
 .consultation-services {
   height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 70px 12px;
-  /* Adjust padding as needed */
-  /* background-color: #FFFFFF; */
 }
 
 /* Text styling */
@@ -160,7 +157,7 @@
 
   @media (max-width: 1600px) {
     .consultation-services .head-h1 {
-      font: normal normal bold 50px/88px Open Sans;
+      font: normal normal bold 50px/80px Open Sans;
       letter-spacing: -4.16px;
       color: #131313;
     }
@@ -169,4 +166,8 @@
   /* .consultation-services .card-custom {
     padding: 5px 12px;
   } */
+}
+
+@media (max-width: 1280px) {
+
 }

@@ -8,7 +8,7 @@ function Sponsor({ offOnSlide }) {
   return (
     <div className='sponsor-container standard-margin-space md-py-3 py-1 '>
       <div className='container'>
-        <div className='py-2 '></div>
+        <div className='py-3 '></div>
         <div className="companies-logo-box ">
           <Swiper
             spaceBetween={10}
@@ -70,7 +70,6 @@ function Sponsor({ offOnSlide }) {
             <SwiperSlide>
               <img src="/images/creatives/sponsor.png" alt="sponsor icon" />
             </SwiperSlide>
-
           </Swiper>
         </div>
         <div className='py-2'></div>

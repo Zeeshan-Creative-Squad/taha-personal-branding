@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './VisionAndMission.css';
 
-
 const VisionAndMission = (props) => {
   let linkTo = '#';
 
@@ -23,7 +22,7 @@ const VisionAndMission = (props) => {
       linkTo = '/blog';
       break;
     default:
-      linkTo = '#'; // Default case
+      linkTo = '#';
   }
 
   return (

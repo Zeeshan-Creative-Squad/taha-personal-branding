@@ -1,32 +1,29 @@
-.sponsor-container
-{
+.sponsor-container {
     border-radius: 80px;
-  margin-left: auto;
-  margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.sponsor-container .companies-logo-box .swiper-slide 
-{
+.sponsor-container .companies-logo-box .swiper-slide {
     display: flex;
     align-items: center;
     justify-content: center;
 }
- 
-.sponsor-container .companies-logo-box img{
+
+.sponsor-container .companies-logo-box img {
     max-height: 60px;
 }
 
-.sponsor-container .companies-logo-box .swiper{
+.sponsor-container .companies-logo-box .swiper {
 
     max-height: 60px;
 }
 
-@media(max-width:443px)
-{
-    .sponsor-container .companies-logo-box .hideOnNav{
-    
-       position: relative!important;
-       z-index: -1!important;
+@media(max-width:443px) {
+    .sponsor-container .companies-logo-box .hideOnNav {
+
+        position: relative !important;
+        z-index: -1 !important;
     }
-    
+
 }

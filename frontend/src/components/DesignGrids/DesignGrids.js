@@ -1,5 +1,5 @@
 import React from 'react';
-import './DesignGrids.css'; // Include your custom CSS file
+import './DesignGrids.css';
 
 const DesignGrids = () => {
     return (
@@ -10,7 +10,6 @@ const DesignGrids = () => {
             </div>
 
             <div className="row all-cards">
-                {/* Card 1 */}
                 <div className="col-md-6 col-sm-12 mb-4">
                     <div className="card custom-card">
                         <div className='design-images'>
@@ -30,7 +29,6 @@ const DesignGrids = () => {
                     </div>
                 </div>
 
-                {/* Card 2 */}
                 <div className="col-md-6 col-sm-12 mb-4">
                     <div className="card custom-card">
                         <div className='design-images'>

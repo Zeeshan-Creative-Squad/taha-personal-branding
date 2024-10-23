@@ -23,7 +23,6 @@
   margin-top: 50px;
   border-radius: 50px;
   padding: 0vh 1vh;
-
 }
 
 .logo {
@@ -260,5 +259,11 @@
 
   .mobileHeader {
     display: block;
+  }
+}
+
+@media (max-width: 1280px) {
+  .nav {
+    margin-top: 30px;
   }
 }

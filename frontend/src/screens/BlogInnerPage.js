@@ -1,11 +1,8 @@
 import React, { useState, useEffect } from 'react'
-import CommonHeroComponent from '../components/CommonHeroComponent/CommonHeroComponent';
-import Articles from '../components/NewsAndArticles/Articles';
 import BlogInner from '../components/BlogInnerSection/BlogInner';
 import CardTestimonial from '../components/OurServices/CardBoxServicesSection';
 import { useNavigate, useParams } from 'react-router-dom';
 import axios from 'axios';
-import { Spinner } from 'react-bootstrap';
 import BlogInnerHero from '../components/BlogInnerHeroComponent/BlogInnerHero';
 import ConnectPopup from '../components/OurTestimonials/ConnectPopup';
 
@@ -25,9 +22,7 @@ const BloginnerPage = () => {
   const getAllBlogs = async () => {
     if (allBlogsCalled) return;
     allBlogsCalled = true;
-
     setLoading(true);
-
     axios
       .get(`/blogs`, {})
       .then((res) => {

@@ -5,7 +5,6 @@
     padding: 5vh 0;
 }
 
-/* Main heading styling */
 .consultation-container .head-h1 {
     font: normal normal bold 80px/50px Open Sans;
     text-align: center;
@@ -20,14 +19,12 @@
 .consultation-container .para_main {
     text-align: center;
     padding: 0 15px;
-    /* Add padding for better readability on small screens */
 }
 
 .header-section .highlight {
     color: #00FF00;
 }
 
-/* Flexbox layout for calendar and time slots */
 .calendar-time-container {
     display: flex;
     justify-content: center;
@@ -57,7 +54,6 @@
     cursor: pointer;
 }
 
-/* Calendar styling */
 .calendar {
     width: 100%;
     margin-top: 20px;
@@ -80,11 +76,9 @@
     font: normal normal 600 20px/30px Open Sans;
 }
 
-/* Grid layout for time slots */
 .timeslots {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* 3 columns by default */
     gap: 10px;
     text-align: center;
 }
@@ -112,8 +106,6 @@
     border-radius: 7px;
 }
 
-/* Responsive styles */
-
 /* Large screen adjustments */
 @media (max-width: 1200px) {
     .consultation-container .head-h1 {
@@ -123,14 +115,11 @@
 
     .calendar-time-container {
         flex-direction: column;
-        /* Stack calendar and time slots vertically */
         gap: 40px;
-        /* Add more spacing between the sections */
     }
 
     .timeslots {
         grid-template-columns: repeat(2, 1fr);
-        /* 2 columns for larger tablets */
     }
 
     .calendar-section,
@@ -160,12 +149,10 @@
 
     .timeslots {
         grid-template-columns: repeat(2, 1fr);
-        /* 2 columns on tablets */
     }
 
     .timeslot {
         width: auto;
-        /* Remove fixed width to adapt to container size */
     }
 
     .consultation-container .spanHead {
@@ -193,7 +180,6 @@
     .para_main {
         font-size: 14px;
         padding: 0 0px;
-        /* Add padding for mobile readability */
     }
 
     .calendar-time-container {
@@ -205,17 +191,13 @@
     .timeslots-section {
         padding: 10px 4px;
         margin-bottom: 20px;
-
     }
 
     .timeslots {
         grid-template-columns: repeat(1, 1fr);
-        /* 1 column on mobile */
     }
 
     .timeslot {
         width: 100%;
-
-
     }
 }

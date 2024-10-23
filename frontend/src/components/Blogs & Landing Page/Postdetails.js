@@ -4,7 +4,7 @@ import HeroBanner from "../HeroBanner/HeroBanner";
 import NavbarCS from "../HeroMenu/NavbarCS";
 import Footer from "../Footer_/Footer";
 import BlogDetailView from "./BlogDetailView";
-import PopularBlogs from "./PopularBlogs"; 
+import PopularBlogs from "./PopularBlogs";
 import axios from "axios";
 import { Spinner } from "react-bootstrap";
 
@@ -12,9 +12,9 @@ const Postdetails = () => {
   const [blogsData, setBlogsData] = useState({})
   const [popularBlogs, setPopularBlogs] = useState([])
 
-  const [loading, setLoading] = useState(true) 
+  const [loading, setLoading] = useState(true)
 
-  const {id} = useParams();
+  const { id } = useParams();
 
   let blogAPICalledId = false
   let allBlogsCalled = false
@@ -26,12 +26,12 @@ const Postdetails = () => {
   }
 
 
-  const getAllBlogs = async() => {
-    if(allBlogsCalled) return;
-      allBlogsCalled = true;
-   
-      setLoading(true)
-      axios.get(`/blogs`, {})
+  const getAllBlogs = async () => {
+    if (allBlogsCalled) return;
+    allBlogsCalled = true;
+
+    setLoading(true)
+    axios.get(`/blogs`, {})
       .then((res) => {
         if (res.data.status === "success") {
           let slug = convertToOriginalFormat(id);
@@ -42,35 +42,35 @@ const Postdetails = () => {
           res.data.data.forEach((item) => {
             Popular_blogs_data.push({
               blog_id: item.blog_id,
-              heading: item.title,  
+              heading: item.title,
               slug_url: item.slug_url,
-              creative: item.blog_image, 
-              date: item.published_date,  
+              creative: item.blog_image,
+              date: item.published_date,
             })
           })
-          setPopularBlogs(Popular_blogs_data);  
+          setPopularBlogs(Popular_blogs_data);
           setLoading(false)
         }
-      }).catch((err) => { 
+      }).catch((err) => {
         console.log(err)
-        setLoading(false) 
+        setLoading(false)
       })
-    }
+  }
 
   useEffect(() => {
     // getBlogById()
-    getAllBlogs() 
+    getAllBlogs()
   }, [id]);
-  
 
-  const DetailModuleBlogs = () =>{ 
+
+  const DetailModuleBlogs = () => {
     return (
       <Fragment>
-        <NavbarCS /> 
-        <HeroBanner 
-          title={blogsData.title} 
-          btnReq={false} 
-          txtCenter={true} 
+        <NavbarCS />
+        <HeroBanner
+          title={blogsData.title}
+          btnReq={false}
+          txtCenter={true}
         />
         <BlogDetailView blog={blogsData} />
         <PopularBlogs popularBlogs={popularBlogs} />
@@ -80,8 +80,8 @@ const Postdetails = () => {
   }
 
   return (
-    <Fragment> {loading ? <div className='spinner-styles'> <Spinner style={{color: '#85329A', width: '120px', height: '120px'}} /> </div> : DetailModuleBlogs()} </Fragment>
-    ) 
+    <Fragment> {loading ? <div className='spinner-styles'> <Spinner style={{ color: '#85329A', width: '120px', height: '120px' }} /> </div> : DetailModuleBlogs()} </Fragment>
+  )
 };
 
 export default Postdetails; 

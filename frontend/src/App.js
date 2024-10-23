@@ -4,12 +4,9 @@ import {
   Route,
   Navigate,
 } from "react-router-dom";
-import { useSelector } from "react-redux";
-import { Fragment } from "react";
 import HomePage from "./screens/HomePage";
 import Navbar from "./components/Header/Navbar";
 import Footer from "./components/FooterNew/footerHero"
-import ContactPage from './components/ContactUsPage/ContactPage';
 import AboutPage from "./screens/AboutPage";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 import Services from "./screens/Services";
@@ -36,7 +33,6 @@ const App = () => {
       <ScrollToTop />
       <Navbar />
       <Routes>
-
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/services" element={<Services />} />
@@ -50,6 +46,7 @@ const App = () => {
         <Route path="/contact" element={<ContactFormPage />} />
         <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
         <Route path="/refund-policy" element={<RefundPolicyPage />} />
+
 
         <Route path="/admin" element={<AdminScreen />} />
         <Route path="/admin/blogs" element={<BlogsScreen />} />

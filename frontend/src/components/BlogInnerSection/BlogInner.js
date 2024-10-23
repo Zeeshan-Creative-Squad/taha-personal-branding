@@ -6,17 +6,6 @@ function BlogInner({ text, blogContent, date, Heading }) {
     <>
       <div className="main-section-container">
         <div className="container">
-          {/* <div className="main-heading">
-      <div className='card-icon-text d-flex'>
-          <img src='/images/icons/schedule-icon.svg' alt='icon' className='cards-some-icon img-fluid'/>
-          <p className='text-for-box'>{date}</p>
-
-          <img src='/images/icons/profile-icon.svg' alt='icon' className='cards-some-icon img-fluid'/>
-          <p className='text-for-box'>{Heading}</p>
-        </div>
-        <h1 className='head-h2'>INTERIOR DESIGN TRENDS IN 2016</h1>
-      </div> */}
-
           <div className="case-study-inner-section">
             <div className="Heading-stuff mt-4">
               <h1 className="head-h1">Building an experience</h1>

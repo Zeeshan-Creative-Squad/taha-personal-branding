@@ -5,33 +5,33 @@ function PrivacyPolicy() {
   return (
 
     <div className='Privacy-Policy d-flex flex-column'>
-      <div className='container d-flex flex-column justify-content-center align-items-center h-100'>
+      <div className='container h-100'>
         <div className='row align-items-center gy-4'>
-          <div className='col-lg-6 text-center'>
-            <div className='text-content'>
-              <h1 className='body-heading my-5'>
+          <div className='col-lg-12'>
+            <div className=''>
+              <h1 className='body-heading my-5' style={{ color: "#ACF96D" }}>
                 Privacy <span className='color-yellow'>Policy</span>
               </h1>
-              <p className='body-paragraph main'>
+              <p className='body-paragraph' style={{ color: "#ACF96D" }}>
                 Last updated: May 28, 2024
               </p>
-              <p className='para'>
+              <p className='para_main'>
                 This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.
                 We use Your Personal data to provide and improve the Service. By using the Service, You agree to the collection and use of information in accordance with this Privacy Policy.
 
               </p>
-              <h2 className='body-heading my-4'>
+              <h2 className='body-heading my-4' style={{ color: "#ACF96D" }}>
                 Interpretation and Definitions
               </h2>
-              <p className='body-paragraph main'>
+              <p className='body-paragraph' style={{ color: "#ACF96D" }}>
                 Interpretation
 
               </p>
-              <p className='para'>
+              <p className='para_main'>
                 The words of which the initial letter is capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural.
 
               </p>
-              <p className='body-paragraph main'>
+              <p className='body-paragraph' style={{ color: "#ACF96D" }}>
                 Definitions
               </p>
               <p className='body-paragraph'>For the purposes of this Privacy Policy:</p>
@@ -54,10 +54,10 @@ function PrivacyPolicy() {
                 Collecting and Using Your Personal Data
               </h2>
 
-              <p className='body-paragraph main'>
+              <p className='body-paragraph'>
                 Types of Data Collected
               </p>
-              <p className='body-paragraph main'>
+              <p className='body-paragraph'>
                 Personal Data
               </p>
 
@@ -68,7 +68,7 @@ function PrivacyPolicy() {
                 Usage Data<br></br>
               </p>
 
-              <p className='body-paragraph main'>
+              <p className='body-heading'>
                 Usage Data
               </p>
 
@@ -78,7 +78,7 @@ function PrivacyPolicy() {
                 We may also collect information that Your browser sends whenever You visit our Service or when You access the Service by or through a mobile device.
               </p>
 
-              <p className='body-paragraph main'>
+              <p className='body-paragraph'>
                 Information from Third-Party Social Media Services
               </p>
               <p className='body-paragraph'>The Company allows You to create an account and log in to use the Service through the following Third-party Social Media Services:<br></br>
@@ -90,19 +90,19 @@ function PrivacyPolicy() {
                 If You decide to register through or otherwise grant us access to a Third-Party Social Media Service, We may collect Personal data that is already associated with Your Third-Party Social Media Service's account, such as Your name, Your email address, Your activities or Your contact list associated with that account.<br></br>
                 You may also have the option of sharing additional information with the Company through Your Third-Party Social Media Service's account. If You choose to provide such information and Personal Data, during registration or otherwise, You are giving the Company permission to use, share, and store it in a manner consistent with this Privacy Policy.
               </p>
-              <p className='body-paragraph main'>
+              <p className='body-heading'>
                 Tracking Technologies and Cookies
               </p>
 
               <p className='body-paragraph'>We use Cookies and similar tracking technologies to track the activity on Our Service and store certain information. Tracking technologies used are beacons, tags, and scripts to collect and track information and to improve and analyze Our Service. The technologies We use may include:</p>
 
-              <p className='body-paragraph main'>
+              <p className='body-heading'>
                 Cookies or Browser Cookies
               </p>
 
               <p className='body-paragraph'>A cookie is a small file placed on Your Device. You can instruct Your browser to refuse all Cookies or to indicate when a Cookie is being sent. However, if You do not accept Cookies, You may not be able to use some parts of our Service. Unless you have adjusted Your browser setting so that it will refuse Cookies, our Service may use Cookies.</p>
 
-              <p className='body-paragraph main'>
+              <p className='body-heading'>
                 Web Beacons
               </p>
 
@@ -111,7 +111,7 @@ function PrivacyPolicy() {
                 We use both Session and Persistent Cookies for the purposes set out below:
               </p>
 
-              <p className='body-paragraph main'>
+              <p className='body-heading'>
                 Necessary / Essential Cookies
               </p>
 
@@ -122,7 +122,7 @@ function PrivacyPolicy() {
                 Purpose: These Cookies are essential to provide You with services available through the Website and to enable You to use some of its features. They help to authenticate users and prevent fraudulent use of user accounts. Without these Cookies, the services that You have asked for cannot be provided, and We only use these Cookies to provide You with those services.
               </p>
 
-              <p className='body-paragraph main'>
+              <p className='body-heading'>
                 Cookies Policy / Notice Acceptance Cookies
               </p>
 
@@ -135,12 +135,12 @@ function PrivacyPolicy() {
 
               </p>
 
-              <p className='body-paragraph main'>
+              <p className='body-paragraph'>
                 Use of Your Personal Data
               </p>
 
               <p className='body-paragraph'>The Company may use Personal Data for the following purposes:</p>
-              <p className='body-paragraph main'>
+              <p className='body-paragraph'>
                 To provide and maintain our Service,
               </p>
 
@@ -160,14 +160,14 @@ function PrivacyPolicy() {
               <p className='body-paragraph'><b>With Your consent:</b> We may disclose Your personal information for any other purpose with Your consent.</p>
               <p className='body-paragraph'>including to monitor the usage of our Service.</p>
 
-              <p className='body-paragraph main'>
+              <p className='body-paragraph'>
                 Retention of Your Personal Data
               </p>
               <p className='body-paragraph'>The Company will retain Your Personal Data only for as long as is necessary for the purposes set out in this Privacy Policy. We will retain and use Your Personal Data to the extent necessary to comply with our legal obligations (for example, if we are required to retain your data to comply with applicable laws), resolve disputes, and enforce our legal agreements and policies.<br />
                 <br />
                 The Company will also retain Usage Data for internal analysis purposes. Usage Data is generally retained for a shorter period of time, except when this data is used to strengthen the security or to improve the functionality of Our Service, or We are legally obligated to retain this data for longer time periods.
               </p>
-              <p className='body-paragraph main'>
+              <p className='body-paragraph'>
                 Transfer of Your Personal Data
               </p>
               <p className='body-paragraph'>Your information, including Personal Data, is processed at the Company's operating offices and in any other places where the parties involved in the processing are located. It means that this information may be transferred to — and maintained on — computers located outside of Your state, province, country or other governmental jurisdiction where the data protection laws may differ than those from Your jurisdiction.<br />
@@ -176,7 +176,7 @@ function PrivacyPolicy() {
                 <br />
                 The Company will take all steps reasonably necessary to ensure that Your data is treated securely and in accordance with this Privacy Policy and no transfer of Your Personal Data will take place to an organization or a country unless there are adequate controls in place including the security of Your data and other personal information.
               </p>
-              <p className='body-paragraph main'>
+              <p className='body-paragraph'>
                 Delete Your Personal Data
               </p>
               <p className='body-paragraph'>You have the right to delete or request that We assist in deleting the Personal Data that We have collected about You.<br />
@@ -188,7 +188,7 @@ function PrivacyPolicy() {
                 Please note, however, that We may need to retain certain information when we have a legal obligation or lawful basis to do so.
               </p>
 
-              <p className='body-paragraph main'>
+              <p className='body-paragraph'>
                 Disclosure of Your Personal Data
               </p>
               <p className='body-paragraph'><b>Business Transactions</b></p>
@@ -205,27 +205,27 @@ function PrivacyPolicy() {
                 ·         Protect against legal liability<br /><br />
               </p>
 
-              <p className='body-paragraph main'>
+              <p className='body-paragraph'>
                 Security of Your Personal Data
               </p>
 
               <p className='body-paragraph'>The security of Your Personal Data is important to Us, but remember that no method of transmission over the Internet, or method of electronic storage is 100% secure. While We strive to use commercially acceptable means to protect Your Personal Data, We cannot guarantee its absolute security.</p>
 
-              <p className='body-paragraph main'>
+              <p className='body-paragraph'>
                 Children's Privacy
               </p>
 
               <p className='body-paragraph'>Our Service does not address anyone under the age of 13. We do not knowingly collect personally identifiable information from anyone under the age of 13. If You are a parent or guardian and You are aware that Your child has provided Us with Personal Data, please contact Us. If We become aware that We have collected Personal Data from anyone under the age of 13 without verification of parental consent, We take steps to remove that information from Our servers.<br /><br />
                 If We need to rely on consent as a legal basis for processing Your information and Your country requires consent from a parent, We may require Your parent's consent before We collect and use that information.
               </p>
-              <p className='body-paragraph main'>
+              <p className='body-paragraph'>
                 Links to Other Websites
               </p>
 
               <p className='body-paragraph'>Our Service may contain links to other websites that are not operated by Us. If You click on a third party link, You will be directed to that third party's site. We strongly advise You to review the Privacy Policy of every site You visit.<br /><br />
                 We have no control over and assume no responsibility for the content, privacy policies or practices of any third party sites or services.
               </p>
-              <p className='body-paragraph main'>
+              <p className='body-paragraph'>
                 Changes to this Privacy Policy
               </p>
 

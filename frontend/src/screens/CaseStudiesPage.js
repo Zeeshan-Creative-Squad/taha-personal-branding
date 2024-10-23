@@ -11,7 +11,6 @@ const CaseStudiesPage = () => {
         spanHead="Studies"
         Para="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim urna porttitor neque elementum cursus. Bibendum."
       />
-
       <CaseStudy />
       <HomeGallery />
     </div>

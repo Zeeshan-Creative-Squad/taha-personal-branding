@@ -10,7 +10,6 @@ const ConsultationServices = () => {
           <Col md={4} className="text-md-left text-lg-left mb-4 text-center text-lg-start ">
             <div className="content-wrapper">
               <h1 className="head-h1">Consultation Services</h1>
-              {/* <h2 className="font-weight-bold-custom">To Our Customers</h2> */}
               <p className='para_main'>Lorem Ipsum has been the printer took a galley of type and scrambled survived not only five finance software has love the financial haveing on centuries Lorem Ipsum has been the rinter took a galley of type and scrambled survived not only ive finance software has love the financial haveing on centuries</p>
               <div className='mt-4'>
                 <button className='connect-button'>Explore Now</button>

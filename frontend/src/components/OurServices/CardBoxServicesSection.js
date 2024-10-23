@@ -1,12 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "./CardBoxServicesSection.css";
-import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import { Autoplay } from "swiper/modules";
-import CardBox from "./CardBox";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-import { Spinner } from "react-bootstrap";
+
 
 function CardTestimonial({
   subHeading,

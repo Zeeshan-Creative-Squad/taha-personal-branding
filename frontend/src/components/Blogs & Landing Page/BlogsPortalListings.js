@@ -104,15 +104,15 @@ const BlogsPortalListings = () => {
   const BlogListingModule = () => {
     return (
       <>
-        <CommonHeroComponent 
-        backgroundImg="/images/creatives/services-hero.jpg" 
-        Heading="Blogs Portal" subtitle="HB Care Blogs Portal" />
+        <CommonHeroComponent
+          backgroundImg="/images/creatives/services-hero.jpg"
+          Heading="Blogs Portal" subtitle="HB Care Blogs Portal" />
         <div className="blogs_portal_listings mt-4 mb-4">
           <div className="container">
 
             <div className="blogs_upload">
               <button onClick={UploadBlog}>
-                <img src="/icons/plus-white.png" alt="icon"/>
+                <img src="/icons/plus-white.png" alt="icon" />
                 <span>Upload New Blog</span>
               </button>
             </div>
@@ -127,32 +127,32 @@ const BlogsPortalListings = () => {
   const BlogPatch = () => {
     return (
       <div className="row">
-      {blogs.map((element) => (
+        {blogs.map((element) => (
           <div className="col-lg-4 col-md-6 col-12 mb-5 ">
-              <div className="blogs_card">
-                  <div className='entity_details mb-2 d-flex justify-content-start align-items-center'>
-                      {/* <img className='img-fluid' src="/images/icons/ETB-Logo.png" alt='Favicon logo' /> */}
-                      <div className='entity_dates'>
-                          <h5>ETB-HOME STAGING</h5>
-                          <h4>{element.published_date}</h4>
-                      </div> 
-                  </div>
-
-                  <img src={element.blog_image} className='img-fluid blg_crt' alt='Blog Img' />
-
-                  <div className='blogs_card_details'> 
-                      <h5>{ categories?.find((val) => val.category_id == element.category)?.category }</h5>
-                      <h3>{element.title}</h3>
-                      <p>{element.brief_paragraph}</p>
-                      <div className='action_btns'>
-                         <button onClick={() => editBlog(element.blog_id)} className='edit'> <span><img src='/icons/edit.svg' className='img-fluid' alt='Edit Img' /></span> Edit Blog</button>
-                         <button onClick={() => deleteBlog(element.blog_id)} className='delete'> <span><img src='/icons/delete.svg' className='img-fluid' alt='Delete Img' /></span> Delete Blog</button>
-                      </div>
-                  </div>
+            <div className="blogs_card">
+              <div className='entity_details mb-2 d-flex justify-content-start align-items-center'>
+                {/* <img className='img-fluid' src="/images/icons/ETB-Logo.png" alt='Favicon logo' /> */}
+                <div className='entity_dates'>
+                  <h5>ETB-HOME STAGING</h5>
+                  <h4>{element.published_date}</h4>
+                </div>
               </div>
+
+              <img src={element.blog_image} className='img-fluid blg_crt' alt='Blog Img' />
+
+              <div className='blogs_card_details'>
+                <h5>{categories?.find((val) => val.category_id == element.category)?.category}</h5>
+                <h3>{element.title}</h3>
+                <p>{element.brief_paragraph}</p>
+                <div className='action_btns'>
+                  <button onClick={() => editBlog(element.blog_id)} className='edit'> <span><img src='/icons/edit.svg' className='img-fluid' alt='Edit Img' /></span> Edit Blog</button>
+                  <button onClick={() => deleteBlog(element.blog_id)} className='delete'> <span><img src='/icons/delete.svg' className='img-fluid' alt='Delete Img' /></span> Delete Blog</button>
+                </div>
+              </div>
+            </div>
           </div>
-      ))}
-  </div>
+        ))}
+      </div>
     );
   };
   // -----

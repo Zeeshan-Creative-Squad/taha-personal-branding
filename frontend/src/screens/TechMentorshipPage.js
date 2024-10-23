@@ -1,8 +1,6 @@
 import React from 'react'
 import CommonHeroComponent from '../components/CommonHeroComponent/CommonHeroComponent'
 import TechMentorshipCards from '../components/TechMentorshipCards/TechMentorshipCards'
-import VisionAndMission from '../components/VisionAndMission/VisionAndMission'
-import QuestionAnswer from '../components/QuestionAnswer/QuestionAnswer'
 import ConnectPopup from '../components/OurTestimonials/ConnectPopup'
 import TextContent from '../components/TextContent/TextContent'
 import SectionComponent from '../components/SectionComponent/SectionComponent'
@@ -19,11 +17,8 @@ const TechMentorshipPage = () => {
                 padding="2vh 0vh"
             />
             <TechMentorshipCards />
-
             <BookConsultation />
             <PaymentForm />
-
-
             <TextContent
                 subHeading=""
                 heading="At your fingertips : "
@@ -46,21 +41,11 @@ const TechMentorshipPage = () => {
                 button="Get Consultation"
                 image="/images/creatives/boy-about-image.png" />
             <SectionComponent
-
                 heading="At your "
                 spanHead="fingertips"
                 Para="Lorem Ipsum has been the printer took a galley of type and scrambled survived not only five finance software has love the financial haveing on centuries Lorem Ipsum has been the rinter took a galley of type and scrambled survived not only ive finance software has love the financial haveing on centuries" homeTitle=""
                 button="Get Consultation"
                 image="/images/creatives/boy-about-image.png" />
-
-            {/* <VisionAndMission Para="Lorem Ipsum has been the printer took a galley of type and scrambled survived not only five finance software has love the financial haveing on centuries Lorem Ipsum has been the rinter took a galley of type and scrambled survived not only ive finance software has love the financial haveing on centuries Lorem Ipsum has been the printer took a galley of type and scrambled survived not only five finance software has love the financial haveing on centuries Lorem Ipsum has been the rinter took a galley of type and scrambled survived not only ive finance software has love the financial haveing on centuries finance software has love the financial haveing on centuries"
-                image="/images/creatives/about-banner-boy.png"
-                heading="Tech Mentorship &  "
-                spanHead="Career Guidance"
-                button="Learn More"
-                background="#131313" /> */}
-
-            {/* <QuestionAnswer /> */}
             <ConnectPopup />
         </div>
     )

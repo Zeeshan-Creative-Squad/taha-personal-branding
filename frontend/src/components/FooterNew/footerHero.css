@@ -274,6 +274,14 @@ ul li a:hover {
     padding: 0px 30px;
     line-height: 2.5;
   }
+
+  .footer .footer-second-section {
+    display: block;
+    gap: 10px;
+    list-style: none;
+    padding: 0px 0px;
+    line-height: 2.5;
+  }
 }
 
 @media (max-width: 992px) {

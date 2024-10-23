@@ -7,7 +7,6 @@ const BlogsPage = () => {
   return (
     <div>
       <BlogsHero />
-
       <CardTestimonial
         heading="Design, technology, and the things I cherish "
         // shadeHeading="News"
@@ -15,7 +14,6 @@ const BlogsPage = () => {
         content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's Lorem Ipsum is simply dummy text of the printing"
         button="Learn more"
       />
-
       <ConnectPopup />
     </div>
   );

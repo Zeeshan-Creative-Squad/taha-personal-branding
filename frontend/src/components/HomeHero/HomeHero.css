@@ -157,7 +157,7 @@
     .home-hero .social-media-icons {}
 
     .home-hero .banner-img {
-        width: 50%;
+        width: 40%;
         margin: 0 auto;
         transform: translateY(-0px);
         padding: 12vh 0vh 0vh 0vh
@@ -174,7 +174,6 @@
     .home-hero {
         height: auto;
         flex-direction: row-reverse;
-
     }
 
     .home-hero .Homehero-content {

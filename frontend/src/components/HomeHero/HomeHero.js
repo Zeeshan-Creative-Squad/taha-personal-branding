@@ -22,7 +22,6 @@ const Homehero = () => {
                 </div>
               </div>
 
-
               <div className="social-media-icons">
                 <p className='get-consult'>Follow me <span className='span-line'>-------</span> </p>
 

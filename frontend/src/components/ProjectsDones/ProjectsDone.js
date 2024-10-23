@@ -1,17 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
-import CountUp from 'react-countup'; // Import the CountUp component
-import './ProjectsDone.css'; // Import the external CSS file
+import CountUp from 'react-countup';
+import './ProjectsDone.css';
 
 const ProjectsDone = () => {
   const [startAnimation, setStartAnimation] = useState(false);
 
-  // Trigger animation when the component is mounted
   useEffect(() => {
-    // Simulate a delay before starting the animation (for smooth appearance)
-    const timer = setTimeout(() => setStartAnimation(true), 300); // 200ms delay
+    const timer = setTimeout(() => setStartAnimation(true), 300);
 
-    return () => clearTimeout(timer); // Clean up the timer
+    return () => clearTimeout(timer);
   }, []);
 
   return (
@@ -22,7 +20,7 @@ const ProjectsDone = () => {
             <Card.Body>
               <Card.Title className="card-title-custom">
                 {startAnimation && (
-                  <CountUp end={140} duration={4.5} start={0} />  // Smooth transition
+                  <CountUp end={140} duration={4.5} start={0} />
                 )}
                 +
               </Card.Title>
@@ -37,7 +35,7 @@ const ProjectsDone = () => {
             <Card.Body>
               <Card.Title className="card-title-custom">
                 {startAnimation && (
-                  <CountUp end={5} duration={4.5} start={0} />  // Smooth transition
+                  <CountUp end={5} duration={4.5} start={0} />
                 )}
                 +
               </Card.Title>
@@ -52,7 +50,7 @@ const ProjectsDone = () => {
             <Card.Body>
               <Card.Title className="card-title-custom">
                 {startAnimation && (
-                  <CountUp end={100} duration={4.5} start={0} />  // Smooth transition
+                  <CountUp end={100} duration={4.5} start={0} />
                 )}
                 +
               </Card.Title>
