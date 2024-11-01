@@ -108,6 +108,7 @@
     background-color: #131313;
     border-radius: 20px;
     margin-top: 0px;
+    margin-bottom: 10px;
   }
 
   .consultation-services .connect-button {
@@ -168,6 +169,4 @@
   } */
 }
 
-@media (max-width: 1280px) {
-
-}
+@media (max-width: 1280px) {}

@@ -131,6 +131,11 @@
 }
 
 @media (max-width:768px) {
+    .main-container {
+        background-color: #131313;
+        padding: 0vh 0vh;
+    }
+
     .Testimonials-container .head-h1 {
         padding: 0vh 0vh;
         font: normal normal bold 45px/70px Open Sans;

@@ -32,7 +32,6 @@ const TechMentorshipPage = () => {
                 shiftRow={false}
                 listData={["Professional Sports", "Automotive", "Construction", "Technology", "Healthcare", "E-Commerce", "Hospitality", "Finance", "Real Estate", "Retail", "Education", "Legal"]}
             />
-
             <SectionComponent
                 flexdirection="row-reverse"
                 heading="At your "
