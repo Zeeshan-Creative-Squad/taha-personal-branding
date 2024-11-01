@@ -130,7 +130,7 @@ const Mobilenav = (props) => {
             </div>
             <div className={`d-flex justify-content-between align-content center navitems_cs1 ${props.landingPage && 'd-none'}`}>
               <li>
-                <Link onClick={() => props.hamburgerdropdown(transfer)} to="/services">Consultation</Link>
+                <Link onClick={() => props.hamburgerdropdown(transfer)} to="/consultation">Consultation</Link>
               </li>
             </div>
 
@@ -624,7 +624,7 @@ const Mobilenav = (props) => {
 
           <div className={`d-flex justify-content-between align-content center navitems_cs1 ${props.landingPage && 'd-none'}`}>
             <li>
-              <Link onClick={() => props.hamburgerdropdown(transfer)} to="/blogs">My Agency</Link>
+              <Link onClick={() => props.hamburgerdropdown(transfer)} to="/tech-mentorship">My Agency</Link>
             </li>
           </div>
 

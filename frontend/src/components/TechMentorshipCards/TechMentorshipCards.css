@@ -17,7 +17,7 @@
     padding: 40px;
     background-color: #272727;
     transition: transform 0.3s ease, background-color 0.3s ease;
-    /* height: 100%; */   
+    /* height: 100%; */
 }
 
 .ServiceCard-container .services-card-content {
@@ -82,9 +82,11 @@
         flex-direction: row-reverse;
         text-align: center;
     }
+
     .ServiceCard-container .head-h1 {
         font: normal normal bold 50px/60px Open Sans;
     }
+
     .ServiceCard-container .service-card {
         border-radius: 30px;
         padding: 32px 20px;
@@ -93,9 +95,11 @@
         margin-top: 14px;
         /* height: 100%; */
     }
+
     .ServiceCard-container .connect-button {
         font-size: 13px;
     }
+
     .ServiceCard-container .text-section {
         padding: 5vh 1.2vh;
     }

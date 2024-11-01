@@ -6,6 +6,10 @@
   padding: 70px 12px;
 }
 
+.consultation-services .card {
+  border: none;
+}
+
 /* Text styling */
 .consultation-services .h2-main {
   color: #3F1626;
@@ -101,6 +105,10 @@
 
   .consultation-services .head-h1 {
     font: normal normal bold 55px/78px Open Sans;
+  }
+
+  .consultation-services .card {
+    border: none;
   }
 
   .consultation-services .card-body {
